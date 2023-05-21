@@ -5,7 +5,7 @@ import soup_kitchens from './data/soup_kitchens.json';
 
 const PopupRenderer = ({
     data
-}) => {
+}: any) => {
     return (
 	<>
 	    <strong>{data?.name}</strong>
