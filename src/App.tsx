@@ -1,3 +1,4 @@
+// @ts-ignore
 import {Map} from 'frg';
 
 import food_pantries from './data/food_pantries.json';
