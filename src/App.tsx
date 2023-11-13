@@ -5,7 +5,7 @@ import {
     setupIonicReact
 } from '@ionic/react';
 import {Map} from '@share-meals/frg-ui';
-import type {MapLayer} from 'share-meals/frg-ui';
+import type {MapLayer} from '@share-meals/frg-ui';
 import {Renderer} from './data/Renderer';
 
 import food_pantries from './data/food_pantries.json';
