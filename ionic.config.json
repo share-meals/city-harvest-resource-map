@@ -1,0 +1,7 @@
+{
+  "name": "City Harvest Resource Map",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
