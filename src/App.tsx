@@ -38,7 +38,7 @@ const layers: MapLayer[] = [
     {
 	name: 'Community Partner Distributions',
 	geojson: cpds,
-	fillColor: '#54688b',
+	fillColor: '#D25B73',
 	strokeColor: 'white',
 	icon: {
 	    src: cpd_truck,
