@@ -1993,9 +1993,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@share-meals/frg-ui@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@share-meals/frg-ui@npm:0.0.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40share-meals%2Ffrg-ui%2F0.0.1%2F277834267ba50e73d64fe59f655d9131dd73e932"
+"@share-meals/frg-ui@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@share-meals/frg-ui@npm:0.0.3::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40share-meals%2Ffrg-ui%2F0.0.3%2Fc4d0c3691fe6d3815db6627ad8dd95c96ceca067"
   dependencies:
     dayjs: "npm:^1.11.10"
     deepmerge: "npm:^4.3.1"
@@ -2005,7 +2005,7 @@ __metadata:
     "@ionic/react": "*"
     react: "*"
     react-hook-form: "*"
-  checksum: fab1fd4c0388ed4b73f44973e9d2a61b1823ac68a5b17f64efe76bd04705bccb03f7a0ab6bc8e9772536fd93b8c300cc5a744f5c72f21a408d115adb835d8b96
+  checksum: 5ae66bf5b2c3858eff6e4ceb66218468048a62108941e7faea488ad396e81c7aa247b74623b73391b5421b382cbb05c8280a5e34be28cfafa7634548202a6d45
   languageName: node
   linkType: hard
 
@@ -2374,6 +2374,16 @@ __metadata:
   dependencies:
     "@types/node": "npm:*"
   checksum: f1b7c1b99fef9f2fe7f1985ef7426d0cebe48cd031f1780fcdc7451eec7e31ac97028f16f50121a59bcf53086a1fc8c856fd5b7d3e00970e43d92ae27d6b43dc
+  languageName: node
+  linkType: hard
+
+"@uidotdev/usehooks@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "@uidotdev/usehooks@npm:2.4.1"
+  peerDependencies:
+    react: ">=18.0.0"
+    react-dom: ">=18.0.0"
+  checksum: 181c43fb324dbe4fef9762c61ab4b8235efa48abedf39a9bfeab65872522c43dae789c4f85b82a1164ed7bb18ae7ff25c3a19e7c4e0eb944937ac7f8109cee9b
   languageName: node
   linkType: hard
 
@@ -3129,7 +3139,7 @@ __metadata:
     "@capacitor/status-bar": "npm:5.0.6"
     "@ionic/react": "npm:^7.0.0"
     "@ionic/react-router": "npm:^7.0.0"
-    "@share-meals/frg-ui": "npm:^0.0.1"
+    "@share-meals/frg-ui": "npm:^0.0.3"
     "@testing-library/dom": "npm:^9.3.3"
     "@testing-library/jest-dom": "npm:^5.16.5"
     "@testing-library/react": "npm:^14.0.0"
@@ -3138,6 +3148,7 @@ __metadata:
     "@types/react-dom": "npm:^18.0.10"
     "@types/react-router": "npm:^5.1.20"
     "@types/react-router-dom": "npm:^5.3.3"
+    "@uidotdev/usehooks": "npm:^2.4.1"
     "@vitejs/plugin-legacy": "npm:^4.0.2"
     "@vitejs/plugin-react": "npm:^4.0.1"
     cypress: "npm:^12.7.0"
@@ -3222,10 +3233,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-name@npm:~1.1.4":
+"color-name@npm:^1.0.0, color-name@npm:~1.1.4":
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: a1a3f914156960902f46f7f56bc62effc6c94e84b2cae157a526b1c1f74b677a47ec602bf68a61abfa2b42d15b7c5651c6dbe72a43af720bc588dff885b10f95
+  languageName: node
+  linkType: hard
+
+"color-parse@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "color-parse@npm:2.0.0"
+  dependencies:
+    color-name: "npm:^1.0.0"
+  checksum: f489deaea5bb323e05f41436d747e22bbb45928420fce8a989c209a4baa71c7ee90f8b43298d9565844af1d02580743d5d87b506519f755b4b218df6b72eb4a0
+  languageName: node
+  linkType: hard
+
+"color-rgba@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "color-rgba@npm:3.0.0"
+  dependencies:
+    color-parse: "npm:^2.0.0"
+    color-space: "npm:^2.0.0"
+  checksum: 8f3920cd1dcafde31c9240e54c2aba3c4fc43e350dc15cc00de3ea988800e1a533f85b38aa67867acfd51634a92bfd5e8aa9f06f1b42965c8fa538b5e16d9667
+  languageName: node
+  linkType: hard
+
+"color-space@npm:^2.0.0, color-space@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "color-space@npm:2.0.1"
+  checksum: aeeca8d5f99f108a056df9dbadcebfe0e8c352004a5999c858ecc48ef8e52f5d06d137b7f330100d68c61dfb83fd6a7c1c113fcc2dfc37d783351b03536aa33f
   languageName: node
   linkType: hard
 
@@ -6375,14 +6412,16 @@ __metadata:
   linkType: hard
 
 "ol@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "ol@npm:8.1.0"
+  version: 8.2.0
+  resolution: "ol@npm:8.2.0"
   dependencies:
+    color-rgba: "npm:^3.0.0"
+    color-space: "npm:^2.0.1"
     earcut: "npm:^2.2.3"
     geotiff: "npm:^2.0.7"
     pbf: "npm:3.2.1"
     rbush: "npm:^3.0.1"
-  checksum: ef5252bd67b1e9beb9995eaa38073639fedbd0c9dfeda4886d35e85bc7a4a8a3612e13bb0b41a86f7b68ea30c6613983145f0bd24342d4e2c129e2dafac483cc
+  checksum: 46e1cf2b73da2ab1b30a7e596e2ce2d2c8891e3abf1a3274f933dcf2d76ff0c38ba0a2087a681997977f688a998d933e818975db8a7dfe198b9e2639bdd2d0df
   languageName: node
   linkType: hard
 
@@ -7213,15 +7252,15 @@ __metadata:
   linkType: hard
 
 "rlayers@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "rlayers@npm:2.1.0"
+  version: 2.2.0
+  resolution: "rlayers@npm:2.2.0"
   dependencies:
     lru-cache: "npm:^7.10.0"
   peerDependencies:
-    ol: ">=6.10.0 <=8.1.0"
+    ol: ">=6.10.0 <=8.2.0"
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: f42ddeb810b082351082b8feb85044c48688d9780cb79885158293bf0115c4e48806852d92dbdf7fbf41e5ffded917e85d5c99ac9ae2aca30c735524beb782bf
+  checksum: 54365ff849ecb68f3515bf06151931f2e601cc2faf9382cebfda818dc153458cc167aaaab8eec9b8c66ca186df919aac92b34445e4f85f71ac1cbf2aa036c8e4
   languageName: node
   linkType: hard
 
