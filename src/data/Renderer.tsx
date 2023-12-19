@@ -18,7 +18,7 @@ import {
 import type {
     Dictionary,
     Hours
-} from '@/HoursFormatter';
+} from '@share-meals/frg-ui';
 import {PrivacyPolicy} from './PrivacyPolicy';
 import {
     formatDays,
