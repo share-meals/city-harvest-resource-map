@@ -148,28 +148,7 @@ const LayerTogglesModal = () => {
     </IonModal>;
 }
 
-const GeocoderModal = () => {
-    const modal = useRef<HTMLIonModalElement>(null);
-    return <IonModal ref={modal} trigger='openGeocoderModal'>
-	<IonHeader>
-	    <IonToolbar>
-		<IonButtons slot='end'>
-		    <IonButton onClick={() => {modal.current?.dismiss();}}>
-			<IonIcon slot='icon-only' icon={closeSharp} />
-		    </IonButton>
-		</IonButtons>
-	    </IonToolbar>
-	</IonHeader>
-	<IonContent className='ion-padding'>
-	    <GeocoderInput />
-	</IonContent>
-    </IonModal>;
-}
-
-export const App = () => {
-    const geocoderInput = <GeocoderInput
-    onGeocode={({latlng, address}: onGeocodeProps) => {
-	
+const logGeocode = ({latlng, address}: onGeocodeProps) => {
 	/*
 	   if(onMapCenter !== undefined){
 	   onMapCenter({
@@ -190,9 +169,28 @@ export const App = () => {
 	   setGeocoderErrorMessage('Address not found');
 	   }
 	 */
-    }}
-    />;
+};
 
+
+const GeocoderModal = () => {
+    const modal = useRef<HTMLIonModalElement>(null);
+    return <IonModal ref={modal} trigger='openGeocoderModal'>
+	<IonHeader>
+	    <IonToolbar>
+		<IonButtons slot='end'>
+		    <IonButton onClick={() => {modal.current?.dismiss();}}>
+			<IonIcon slot='icon-only' icon={closeSharp} />
+		    </IonButton>
+		</IonButtons>
+	    </IonToolbar>
+	</IonHeader>
+	<IonContent className='ion-padding'>
+	    <GeocoderInput onGeocode={logGeocode}/>
+	</IonContent>
+    </IonModal>;
+}
+
+export const App = () => {
     const size: {
 	height: number | null,
 	width: number | null
@@ -246,7 +244,7 @@ export const App = () => {
 					 </IonCol>
 					 <IonCol>
 					     <LayerToggles />
-					     {geocoderInput}
+					     <GeocoderInput onGeocode={logGeocode} />
 					     <Renderer />
 					 </IonCol>
 				     </IonRow>
