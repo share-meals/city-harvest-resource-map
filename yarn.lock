@@ -1993,9 +1993,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@share-meals/frg-ui@npm:^0.0.3":
-  version: 0.0.3
-  resolution: "@share-meals/frg-ui@npm:0.0.3::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40share-meals%2Ffrg-ui%2F0.0.3%2Fc4d0c3691fe6d3815db6627ad8dd95c96ceca067"
+"@share-meals/frg-ui@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@share-meals/frg-ui@npm:0.0.4::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40share-meals%2Ffrg-ui%2F0.0.4%2F023ed3d7bd93579dd2e445e4017a623e15b93604"
   dependencies:
     dayjs: "npm:^1.11.10"
     deepmerge: "npm:^4.3.1"
@@ -2005,7 +2005,7 @@ __metadata:
     "@ionic/react": "*"
     react: "*"
     react-hook-form: "*"
-  checksum: 5ae66bf5b2c3858eff6e4ceb66218468048a62108941e7faea488ad396e81c7aa247b74623b73391b5421b382cbb05c8280a5e34be28cfafa7634548202a6d45
+  checksum: f1656fd460f22835a6047cf0a574f3e9bcbd03767651f5ad4ed1eaaa9567494b3c562bb8b687675cd9e1ca768dd6d5538468d9ddb8c7c31c999c8fbe442a0967
   languageName: node
   linkType: hard
 
@@ -3139,7 +3139,7 @@ __metadata:
     "@capacitor/status-bar": "npm:5.0.6"
     "@ionic/react": "npm:^7.0.0"
     "@ionic/react-router": "npm:^7.0.0"
-    "@share-meals/frg-ui": "npm:^0.0.3"
+    "@share-meals/frg-ui": "npm:^0.0.4"
     "@testing-library/dom": "npm:^9.3.3"
     "@testing-library/jest-dom": "npm:^5.16.5"
     "@testing-library/react": "npm:^14.0.0"
@@ -4429,8 +4429,8 @@ __metadata:
   linkType: hard
 
 "geotiff@npm:^2.0.7":
-  version: 2.1.0
-  resolution: "geotiff@npm:2.1.0"
+  version: 2.1.1
+  resolution: "geotiff@npm:2.1.1"
   dependencies:
     "@petamoriken/float16": "npm:^3.4.7"
     lerc: "npm:^3.0.0"
@@ -4440,7 +4440,7 @@ __metadata:
     web-worker: "npm:^1.2.0"
     xml-utils: "npm:^1.0.2"
     zstddec: "npm:^0.1.0"
-  checksum: cb8aaa2739abfafa52116f82e237054916329bd445d39ed83be7e58b2ad510cf12948e91414c049e3ca6335333aab27667525d979efd38fe0d2996bb567fb439
+  checksum: f69390b6cced4c30352200b0eeadf62c54544996ed5744fdcbe06930943482740a80f766db97833fb51467612fa35f2656735671c1cf43544ae8c321c8e1ed55
   languageName: node
   linkType: hard
 

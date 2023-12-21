@@ -17,6 +17,7 @@ import {
     IonModal,
     IonPage,
     IonRow,
+    IonTitle,
     IonToolbar,
     setupIonicReact
 } from '@ionic/react';
@@ -177,6 +178,9 @@ const GeocoderModal = () => {
     return <IonModal ref={modal} trigger='openGeocoderModal'>
 	<IonHeader>
 	    <IonToolbar>
+		<IonTitle>
+		    Go to an address
+		</IonTitle>
 		<IonButtons slot='end'>
 		    <IonButton onClick={() => {modal.current?.dismiss();}}>
 			<IonIcon slot='icon-only' icon={closeSharp} />
@@ -185,7 +189,13 @@ const GeocoderModal = () => {
 	    </IonToolbar>
 	</IonHeader>
 	<IonContent className='ion-padding'>
-	    <GeocoderInput onGeocode={logGeocode}/>
+	    <GeocoderInput
+	    onGeocode={(args) => {
+		modal.current?.dismiss();
+		logGeocode(args);
+	    }}
+	    helperText='To find food near you, please enter your address, city, and zip code'
+	    />
 	</IonContent>
     </IonModal>;
 }
@@ -244,7 +254,10 @@ export const App = () => {
 					 </IonCol>
 					 <IonCol>
 					     <LayerToggles />
-					     <GeocoderInput onGeocode={logGeocode} />
+					     <GeocoderInput
+						 onGeocode={logGeocode}
+						 helperText='To find food near you, please enter your address, city, and zip code'
+					     />
 					     <Renderer />
 					 </IonCol>
 				     </IonRow>
