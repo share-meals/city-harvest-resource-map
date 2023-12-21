@@ -1995,7 +1995,7 @@ __metadata:
 
 "@share-meals/frg-ui@npm:^0.0.4":
   version: 0.0.4
-  resolution: "@share-meals/frg-ui@npm:0.0.4::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40share-meals%2Ffrg-ui%2F0.0.4%2F023ed3d7bd93579dd2e445e4017a623e15b93604"
+  resolution: "@share-meals/frg-ui@npm:0.0.4::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40share-meals%2Ffrg-ui%2F0.0.4%2F191c26f3a1b868b6620758bba03fc108e81a7a07"
   dependencies:
     dayjs: "npm:^1.11.10"
     deepmerge: "npm:^4.3.1"
@@ -2005,7 +2005,7 @@ __metadata:
     "@ionic/react": "*"
     react: "*"
     react-hook-form: "*"
-  checksum: f1656fd460f22835a6047cf0a574f3e9bcbd03767651f5ad4ed1eaaa9567494b3c562bb8b687675cd9e1ca768dd6d5538468d9ddb8c7c31c999c8fbe442a0967
+  checksum: cdd0dcb1a2b2e96399debd8c0a8f2df748d742173a2381d5c3a93db98f8c804a3055fffea961d80756aa8568e6b53872aed01c0c999fbe787292410039ac9ae4
   languageName: node
   linkType: hard
 
