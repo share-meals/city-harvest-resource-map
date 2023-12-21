@@ -150,26 +150,26 @@ const LayerTogglesModal = () => {
 }
 
 const logGeocode = ({latlng, address}: onGeocode) => {
-	/*
-	   if(onMapCenter !== undefined){
-	   onMapCenter({
-	   address,
-	   lat: latlng?.lat || null,
-	   lng: latlng?.lng || null,
-	   });
-	   }
-	   if(latlng !== null){
-	   const point: Coordinate = fromLonLat([latlng.lng, latlng.lat]);
-	   setView({
-	   center: point,
-	   zoom: view.zoom
-	   });
-	   setSpotlight!(new Point(point));
-	   setGeocoderErrorMessage(null);
-	   }else{
-	   setGeocoderErrorMessage('Address not found');
-	   }
-	 */
+    /*
+       if(onMapCenter !== undefined){
+       onMapCenter({
+       address,
+       lat: latlng?.lat || null,
+       lng: latlng?.lng || null,
+       });
+       }
+       if(latlng !== null){
+       const point: Coordinate = fromLonLat([latlng.lng, latlng.lat]);
+       setView({
+       center: point,
+       zoom: view.zoom
+       });
+       setSpotlight!(new Point(point));
+       setGeocoderErrorMessage(null);
+       }else{
+       setGeocoderErrorMessage('Address not found');
+       }
+     */
 };
 
 
@@ -230,54 +230,53 @@ export const App = () => {
 	}
     }, [isMobile, infoTrigger, setInfoTrigger]);
     return <IonApp>
-	    <IonPage>
-		<IonContent>
-		    <div style={{height: '100vh', width: '100vw'}}>
-			<MapProvider
-			    center={{
-				lat: 40.7127281,
-				lng: -74.0060152
-			    }}
-			    layers={layers}
-			    maxZoom={20}
-			    minZoom={10}>
-			    <GeocoderProvider
-				platform='nominatim'
-				url='https://nominatim.openstreetmap.org/search'>
-				{!isMobile &&
-				 <IonGrid>
-				     <IonRow style={{height: '100vh'}}>
-					 <IonCol>
-					     <Map
-						 controls={controls.slice(0, 1)}
-					     />
-					 </IonCol>
-					 <IonCol>
-					     <LayerToggles />
-					     <GeocoderInput
-						 onGeocode={logGeocode}
-						 helperText='To find food near you, please enter your address, city, and zip code'
-					     />
-					     <Renderer />
-					 </IonCol>
-				     </IonRow>
-				 </IonGrid>
-				}
-				{isMobile && <>
-				    <Map
-					onMapClick={() => {
-					    setInfoTrigger((new Date()).toString());
-					}}
-					controls={controls} />
-				    <InfoModal trigger={infoTrigger} />
-				    <GeocoderModal />
-				    <LayerTogglesModal />
-				</>}
-			    </GeocoderProvider>
-			</MapProvider>
-		    </div>
-		</IonContent>
-	    </IonPage>
-	</IonApp>;
+	<IonPage>
+	    <IonContent>
+		<div style={{height: '100vh', width: '100vw'}}>
+		    <MapProvider
+			center={{
+			    lat: 40.7127281,
+			    lng: -74.0060152
+			}}
+			layers={layers}
+			maxZoom={20}
+			minZoom={10}>
+			<GeocoderProvider
+			    platform='nominatim'
+			    url='https://nominatim.openstreetmap.org/search'>
+			    {!isMobile &&
+			     <IonGrid>
+				 <IonRow style={{height: '100vh'}}>
+				     <IonCol>
+					 <Map
+					     controls={controls.slice(0, 1)}
+					 />
+				     </IonCol>
+				     <IonCol>
+					 <LayerToggles />
+					 <GeocoderInput
+					     onGeocode={logGeocode}
+					     helperText='To find food near you, please enter your address, city, and zip code'
+					 />
+					 <Renderer />
+				     </IonCol>
+				 </IonRow>
+			     </IonGrid>
+			    }
+			    {isMobile && <>
+				<Map
+				onMapClick={() => {
+				    setInfoTrigger((new Date()).toString());
+				}}
+				controls={controls} />
+				<InfoModal trigger={infoTrigger} />
+				<GeocoderModal />
+				<LayerTogglesModal />
+			    </>}
+			</GeocoderProvider>
+		    </MapProvider>
+		</div>
+	    </IonContent>
+	</IonPage>
+    </IonApp>;
 }
-
