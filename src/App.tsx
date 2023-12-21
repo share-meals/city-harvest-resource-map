@@ -33,7 +33,7 @@ import {
 
 import type {
     MapLayer,
-    onGeocodeProps
+    onGeocode
 } from '@share-meals/frg-ui';
 import {Renderer} from './data/Renderer';
 import {useWindowSize} from '@uidotdev/usehooks';
@@ -149,7 +149,7 @@ const LayerTogglesModal = () => {
     </IonModal>;
 }
 
-const logGeocode = ({latlng, address}: onGeocodeProps) => {
+const logGeocode = ({latlng, address}: onGeocode) => {
 	/*
 	   if(onMapCenter !== undefined){
 	   onMapCenter({
