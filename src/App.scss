@@ -16,7 +16,7 @@
     flex-direction: column;
 }
 
-@media (max-width: 768px){
+@media (max-width: 576px){
     .primaryButtons, .secondaryButtons {
 	ion-button {
 	    font-size: 10px !important;
