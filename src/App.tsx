@@ -43,7 +43,7 @@ import {
     layersSharp
 } from 'ionicons/icons';
 
-import './App.css';
+import './App.scss';
 
 
 

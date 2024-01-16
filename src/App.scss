@@ -1,0 +1,28 @@
+.ol-control {
+    background: none;
+}
+
+.primaryButtons{
+    left: 1rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondaryButtons {
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px){
+    .primaryButtons, .secondaryButtons {
+	ion-button {
+	    font-size: 10px !important;
+	    &:not(:first-child){
+		margin-top: 2rem;
+	    }
+	}
+    }
+}
