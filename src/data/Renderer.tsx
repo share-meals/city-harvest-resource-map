@@ -86,14 +86,7 @@ export const Renderer = () => {
     }, [clickedFeatures]);
     switch(clickedFeatures.length){
 	case 0:
-	    return <>
-		<IonText>
-		    <p>
-			Welcome to the City Harvest Resource Map! Here are all of the food pantries, soup kitchens, community partners. Click on any marker for more information.
-		    </p>
-		</IonText>
-		<PrivacyPolicy />
-	    </>;
+	    return <PrivacyPolicy />;
 	case 1:
 	    return <IonText>
 		<ReactMarkdown children={formatData(clickedFeatures[0])} />
