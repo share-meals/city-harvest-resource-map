@@ -19,6 +19,7 @@ import type {
     Dictionary,
     Hours
 } from '@share-meals/frg-ui';
+import rehypeExternalLinks from 'rehype-external-links';
 import {PrivacyPolicy} from './PrivacyPolicy';
 import {
     formatDays,
@@ -89,7 +90,10 @@ export const Renderer = () => {
 	    return <PrivacyPolicy />;
 	case 1:
 	    return <IonText>
-		<ReactMarkdown children={formatData(clickedFeatures[0])} />
+		<ReactMarkdown
+		    children={formatData(clickedFeatures[0])}
+		    rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
+		/>
 	    </IonText>;
 	default:
 	    return <>
@@ -128,7 +132,10 @@ export const Renderer = () => {
 		</IonButtons>
 	    </IonToolbar>
 	</IonHeader>
-	    <ReactMarkdown children={formatData(clickedFeatures[page])} />
+	<ReactMarkdown
+	    children={formatData(clickedFeatures[page])}
+	rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
+	/>
 	    </>;
     }
 }
