@@ -65,11 +65,12 @@ const formatHours = (hours: any) => {
 }
 
 const formatData = (data: any) => {
+    const full_address: string = (`${data.address}, ${data.city}, ${data.state} ${data.zipcode}`).replace(/ /g, '+');
     return (
 `**${data.name}**  
 ${data.address || ''}  
 ${data.city || ''}, ${data.state || ''} ${data.zipcode || ''}  
-[Get directions](https://www.google.com/maps/dir/${data.lat},${data.lng}//@${data.lat},${data.lng},18.5z?entry=ttu)  
+[Open in Google Map](https://www.google.com/maps/?q=${full_address})  
 ${data.website ? '\nVisit the [website](' + data.website + ')' :''}  
 ${data.hours !== null ? '\n\n**Hours of Operation**\n' + formatHours(data.hours) : ''}  
 ${data.notes && data.notes.trim() !== '' ? '\n\n**Notes**  \n' + data.notes : ''}  
