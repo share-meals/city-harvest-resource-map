@@ -256,6 +256,7 @@ export const App = () => {
 					 <LayerToggles />
 					 <GeocoderInput
 					     onGeocode={logGeocode}
+					     onGeocodeZoom={17}
 					     helperText='To find food near you, please enter your address, city, and zip code'
 					 />
 					 <Renderer />

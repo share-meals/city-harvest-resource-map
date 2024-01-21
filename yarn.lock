@@ -1993,9 +1993,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@share-meals/frg-ui@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "@share-meals/frg-ui@npm:0.0.4::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40share-meals%2Ffrg-ui%2F0.0.4%2F191c26f3a1b868b6620758bba03fc108e81a7a07"
+"@share-meals/frg-ui@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "@share-meals/frg-ui@npm:0.0.5::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40share-meals%2Ffrg-ui%2F0.0.5%2Fcf5b29121ab0dad4159946e3b43b86b7f765b80c"
   dependencies:
     dayjs: "npm:^1.11.10"
     deepmerge: "npm:^4.3.1"
@@ -2005,7 +2005,7 @@ __metadata:
     "@ionic/react": "*"
     react: "*"
     react-hook-form: "*"
-  checksum: cdd0dcb1a2b2e96399debd8c0a8f2df748d742173a2381d5c3a93db98f8c804a3055fffea961d80756aa8568e6b53872aed01c0c999fbe787292410039ac9ae4
+  checksum: c5adfd480abdca13d664e97d51581a0b5d8cc685d3c77b4454a4785b7f5825f7d0353aa306e412339e94175a10cf260c4b45ed18ba5cb256bf4d817ef0a8020f
   languageName: node
   linkType: hard
 
@@ -3175,7 +3175,7 @@ __metadata:
     "@capacitor/status-bar": "npm:5.0.6"
     "@ionic/react": "npm:^7.0.0"
     "@ionic/react-router": "npm:^7.0.0"
-    "@share-meals/frg-ui": "npm:^0.0.4"
+    "@share-meals/frg-ui": "npm:^0.0.5"
     "@testing-library/dom": "npm:^9.3.3"
     "@testing-library/jest-dom": "npm:^5.16.5"
     "@testing-library/react": "npm:^14.0.0"
