@@ -1995,7 +1995,7 @@ __metadata:
 
 "@share-meals/frg-ui@npm:^0.0.5":
   version: 0.0.5
-  resolution: "@share-meals/frg-ui@npm:0.0.5::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40share-meals%2Ffrg-ui%2F0.0.5%2Fcf5b29121ab0dad4159946e3b43b86b7f765b80c"
+  resolution: "@share-meals/frg-ui@npm:0.0.5::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40share-meals%2Ffrg-ui%2F0.0.5%2Fab2e12cccdb11b79c3438522006bcbc29c009b08"
   dependencies:
     dayjs: "npm:^1.11.10"
     deepmerge: "npm:^4.3.1"
@@ -2005,7 +2005,7 @@ __metadata:
     "@ionic/react": "*"
     react: "*"
     react-hook-form: "*"
-  checksum: c5adfd480abdca13d664e97d51581a0b5d8cc685d3c77b4454a4785b7f5825f7d0353aa306e412339e94175a10cf260c4b45ed18ba5cb256bf4d817ef0a8020f
+  checksum: 561a691bada62d8131d69185b2c417c65307dc24422147e950ae5f55fe6f7824b5a7ddbca137c1bf4c855bc01a853194f2afeb838a80aad636ce85990bbc3b2b
   languageName: node
   linkType: hard
 
@@ -4467,8 +4467,8 @@ __metadata:
   linkType: hard
 
 "geotiff@npm:^2.0.7":
-  version: 2.1.1
-  resolution: "geotiff@npm:2.1.1"
+  version: 2.1.2
+  resolution: "geotiff@npm:2.1.2"
   dependencies:
     "@petamoriken/float16": "npm:^3.4.7"
     lerc: "npm:^3.0.0"
@@ -4478,7 +4478,7 @@ __metadata:
     web-worker: "npm:^1.2.0"
     xml-utils: "npm:^1.0.2"
     zstddec: "npm:^0.1.0"
-  checksum: f69390b6cced4c30352200b0eeadf62c54544996ed5744fdcbe06930943482740a80f766db97833fb51467612fa35f2656735671c1cf43544ae8c321c8e1ed55
+  checksum: 39e63a66e9b9514f395d6a15063956401f713de46b2e710c4cfd18164fbecdf890a0d01603e479bdb8a9caa4a123d4dee929f37255a0b68fb7aa5eb5a94b7859
   languageName: node
   linkType: hard
 
@@ -8592,9 +8592,9 @@ __metadata:
   linkType: hard
 
 "web-worker@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "web-worker@npm:1.2.0"
-  checksum: 2bec036cd4784148e2f135207c62facf4457a0f2b205d6728013b9f0d7c62404dced95fcd849478387e10c8ae636d665600bd0d99d80b18c3bb2a7f045aa20d8
+  version: 1.3.0
+  resolution: "web-worker@npm:1.3.0"
+  checksum: bca341b421f07c2d33aa205d463e6a2d3d376fb0628a01052dc343fd88a1d688df58d1c7fe36f631d0d860bbd3060f5014cca67d6f8781634b6c2fae25d1fc70
   languageName: node
   linkType: hard
 
