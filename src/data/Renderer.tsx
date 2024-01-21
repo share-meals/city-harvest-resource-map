@@ -70,7 +70,7 @@ const formatData = (data: any) => {
 `**${data.name}**  
 ${data.address || ''}  
 ${data.city || ''}, ${data.state || ''} ${data.zipcode || ''}  
-[Open in Google Map](https://www.google.com/maps/?q=${full_address})  
+[Open in Google Maps](https://www.google.com/maps/?q=${full_address})  
 ${data.website ? '\nVisit the [website](' + data.website + ')' :''}  
 ${data.hours !== null ? '\n\n**Hours of Operation**\n' + formatHours(data.hours) : ''}  
 ${data.notes && data.notes.trim() !== '' ? '\n\n**Notes**  \n' + data.notes : ''}  
