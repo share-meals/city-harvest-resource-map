@@ -209,6 +209,7 @@ export const App = () => {
     const controls: MapControl[] = [
 	{
 	    className:'primaryButtons',
+	    // @ts-ignore
 	    element: ZoomButtons
 	},
 	{
