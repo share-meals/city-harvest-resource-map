@@ -72,7 +72,6 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-console.log(cpds);
 
 const layers: MapLayer[] = [
     {
@@ -85,7 +84,6 @@ const layers: MapLayer[] = [
 	scale: 0.13312
 	}
     },
-  /*
     {
 	name: 'Mobile Markets',
 	geojson: mms,
@@ -108,7 +106,6 @@ const layers: MapLayer[] = [
 	fillColor: '#893B67',
 	strokeColor: 'white'
     }
-  */
 ];
 
 setupIonicReact();
