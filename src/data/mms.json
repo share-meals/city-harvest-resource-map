@@ -6,34 +6,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -73.9203167,
-                    40.8217281
+		    40.821764152033175,
+                    -73.9201780573605
                 ]
             },
             "properties": {
                 "id": "85353",
-                "name": "City Harvest Mobile Market, Melrose Houses",
-                "address": "286 E 156th St",
+                "name": "City Harvest Mobile Market, Melrose",
+                "address": "286 E 156th St, at the Classic Center",
                 "zipcode": "10451",
-                "notes": "- Eligibility requirements: must be resident of the Melrose, Morrisania Air Rights, or Andrew Jackson Houses\n",
-                "website": "https://www.cityharvest.org/programs/bronx-mobile-markets/",
-                "lat": 40.8217281,
-                "lng": -73.9203167,
+                "notes": "- Must be a Bronx resident to receive food",
+                "lat": 40.821764152033175,
+                "lng": -73.9201780573605,
                 "status": "open",
                 "hours": [
                     {
                         "days": "36",
                         "time_start": "9:30",
                         "time_end": "11:30",
-                        "notes": null,
+                        "notes": "Only 2nd Saturday and 4th Wednesday of each month",
                         "time_zone": "America/New_York"
                     }
                 ],
                 "city": "Bronx",
-                "state": "NY",
-                "trackedBy": [
-                    "SM"
-                ]
+                "state": "NY"
             }
         },
         {
@@ -41,18 +37,18 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -74.018845,
-                    40.648277
+                    -74.01912045298224,
+                    40.64859633888526
                 ]
             },
             "properties": {
                 "id": "Plentiful-2305",
-                "name": "City Harvest Food Rescue Center",
-                "address": "52nd St and 1st Avenue",
+                "name": "City Harvest Mobile Market, Sunset Park",
+                "address": "City Harvest Food Rescue Center, 52nd St and 1st Avenue",
                 "zipcode": "11232",
                 "notes": "- Must be a Brooklyn resident to receive food",
-                "lat": 40.648277,
-                "lng": -74.018845,
+                "lat": 40.64859633888526,
+                "lng": -74.01912045298224,
                 "status": "open",
                 "city": "Brooklyn",
                 "state": "NY",
@@ -61,7 +57,7 @@
                         "days": "56",
                         "time_start": "10:00",
                         "time_end": "12:00",
-                        "notes": "2nd Friday and 4th Saturday of each month",
+                        "notes": "Only 2nd Friday and 4th Saturday of each month",
                         "time_zone": "America/New_York"
                     }
                 ]
@@ -72,55 +68,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -73.9442895,
-                    40.756597
+		    -73.94461675532463,
+                    40.75572388187865
                 ]
             },
             "properties": {
                 "id": "85354",
                 "name": "City Harvest Mobile Market, Queensbridge",
-                "address": "40-07 Vernon Blvd, Basketball Court",
+                "address": "Basketball court directly behind the Jacob A. Riis Neighborhood Settlement House at 40-07 Vernon Boulevard",
                 "zipcode": "11101",
-                "notes": "- Appointments are preferred, but not required\n- ID is required, but there are no neighborhood restrictions\n- Located in the basketball court directly behind the Jacob A. Riis Neighborhood Settlement House\n- Mostly produce items \n",
-                "website": "https://www.cityharvest.org/programs/queens-mobile-markets/",
-                "lat": 40.756597,
-                "lng": -73.9442895,
-                "status": "closed",
+                "notes": "- Must be a Queens resident to receive food",
+                "lat": 40.75572388187865,
+                "lng": -73.94461675532463,
+                "status": "open",
                 "hours": [
                     {
-                        "days": "2345",
-                        "time_start": "9:00",
-                        "time_end": "15:00",
-                        "notes": null,
-                        "time_zone": "America/New_York"
-                    },
-                    {
-                        "days": "6",
-                        "time_start": "9:00",
-                        "time_end": "12:00",
-                        "notes": null,
-                        "time_zone": "America/New_York"
-                    },
-                    {
-                        "days": "3",
-                        "time_start": "11:30",
-                        "time_end": null,
-                        "notes": null,
-                        "time_zone": "America/New_York"
-                    },
-                    {
-                        "days": "6",
+                        "days": "36",
                         "time_start": "9:30",
                         "time_end": "11:30",
-                        "notes": null,
+                        "notes": "Only 1st Wednesday and 3rd Saturday of each month",
                         "time_zone": "America/New_York"
                     }
                 ],
                 "city": "Queens",
-                "state": "NY",
-                "trackedBy": [
-                    "SM"
-                ]
+                "state": "NY"
             }
         },
         {
@@ -128,41 +99,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -73.9419183,
-                    40.8308796
+                    -73.9418728744004,
+                    40.83101156812198
                 ]
             },
             "properties": {
                 "id": "85358",
-                "name": "City Harvest Mobile Market, Prince Hall Temple",
-                "address": "454 W 155th St",
+                "name": "City Harvest Mobile Market, Prince Hall",
+                "address": "Prince Hall Masonic Temple, 454 W 155th St, near the corner of St. Nicholas Avenue",
                 "zipcode": "10032",
-                "notes": "\n",
-                "website": "https://www.cityharvest.org/programs/manhattan/",
-                "lat": 40.8308796,
-                "lng": -73.9419183,
+                "notes": "- Must be a Manhattan reident to receive food",
+                "lat": 40.83101156812198,
+                "lng": -73.9418728744004,
                 "status": "open",
                 "hours": [
                     {
-                        "days": "4",
+                        "days": "46",
                         "time_start": "9:30",
                         "time_end": "11:30",
-                        "notes": null,
-                        "time_zone": "America/New_York"
-                    },
-                    {
-                        "days": "6",
-                        "time_start": "9:30",
-                        "time_end": "11:30",
-                        "notes": null,
+                        "notes": "Only 2nd Thursday and 4th Saturday of each month",
                         "time_zone": "America/New_York"
                     }
                 ],
                 "city": "New York",
-                "state": "NY",
-                "trackedBy": [
-                    "SM"
-                ]
+                "state": "NY"
             }
         },
         {
@@ -170,41 +130,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -73.933889,
-                    40.7731213
+		    -73.93326110863056,
+		    40.77275790484195
                 ]
             },
             "properties": {
                 "id": "85350",
-                "name": "City Harvest Mobile Market, Astoria Houses",
-                "address": "7-1 Astoria Blvd",
+                "name": "City Harvest Mobile Market, Astoria",
+                "address": "Basketball court off of Astoria Boulevard, in the Astoria Houses",
                 "zipcode": "11102",
-                "notes": "- No ID requirements for first time visitors\n- May be some geographical restrictions, but first-time visitors are welcome\n- Located on the basketball court off of Astoria Boulevard in the Astoria Houses\n- bring shopping cart \n- Mostly produce items \n",
-                "website": "https://www.cityharvest.org/programs/queens-mobile-markets/",
-                "lat": 40.7731213,
-                "lng": -73.933889,
+                "notes": "- Must be a Queens resident to receive food",
+                "lat": 40.77275790484195,
+                "lng": -73.93326110863056,
                 "status": "open",
                 "hours": [
                     {
-                        "days": "4",
+                        "days": "36",
                         "time_start": "9:30",
                         "time_end": "11:30",
-                        "notes": null,
-                        "time_zone": "America/New_York"
-                    },
-                    {
-                        "days": "6",
-                        "time_start": "9:30",
-                        "time_end": "11:30",
-                        "notes": null,
+                        "notes": "Only 1st Wednesday and 3rd Saturday of each month",
                         "time_zone": "America/New_York"
                     }
                 ],
                 "city": "Queens",
-                "state": "NY",
-                "trackedBy": [
-                    "SM"
-                ]
+                "state": "NY"
             }
         },
         {
@@ -212,43 +161,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -74.1628204,
-                    40.6328169
-                ]
-            },
-            "properties": {
-                "id": "85352",
-                "name": "City Harvest Mobile Market, Mariner's Harbor",
-                "address": "22 Roxbury St",
-                "zipcode": "10303",
-                "notes": "\n",
-                "website": "https://www.cityharvest.org",
-                "lat": 40.6328169,
-                "lng": -74.1628204,
-                "status": "open",
-                "hours": [
-                    {
-                        "days": "4",
-                        "time_start": "10:00",
-                        "time_end": "12:00",
-                        "notes": "\"Every other Thursday\"",
-                        "time_zone": "America/New_York"
-                    }
-                ],
-                "city": "Staten Island",
-                "state": "NY",
-                "trackedBy": [
-                    "SM"
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -73.9262813,
-                    40.8643423
+		    -73.92396613706121,
+		    40.860276796509666
                 ]
             },
             "properties": {
@@ -256,25 +170,21 @@
                 "name": "City Harvest Mobile Market, Washington Heights/Inwood",
                 "address": "Nagle Ave & 10th Ave on Dyckman St",
                 "zipcode": "10034",
-                "notes": "- Requirements: Resident of Manhattan\n- The Washington Heights/Inwood Mobile Market is held between Nagle Avenue and 10th Avenue on Dyckman Street\n- Arrive early for the best chance of receiving food\n- Usually fresh produce\n",
-                "website": "https://www.cityharvest.org/programs/manhattan/",
-                "lat": 40.8643423,
-                "lng": -73.9262813,
+                "notes": "- Must be a Manhattan resident to receive food",
+                "lat": 40.860276796509666,
+                "lng": -73.92396613706121,
                 "status": "open",
                 "hours": [
                     {
                         "days": "36",
                         "time_start": "9:30",
-                        "time_end": "23:30",
-                        "notes": null,
+                        "time_end": "11:30",
+                        "notes": "Only 2nd Wednesday and 4th Saturday of each month",
                         "time_zone": "America/New_York"
                     }
                 ],
                 "city": "New York",
-                "state": "NY",
-                "trackedBy": [
-                    "SM"
-                ]
+                "state": "NY"
             }
         },
         {
@@ -282,42 +192,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -74.0805633,
-                    40.6221226
+		    -74.08059617257648,
+		    40.62239680879554
                 ]
             },
             "properties": {
                 "id": "85356",
-                "name": "City Harvest Mobile Market, Stapleton Houses",
-                "address": "75 Hill St",
+                "name": "City Harvest Mobile Market, Stapleton",
+                "address": "Tennis courts at Stapleton Houses, behind 75 Hill Street",
                 "zipcode": "10304",
-                "notes": "- Go there early to get a good spot on the line\n- Open to anyone within Staten Island\n- ID is strongly encouraged\n- Available Fresh Produce, but nothing specifically halal or kosher\n",
-                "website": "https://www.cityharvest.org",
-                "lat": 40.6221226,
-                "lng": -74.0805633,
+                "notes": "- must be a Staten Island resident to receive food",
+                "lat": 40.62239680879554,
+                "lng": -74.08059617257648,
                 "status": "open",
                 "hours": [
                     {
-                        "days": "2",
+                        "days": "26",
                         "time_start": "9:30",
                         "time_end": "11:30",
-                        "notes": "\"First Tuesday of the month\"",
-                        "time_zone": "America/New_York"
-                    },
-                    {
-                        "days": "6",
-                        "time_start": "9:30",
-                        "time_end": "11:30",
-                        "notes": "\"Third Saturday of the month\"",
+                        "notes": "Only 1st Tuesday and 3rd Saturday of each month",
                         "time_zone": "America/New_York"
                     }
                 ],
                 "city": "Staten Island",
-                "state": "NY",
-                "trackedBy": [
-                    "SM",
-                    "Plentiful"
-                ]
+                "state": "NY"
             }
         },
         {
@@ -325,77 +223,62 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -73.9450062,
-                    40.6962225
+		    -73.94612087257494,
+		    40.696197243224255
                 ]
             },
             "properties": {
                 "id": "85351",
-                "name": "City Harvest Mobile Market, Bed-Stuy",
-                "address": "921 Myrtle Ave",
+                "name": "City Harvest Mobile Market, Bed Stuy",
+                "address": "Handball court of the Tompkins Houses on Myrtle Avenue, between Throop and Tompkins Avenues",
                 "zipcode": "11206",
-                "notes": "- Pantry held at the Handball Court of the Tompkins Houses on Myrtle Ave (between Throop and Tompkins Avenues)\n- must be a Brooklyn resident to be eligible to participate\n",
-                "website": "https://www.cityharvest.org/",
-                "lat": 40.6962225,
-                "lng": -73.9450062,
+                "notes": "- Must be a Brooklyn resident to receive food",
+                "lat": 40.696197243224255,
+                "lng": -73.94612087257494,
                 "status": "open",
                 "hours": [
                     {
                         "days": "36",
                         "time_start": "9:30",
-                        "time_end": "23:30",
-                        "notes": null,
+                        "time_end": "13:30",
+                        "notes": "Only 1st Saturday and 3rd Wednesday of each month",
                         "time_zone": "America/New_York"
                     }
                 ],
                 "city": "Brooklyn",
-                "state": "NY",
-                "trackedBy": [
-                    "SM",
-                    "Plentiful"
-                ]
+                "state": "NY"
             }
         },
+	
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -73.9097575,
-                    40.8151385
+		    -73.90975084005572,
+		    40.81520313463588
                 ]
             },
             "properties": {
                 "id": "85355",
-                "name": "City Harvest Mobile Market, St. Mary's Park",
-                "address": "595 Trinity Ave",
+                "name": "City Harvest Mobile Market, St. Mary's",
+                "address": "Parking Lot Adjacent to 595 Trinity Ave",
                 "zipcode": "10455",
-                "notes": "- The St. Mary’s Mobile Markets are held in the parking lot adjacent to 595 Trinity Avenue\n",
-                "website": "https://www.cityharvest.org/programs/bronx-mobile-markets/",
-                "lat": 40.8151385,
-                "lng": -73.9097575,
+                "notes": "- Must be a Bronx resident to receive food",
+                "lat": 40.81520313463588,
+                "lng": -73.90975084005572,
                 "status": "open",
                 "hours": [
                     {
-                        "days": "2",
+                        "days": "26",
                         "time_start": "9:30",
                         "time_end": "11:30",
-                        "notes": null,
-                        "time_zone": "America/New_York"
-                    },
-                    {
-                        "days": "6",
-                        "time_start": "9:30",
-                        "time_end": "11:30",
-                        "notes": null,
+                        "notes": "2nd Saturday and 4th Tuesday of each month",
                         "time_zone": "America/New_York"
                     }
                 ],
                 "city": "Bronx",
-                "state": "NY",
-                "trackedBy": [
-                    "SM"
-                ]
+                "state": "NY"
             }
         }
     ]

@@ -72,18 +72,20 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+console.log(cpds);
 
 const layers: MapLayer[] = [
     {
 	name: 'Community Partner Distributions',
 	geojson: cpds,
 	fillColor: '#D25B73',
-	strokeColor: 'white',
-	icon: {
-	    src: cpd_truck,
-	    scale: 0.13312
+      strokeColor: 'white',
+      icon: {
+	src: cpd_truck,
+	scale: 0.13312
 	}
     },
+  /*
     {
 	name: 'Mobile Markets',
 	geojson: mms,
@@ -106,6 +108,7 @@ const layers: MapLayer[] = [
 	fillColor: '#893B67',
 	strokeColor: 'white'
     }
+  */
 ];
 
 setupIonicReact();
@@ -210,7 +213,7 @@ export const App = () => {
 	{
 	    className:'primaryButtons',
 	    // @ts-ignore
-	    element: ZoomButtons
+	    element: <ZoomButtons />
 	},
 	{
 	    className: 'secondaryButtons',
