@@ -415,18 +415,11 @@
         "name": "North Bronx (Little Italy)",
         "address": "Madison Square Boys & Girls Club – Grimm Clubhouse – 543 E 189 st",
         "zipcode": "10458",
-        "notes": "- Community Partner – Madison Square Boys & Girls Club\n- Opened September 2020",
+          "notes": "- Community Partner – Madison Square Boys & Girls Club\n- Opened September 2020\n- Please call (718) 733-5500 for more info",
+	  "hours": null,
         "lat": 40.85863770036734,
         "lng": -73.88776680119017,
         "status": "open",
-        "hours": [
-          {
-            "days": "6",
-            "time_start": "13:00",
-            "time_end": "16:00",
-            "time_zone": "America/New_York"
-          }
-        ],
         "city": "Bronx",
         "state": "NY"
       }
@@ -476,18 +469,11 @@
         "name": "Flatbush (Brooklyn)",
         "address": "Madison Square Boys & Girls Club – Thomas S. Murphy Clubhouse – 2245 Bedford Ave",
         "zipcode": "11226",
-        "notes": "- Community Partner – Madison Square Boys & Girls Club\n- Opened June 2021",
+          "notes": "- Community Partner – Madison Square Boys & Girls Club\n- Opened June 2021\n- Please call (718) 462-6100 for more info",
+	  "hours": null,
         "lat": 40.64918511150437,
         "lng": -73.95548827235777,
         "status": "open",
-        "hours": [
-          {
-            "days": "6",
-            "time_start": "13:00",
-            "time_end": "16:00",
-            "time_zone": "America/New_York"
-          }
-        ],
         "city": "Brooklyn",
         "state": "NY"
       }
