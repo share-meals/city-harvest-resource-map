@@ -3,11 +3,24 @@
 }
 
 .primaryButtons{
+    position: absolute;
     left: 1rem;
     top: 1rem;
     display: flex;
     flex-direction: column;
+    z-index: 999;
 }
+
+.secondaryButtons {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
 
 .secondaryButtons {
     right: 1rem;
@@ -16,12 +29,14 @@
     flex-direction: column;
 }
 
+*/
+
 @media (max-width: 576px){
     .primaryButtons, .secondaryButtons {
 	ion-button {
 	    font-size: 10px !important;
 	    &:not(:first-child){
-		margin-top: 2rem;
+		// margin-top: 2rem;
 	    }
 	}
     }
