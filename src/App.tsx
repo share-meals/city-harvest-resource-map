@@ -249,7 +249,7 @@ export const App = () => {
       }
     }
     if(isMobile){
-      setInfoTrigger(new Date());
+      setInfoTrigger((new Date()).toString());
     }
   };
   const [infoTrigger, setInfoTrigger] = useState<string>('');
