@@ -1,4 +1,5 @@
 const logFunctionUrl = 'https://us-east1-city-harvest-423311.cloudfunctions.net';
+const protomapsApiKey = 'dae8f6c71066c020';
 
 import {
   useEffect,
@@ -24,6 +25,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import {
+  getMapStyle,
   GeocoderInput,
   GeocoderProvider,
   Map,
@@ -35,7 +37,7 @@ import {
 import {ZoomButtons} from './ZoomButtons';
 
 import type {
-  MapLayer,
+  MapLayerProps,
   onGeocode
 } from '@share-meals/frg-ui';
 import {Renderer} from './data/Renderer';
@@ -74,16 +76,20 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const layers: MapLayer[] = [
+const scalingLookup = {
+  10: 0.5,
+  12: 0.75,
+  14: 1,
+  15: 1.25
+}
+
+const layers: MapLayerProps[] = [
   {
     name: 'Community Partner Distributions',
     geojson: cpds,
     fillColor: '#D25B73',
     strokeColor: 'white',
-    icon: {
-      src: cpd_truck,
-      scale: 0.13312
-    },
+    icon: cpd_truck,
     type: 'vector'
   },
   {
@@ -91,25 +97,31 @@ const layers: MapLayer[] = [
     geojson: mms,
     fillColor: '#006747',
     strokeColor: 'white',
-    icon: {
-      src: mm_truck,
-      scale: 0.065
-    },
+    icon: mm_truck,
     type: 'vector'
   },
   {
     name: 'Food Pantries',
+    featureRadius: 10,
+    featureWidth: 4,
+    //fillColor: '#64A70B',
+    fillColor: 'rgba(100, 167, 11, 0.5)',
     geojson: food_pantries,
-    fillColor: '#64a70b',
     strokeColor: 'white',
-    type: 'vector'
+    textScale: 1.5,
+    type: 'vector',
   },
   {
     name: 'Soup Kitchens',
+    featureRadius: 10,
+    featureWidth: 4,
+    //fillColor: '#893B67',
+    fillColor: 'rgba(137, 59, 103, 0.5)',
     geojson: soup_kitchens,
-    fillColor: '#893B67',
     strokeColor: 'white',
-    type: 'vector'
+    type: 'vector',
+    //type: 'cluster',
+    //clusterRadius: 10
   }
 ];
 
@@ -168,26 +180,6 @@ const logGeocode = ({latlng, address}: onGeocode) => {
     .catch((error) => {
       console.log(error);
     });
-  /*
-     if(onMapCenter !== undefined){
-     onMapCenter({
-     address,
-     lat: latlng?.lat || null,
-     lng: latlng?.lng || null,
-     });
-     }
-     if(latlng !== null){
-     const point: Coordinate = fromLonLat([latlng.lng, latlng.lat]);
-     setView({
-     center: point,
-     zoom: view.zoom
-     });
-     setSpotlight!(new Point(point));
-     setGeocoderErrorMessage(null);
-     }else{
-     setGeocoderErrorMessage('Address not found');
-     }
-   */
 };
 
 
@@ -237,20 +229,28 @@ export const App = () => {
       </IonButton>
     </span>
   ];
-  const onFeatureClick = ({data, lat, lng}: {data: any, lat: number, lng: number}) => {
-    const options = {
-      method: 'POST',
-      headers: {
-	'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({id: data.id, lat, lng})
-    };
+  const onMapClick = ({data, lat, lng}: {data: any, lat: number, lng: number}) => {
+    if(data.length > 0
+       && data.length <= 5){ // don't log anything larger than 5 so as no to clog up logs
+      for(const d of data){
+	const options = {
+	  method: 'POST',
+	  headers: {
+	    'Content-Type': 'application/json'
+	  },
+	  body: JSON.stringify({id: d.id, lat, lng})
+	};
     fetch(`${logFunctionUrl}/log-feature-click`, options)
       .then((response) => {
       })
       .catch((error) => {
 	console.log(error);
       });
+      }
+    }
+    if(isMobile){
+      setInfoTrigger(new Date());
+    }
   };
   const [infoTrigger, setInfoTrigger] = useState<string>('');
   useEffect(() => {
@@ -268,7 +268,7 @@ export const App = () => {
 	      lng: -74.0060152
 	    }}
 	    layers={layers}
-	    maxZoom={20}
+	    maxZoom={16}
 	    minZoom={10}>
 	    <GeocoderProvider
 	      platform='nominatim'
@@ -279,7 +279,16 @@ export const App = () => {
 		   <IonCol>
 		     <Map
 		       controls={controls.slice(0, 1)}
-		       onFeatureClick={onFeatureClick}
+		       onMapClick={onMapClick}
+		       onMapClickOptions={{
+			 hitTolerance: 20
+		       }}
+		       protomapsApiKey={protomapsApiKey}
+		       protomapsStyles={getMapStyle({
+			 apiKey: protomapsApiKey,
+			 theme: 'light'
+		       })}
+		       scalingLookup={scalingLookup}
 		     />
 		   </IonCol>
 		   <IonCol>
@@ -297,7 +306,13 @@ export const App = () => {
 	      {isMobile && <>
 		<Map
 		  controls={controls}
-		  onFeatureClick={onFeatureClick}
+		  onMapClick={onMapClick}
+		  protomapsApiKey={protomapsApiKey}
+		  protomapsStyles={getMapStyle({
+		    apiKey: protomapsApiKey,
+		    theme: 'light'
+		  })}
+		  scalingLookup={scalingLookup}
 		/>
 		<InfoModal trigger={infoTrigger} />
 		<GeocoderModal />
