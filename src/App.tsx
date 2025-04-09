@@ -50,7 +50,7 @@ import {
 
 import './App.scss';
 
-import food_pantries from './data/food_pantries.json';
+import food_pantries from './data/fp.json';
 import soup_kitchens from './data/soup_kitchens.json';
 import mms from './data/mms.json';
 import mm_truck from './data/mm_truck.png';
@@ -83,6 +83,16 @@ const scalingLookup = {
   15: 1.25
 }
 
+// @ts-ignore
+const geojsonify = ({geolocation, ...data}) => {
+  console.log(data);
+  return {
+    type: 'Feature',
+    geometry: geolocation,
+    properties: data
+  }
+};
+
 const layers: MapLayerProps[] = [
   {
     name: 'Community Partner Distributions',
@@ -106,7 +116,11 @@ const layers: MapLayerProps[] = [
     featureWidth: 4,
     //fillColor: '#64A70B',
     fillColor: 'rgba(100, 167, 11, 0.5)',
-    geojson: food_pantries,
+    // @ts-ignore
+    geojson: {
+      type: 'FeatureCollection',
+      features: food_pantries.map(geojsonify)
+    },
     strokeColor: 'white',
     textScale: 1.5,
     type: 'vector',
@@ -217,10 +231,10 @@ export const App = () => {
   } = useWindowSize();
   const isMobile: boolean = size.width! < 576;
   const controls: any = [
-    <span className='primaryButtons'>
+    <span className='primaryButtons' key='primaryButtons'>
       <ZoomButtons />
     </span>,
-    <span className='secondaryButtons'>
+    <span className='secondaryButtons' key='secondaryButtons'>
       <IonButton id='openLayerTogglesModal'>
 	<IonIcon slot='icon-only' icon={layersSharp} />
       </IonButton>
