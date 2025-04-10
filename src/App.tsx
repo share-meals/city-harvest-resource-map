@@ -1,11 +1,6 @@
 const logFunctionUrl = 'https://us-east1-city-harvest-423311.cloudfunctions.net';
 const protomapsApiKey = 'dae8f6c71066c020';
 
-import {
-  useEffect,
-  useRef,
-  useState
-} from 'react';
 import {RControl} from 'rlayers';
 
 import {
@@ -41,6 +36,11 @@ import type {
   onGeocode
 } from '@share-meals/frg-ui';
 import {Renderer} from './data/Renderer';
+import {
+  useEffect,
+  useRef,
+  useState
+} from 'react';
 import {useWindowSize} from '@uidotdev/usehooks';
 import {
   closeSharp,
@@ -50,7 +50,7 @@ import {
 
 import './App.scss';
 
-import food_pantries from './data/food_pantries.json';
+import food_pantries from './data/fp.json';
 import soup_kitchens from './data/soup_kitchens.json';
 import mms from './data/mms.json';
 import mm_truck from './data/mm_truck.png';
@@ -83,6 +83,15 @@ const scalingLookup = {
   15: 1.25
 }
 
+// @ts-ignore
+const geojsonify = ({geolocation, ...data}) => {
+  return {
+    type: 'Feature',
+    geometry: geolocation,
+    properties: data
+  }
+};
+
 const layers: MapLayerProps[] = [
   {
     name: 'Community Partner Distributions',
@@ -99,29 +108,6 @@ const layers: MapLayerProps[] = [
     strokeColor: 'white',
     icon: mm_truck,
     type: 'vector'
-  },
-  {
-    name: 'Food Pantries',
-    featureRadius: 10,
-    featureWidth: 4,
-    //fillColor: '#64A70B',
-    fillColor: 'rgba(100, 167, 11, 0.5)',
-    geojson: food_pantries,
-    strokeColor: 'white',
-    textScale: 1.5,
-    type: 'vector',
-  },
-  {
-    name: 'Soup Kitchens',
-    featureRadius: 10,
-    featureWidth: 4,
-    //fillColor: '#893B67',
-    fillColor: 'rgba(137, 59, 103, 0.5)',
-    geojson: soup_kitchens,
-    strokeColor: 'white',
-    type: 'vector',
-    //type: 'cluster',
-    //clusterRadius: 10
   }
 ];
 
@@ -211,16 +197,18 @@ const GeocoderModal = () => {
 }
 
 export const App = () => {
+  const [foodPantries, setFoodPantries] = useState<any>([]);
+  const [soupKitchens, setSoupKitchens] = useState<any>([]);
   const size: {
     height: number | null,
     width: number | null
   } = useWindowSize();
   const isMobile: boolean = size.width! < 576;
   const controls: any = [
-    <span className='primaryButtons'>
+    <span className='primaryButtons' key='primaryButtons'>
       <ZoomButtons />
     </span>,
-    <span className='secondaryButtons'>
+    <span className='secondaryButtons' key='secondaryButtons'>
       <IonButton id='openLayerTogglesModal'>
 	<IonIcon slot='icon-only' icon={layersSharp} />
       </IonButton>
@@ -258,6 +246,20 @@ export const App = () => {
       setInfoTrigger('');
     }
   }, [isMobile, infoTrigger, setInfoTrigger]);
+
+  useEffect(() => {
+    fetch('https://data-bundles.s3.us-east-2.amazonaws.com/allOpenFoodPantries.json')
+      .then(response => response.json())
+      .then(async (response) => {
+	const fp = response.filter((r: any) => r.type === 'foodPantry').map(geojsonify);
+	const sk = response.filter((r: any) => r.type === 'soupKitchen').map(geojsonify);
+	setFoodPantries(fp);
+	setSoupKitchens(sk);
+      })
+      .catch((error) => {
+	console.log(error);
+      });
+  }, []);
   return <IonApp>
     <IonPage>
       <IonContent>
@@ -267,7 +269,35 @@ export const App = () => {
 	      lat: 40.7127281,
 	      lng: -74.0060152
 	    }}
-	    layers={layers}
+	    layers={[
+	      ...layers,
+	      {
+		name: 'Food Pantries',
+		featureRadius: 10,
+		featureWidth: 4,
+		fillColor: 'rgba(100, 167, 11, 0.5)',
+		// @ts-ignore
+		geojson: {
+		  type: 'FeatureCollection',
+		  features: foodPantries
+		},
+		strokeColor: 'white',
+		textScale: 1.5,
+		type: 'vector',
+	      },
+	      {
+		name: 'Soup Kitchens',
+		featureRadius: 10,
+		featureWidth: 4,
+		fillColor: 'rgba(137, 59, 103, 0.5)',
+		geojson: {
+		  type: 'FeatureCollection',
+		  features: soupKitchens
+		},
+		strokeColor: 'white',
+		type: 'vector',
+	      }
+	    ]}
 	    maxZoom={16}
 	    minZoom={10}>
 	    <GeocoderProvider

@@ -11,25 +11,31 @@
         ]
       },
       "properties": {
-        "id": "R11495",
         "name": "Ebbets Field Houses – Crown Heights (Brooklyn)",
-        "address": "Courtyard inside the Ebbets Field Apartment Houses - 1720 Bedford Ave",
-        "zipcode": "11225",
-        "notes": "- Community Partner – Ebbets Field Intergenerational Center\n- Opened October 2015",
-        "lat": 40.66484362915894,
-        "lng": -73.95827712883619,
+        "streetAddress": "Courtyard inside the Ebbets Field Apartment Houses - 1720 Bedford Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11225",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "2",
-            "time_start": "9:30",
-            "time_end": "12:00",
-            "notes": "Only first Tuesday of each month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "9:30:00",
+            "timeEnd": "12:00:00",
+            "notes": "Only first Tuesday of each month"
           }
         ],
-        "city": "Brooklyn",
-        "state": "NY"
+        "notes": "- Community Partner – Ebbets Field Intergenerational Center\n- Opened October 2015"
       }
     },
     {
@@ -42,25 +48,31 @@
         ]
       },
       "properties": {
-        "id": "R12482",
         "name": "Pink Houses NYCHA – East New York (Brooklyn)",
-        "address": "Pink Houses parking lot behind 2628 Linden Blvd",
-        "zipcode": "11208",
-        "notes": "- Community Partner – The River Fund\n- Opened August 2016",
-        "lat": 40.66821779808902,
-        "lng": -73.8674754435212,
+        "streetAddress": "Pink Houses parking lot behind 2628 Linden Blvd",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11208",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "2",
-            "time_start": "10:00",
-            "time_end": "12:00",
-            "notes": "Only 2nd and 4th Tuesday of each month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "Only 2nd and 4th Tuesday of each month"
           }
         ],
-        "city": "Brooklyn",
-        "state": "NY"
+        "notes": "- Community Partner – The River Fund\n- Opened August 2016"
       }
     },
     {
@@ -73,25 +85,30 @@
         ]
       },
       "properties": {
-        "id": "R13207",
         "name": "Grand Street Settlement – Lower East Side (Manhattan)",
-        "address": "72 Columbia Street",
-        "zipcode": "10002",
-        "notes": "- Community Partner – Grand Street Settlement\n- Opened January 2017",
-        "lat": 40.716975826029675,
-        "lng": -73.97904995701182,
+        "streetAddress": "72 Columbia Street",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10002",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "1",
-            "time_start": "10:00",
-            "time_end": "12:00",
-            "notes": "",
-            "time_zone": "America/New_York"
+            "days": [
+              "Mo"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00"
           }
         ],
-        "city": "New York",
-        "state": "NY"
+        "notes": "- Community Partner – Grand Street Settlement\n- Opened January 2017"
       }
     },
     {
@@ -104,24 +121,30 @@
         ]
       },
       "properties": {
-        "id": "R13072",
         "name": "YWCA – Flushing (Queens)",
-        "address": "42-07 Parsons Blvd.",
-        "zipcode": "11355",
-        "notes": "- Community Partner – YWCA\n- Opened April 2017",
-        "lat": 40.758094419882205,
-        "lng": -73.81893674351963,
+        "streetAddress": "42-07 Parsons Blvd.",
+        "addressLocality": "Flushing",
+        "addressRegion": "NY",
+        "postalCode": "11355",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "3",
-            "time_start": "10:00",
-            "time_end": "14:00",
-            "time_zone": "America/New_York"
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "14:00:00"
           }
         ],
-        "city": "Flushing",
-        "state": "NY"
+        "notes": "- Community Partner – YWCA\n- Opened April 2017"
       }
     },
     {
@@ -134,25 +157,31 @@
         ]
       },
       "properties": {
-        "id": "R15712",
         "name": "Bensonhurst – (Brooklyn)",
-        "address": "2336 86th St",
-        "zipcode": "11214",
-        "notes": "- Community Partner – Health Essential Association\n- Opened June 2018\n",
-        "lat": 40.5998714481062,
-        "lng": -73.99078500119481,
+        "streetAddress": "2336 86th St",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11214",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "4",
-            "time_start": "10:00",
-            "time_end": "12:00",
-            "notes": "Only 1st and 3rd Thursday of each month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "Only 1st and 3rd Thursday of each month"
           }
         ],
-        "city": "Brooklyn",
-        "state": "NY"
+        "notes": "- Community Partner – Health Essential Association\n- Opened June 2018\n"
       }
     },
     {
@@ -165,25 +194,31 @@
         ]
       },
       "properties": {
-        "id": "R15562",
         "name": "Sheepshead Bay – (Brooklyn)",
-        "address": "Sidewalk on E 16 St - 1602 Avenue U",
-        "zipcode": "11229",
-        "notes": "- Community Partner – Health Essential Association\n- Opened October 2018\n- This is a Direct Distribution site.",
-        "lat": 40.59899914418679,
-        "lng": -73.95597998570271,
+        "streetAddress": "Sidewalk on E 16 St - 1602 Avenue U",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11229",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "5",
-            "time_start": "10:00",
-            "time_end": "12:00",
-            "notes": "Only 4th Friday of every month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Fr"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "Only 4th Friday of every month"
           }
         ],
-        "city": "Brooklyn",
-        "state": "NY"
+        "notes": "- Community Partner – Health Essential Association\n- Opened October 2018\n- This is a Direct Distribution site."
       }
     },
     {
@@ -196,25 +231,31 @@
         ]
       },
       "properties": {
-        "id": "R15981",
         "name": "Brownsville – (Brooklyn)",
-        "address": "Salvation Army - Brownsville – 280 Riverdale Ave",
-        "zipcode": "11212",
-        "notes": "- Community Partner – Salvation Army\n- Opened November 2018",
-        "lat": 40.661146680563355,
-        "lng": -73.9060831011938,
+        "streetAddress": "Salvation Army - Brownsville – 280 Riverdale Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11212",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "5",
-            "time_start": "13:00",
-            "time_end": "15:00",
-            "notes": "Only 1st and 3rd Friday of every month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Fr"
+            ],
+            "timeStart": "13:00:00",
+            "timeEnd": "15:00:00",
+            "notes": "Only 1st and 3rd Friday of every month"
           }
         ],
-        "city": "Brooklyn",
-        "state": "NY"
+        "notes": "- Community Partner – Salvation Army\n- Opened November 2018"
       }
     },
     {
@@ -227,25 +268,31 @@
         ]
       },
       "properties": {
-        "id": "R16590",
         "name": "East New York – (Brooklyn)",
-        "address": "Fellowship Baptist Church – 509 Van Siclen Avenue",
-        "zipcode": "11207",
-        "notes": "- Community Partner – Fellowship Baptist Church\n- Opened May 2019",
-        "lat": 40.6673365745202,
-        "lng": -73.88871024352132,
+        "streetAddress": "Fellowship Baptist Church – 509 Van Siclen Avenue",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11207",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "2",
-            "time_start": "9:00",
-            "time_end": "12:00",
-            "notes": "Only 2nd and 4th Tuesday of every month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "9:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "Only 2nd and 4th Tuesday of every month"
           }
         ],
-        "city": "Brooklyn",
-        "state": "NY"
+        "notes": "- Community Partner – Fellowship Baptist Church\n- Opened May 2019"
       }
     },
     {
@@ -258,25 +305,31 @@
         ]
       },
       "properties": {
-        "id": "R16618",
         "name": "Upper West Side – (Manhattan)",
-        "address": "Sidewalk in front of Lincoln Square Neighborhood Center - 250 W 65th St",
-        "zipcode": "10023",
-        "notes": "- Community Partner – Lincoln Square Neighborhood Center and Teens for Food Justice",
-        "lat": 40.77457266970479,
-        "lng": -73.98679224351926,
+        "streetAddress": "Sidewalk in front of Lincoln Square Neighborhood Center - 250 W 65th St",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10023",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "4",
-            "time_start": "10:00",
-            "time_end": "12:00",
-            "notes": "Only 2nd and 4th Thursday of each month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "Only 2nd and 4th Thursday of each month"
           }
         ],
-        "city": "New York",
-        "state": "NY"
+        "notes": "- Community Partner – Lincoln Square Neighborhood Center and Teens for Food Justice"
       }
     },
     {
@@ -289,24 +342,30 @@
         ]
       },
       "properties": {
-        "id": "R16788",
         "name": "Westchester Square – (Bronx)",
-        "address": "Harvest Fields Community Church - 2626 East Tremont Avenue",
-        "zipcode": "10461",
-        "notes": "- Community Partner – Family of Christ Food Distribution Program\n- Opened September 2019",
-        "lat": 40.842795035796264,
-        "lng": -73.84647800119048,
+        "streetAddress": "Harvest Fields Community Church - 2626 East Tremont Avenue",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10461",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "3",
-            "time_start": "10:00",
-            "time_end": "12:00",
-            "time_zone": "America/New_York"
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00"
           }
         ],
-        "city": "Bronx",
-        "state": "NY"
+        "notes": "- Community Partner – Family of Christ Food Distribution Program\n- Opened September 2019"
       }
     },
     {
@@ -319,25 +378,31 @@
         ]
       },
       "properties": {
-        "id": "R17302",
         "name": "Far Rockaway – (Queens)",
-        "address": "Social Center – Oceanside Apartments (NYCHA) – 339 Beach 54 St",
-        "zipcode": "11692",
-        "notes": "- Community Partner – Doris McLaughlin - Oceanside Apartments (NYCHA)\n- Opened March 2020",
-        "lat": 40.59368835262741,
-        "lng": -73.78485683003126,
+        "streetAddress": "Social Center – Oceanside Apartments (NYCHA) – 339 Beach 54 St",
+        "addressLocality": "Arverne",
+        "addressRegion": "NY",
+        "postalCode": "11692",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "1",
-            "time_start": "10:00",
-            "time_end": "12:00",
-            "notes": "Only 2nd and 4th Monday of every month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Mo"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "Only 2nd and 4th Monday of every month"
           }
         ],
-        "city": "Arverne",
-        "state": "NY"
+        "notes": "- Community Partner – Doris McLaughlin - Oceanside Apartments (NYCHA)\n- Opened March 2020"
       }
     },
     {
@@ -350,25 +415,31 @@
         ]
       },
       "properties": {
-        "id": "R17774",
         "name": "Harlem – (Manhattan)",
-        "address": "Community Center – 3005 Frederick Douglass Blvd",
-        "zipcode": "10039",
-        "notes": "- Community Partner – Polo Grounds Towers Resident Association (NYCHA)\n- Opened July 2020",
-        "lat": 40.832081960133344,
-        "lng": -73.93695723002686,
+        "streetAddress": "Community Center – 3005 Frederick Douglass Blvd",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10039",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "2",
-            "time_start": "12:00",
-            "time_end": "14:00",
-            "notes": "Only 1st and 3rd Tuesday of every month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00",
+            "notes": "Only 1st and 3rd Tuesday of every month"
           }
         ],
-        "city": "New York",
-        "state": "NY"
+        "notes": "- Community Partner – Polo Grounds Towers Resident Association (NYCHA)\n- Opened July 2020"
       }
     },
     {
@@ -381,24 +452,30 @@
         ]
       },
       "properties": {
-        "id": "R17788",
         "name": "Williamsbridge – (Bronx)",
-        "address": "North Bronx SDA Church – 3743 Bronxwood Avenue",
-        "zipcode": "10469",
-        "notes": "- Community Partner – North Bronx SDA Church\n- Opened August 2020",
-        "lat": 40.8809745537125,
-        "lng": -73.85795173002607,
+        "streetAddress": "North Bronx SDA Church – 3743 Bronxwood Avenue",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10469",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "4",
-            "time_start": "12:00",
-            "time_end": "14:00",
-            "time_zone": "America/New_York"
+            "days": [
+              "Th"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00"
           }
         ],
-        "city": "Bronx",
-        "state": "NY"
+        "notes": "- Community Partner – North Bronx SDA Church\n- Opened August 2020"
       }
     },
     {
@@ -411,17 +488,22 @@
         ]
       },
       "properties": {
-        "id": "R17863",
         "name": "North Bronx (Little Italy)",
-        "address": "Madison Square Boys & Girls Club – Grimm Clubhouse – 543 E 189 st",
-        "zipcode": "10458",
-          "notes": "- Community Partner – Madison Square Boys & Girls Club\n- Opened September 2020\n- Please call (718) 733-5500 for more info",
-	  "hours": null,
-        "lat": 40.85863770036734,
-        "lng": -73.88776680119017,
+        "streetAddress": "Madison Square Boys & Girls Club – Grimm Clubhouse – 543 E 189 st",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10458",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
-        "city": "Bronx",
-        "state": "NY"
+        "addressCountry": "US",
+        "hours": [],
+        "notes": "- Community Partner – Madison Square Boys & Girls Club\n- Opened September 2020\n- Please call (718) 733-5500 for more info"
       }
     },
     {
@@ -434,25 +516,31 @@
         ]
       },
       "properties": {
-        "id": "R17898",
         "name": "Upper West Side 2 – (Manhattan)",
-        "address": "Douglass Houses NYCHA – 830 Columbus Avenue",
-        "zipcode": "10025",
-        "notes": "- Community Partner – Douglass Houses Resident Council\n- Opened September 2020",
-        "lat": 40.796437804068034,
-        "lng": -73.96528114351888,
+        "streetAddress": "Douglass Houses NYCHA – 830 Columbus Avenue",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10025",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "4",
-            "time_start": "12:00",
-            "time_end": "14:00",
-            "notes": "Only 2nd and 4th Thursday of each month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Th"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00",
+            "notes": "Only 2nd and 4th Thursday of each month"
           }
         ],
-        "city": "New York",
-        "state": "NY"
+        "notes": "- Community Partner – Douglass Houses Resident Council\n- Opened September 2020"
       }
     },
     {
@@ -465,17 +553,22 @@
         ]
       },
       "properties": {
-        "id": "R18370",
         "name": "Flatbush (Brooklyn)",
-        "address": "Madison Square Boys & Girls Club – Thomas S. Murphy Clubhouse – 2245 Bedford Ave",
-        "zipcode": "11226",
-          "notes": "- Community Partner – Madison Square Boys & Girls Club\n- Opened June 2021\n- Please call (718) 462-6100 for more info",
-	  "hours": null,
-        "lat": 40.64918511150437,
-        "lng": -73.95548827235777,
+        "streetAddress": "Madison Square Boys & Girls Club – Thomas S. Murphy Clubhouse – 2245 Bedford Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11226",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
-        "city": "Brooklyn",
-        "state": "NY"
+        "addressCountry": "US",
+        "hours": [],
+        "notes": "- Community Partner – Madison Square Boys & Girls Club\n- Opened June 2021\n- Please call (718) 462-6100 for more info"
       }
     },
     {
@@ -488,25 +581,31 @@
         ]
       },
       "properties": {
-        "id": "R18479",
         "name": "Far Rockaway 2 (Queens)",
-        "address": "Ocean Park Apartments – 125 Beach 17 street – Far Rockaway, NY 11691",
-        "zipcode": "11691",
-        "notes": "- Community Partner – Related Affordable Foundation\n- Opened September 2021",
-        "lat": 40.59415629910103,
-        "lng": -73.75162245886739,
+        "streetAddress": "Ocean Park Apartments – 125 Beach 17 street – Far Rockaway, NY 11691",
+        "addressLocality": "Far Rockaway",
+        "addressRegion": "NY",
+        "postalCode": "11691",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "3",
-            "time_start": "10:00",
-            "time_end": "12:00",
-            "notes": "Only 3rd Wednesday of every month",
-            "time_zone": "America/New_York"
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "Only 3rd Wednesday of every month"
           }
         ],
-        "city": "Far Rockaway",
-        "state": "NY"
+        "notes": "- Community Partner – Related Affordable Foundation\n- Opened September 2021"
       }
     },
     {
@@ -519,25 +618,31 @@
         ]
       },
       "properties": {
-        "id": "R19331",
         "name": "Staten Island Community Partner Distribution",
-        "address": "Knights of Columbus – 397 Clarke Avenue",
-        "zipcode": "10306",
-        "notes": "- Community Partner – Everyone Eats SI Inc.,\n - Opened July 2022",
-        "lat": 40.569936970461605,
-        "lng": -74.14401037235919,
+        "streetAddress": "Knights of Columbus – 397 Clarke Avenue",
+        "addressLocality": "Staten Island",
+        "addressRegion": "NY",
+        "postalCode": "10306",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
         "status": "open",
+        "addressCountry": "US",
         "hours": [
           {
-            "days": "4",
-            "time_start": "10:00",
-            "time_end": "12:00",
-            "notes": "Only 1st and 3rd Thursday of every month",
-            "time_zone": "America/New_York"
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "Only 1st and 3rd Thursday of every month"
           }
         ],
-        "city": "Staten Island",
-        "state": "NY"
+        "notes": "- Community Partner – Everyone Eats SI Inc.,\n - Opened July 2022"
       }
     }
   ]
