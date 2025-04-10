@@ -27,24 +27,18 @@ export const Renderer = () => {
   useEffect(() => {
     setPage(0);
   }, [clickedFeatures]);
-  if(clickedFeatures.length > 0){
-    console.log(render(clickedFeatures[0]));
-  }
   switch(clickedFeatures.length){
     case 0:
       return <PrivacyPolicy />;
     case 1:
       return <IonText>
-	{/*
 	<ReactMarkdown
 	  children={render(clickedFeatures[0])}
 	  rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
 	/>
-	*/}
       </IonText>;
     default:
       return <>
-	{/*
 	<IonHeader class='ion-no-border'>
 	  <IonToolbar>
 	    <IonButtons slot='start'>
@@ -62,7 +56,9 @@ export const Renderer = () => {
 	    </IonButtons>
 	    <IonTitle className='ion-text-center' size='small'>
 	      <IonText>
-		{page + 1} of {clickedFeatures.length}
+		<strong>
+		  {page + 1} of {clickedFeatures.length}
+		</strong>
 	      </IonText>
 	    </IonTitle>
 	    <IonButtons slot='end'>
@@ -84,7 +80,6 @@ export const Renderer = () => {
 	  children={render(clickedFeatures[page])}
 	rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
 	/>
-	*/}
       </>;
   }
 }

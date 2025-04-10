@@ -53,9 +53,9 @@ import './App.scss';
 import food_pantries from './data/fp.json';
 import soup_kitchens from './data/soup_kitchens.json';
 import mms from './data/mms.json';
-import mm_truck from './data/mm_truck.png';
+import mm_truck from './data/mm_truck.svg';
 import cpds from './data/cpds.json';
-import cpd_truck from './data/cpd_truck.png';
+import cpd_truck from './data/cpd_truck.svg';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -275,7 +275,7 @@ export const App = () => {
 		name: 'Food Pantries',
 		featureRadius: 10,
 		featureWidth: 4,
-		fillColor: 'rgba(100, 167, 11, 0.5)',
+		fillColor: 'rgba(100, 167, 11, .5)',
 		// @ts-ignore
 		geojson: {
 		  type: 'FeatureCollection',
@@ -289,7 +289,7 @@ export const App = () => {
 		name: 'Soup Kitchens',
 		featureRadius: 10,
 		featureWidth: 4,
-		fillColor: 'rgba(137, 59, 103, 0.5)',
+		fillColor: 'rgba(137, 59, 103, .5)',
 		geojson: {
 		  type: 'FeatureCollection',
 		  features: soupKitchens
@@ -311,7 +311,7 @@ export const App = () => {
 		       controls={controls.slice(0, 1)}
 		       onMapClick={onMapClick}
 		       onMapClickOptions={{
-			 hitTolerance: 20
+			 hitTolerance: 10
 		       }}
 		       protomapsApiKey={protomapsApiKey}
 		       protomapsStyles={getMapStyle({
@@ -337,6 +337,9 @@ export const App = () => {
 		<Map
 		  controls={controls}
 		  onMapClick={onMapClick}
+		  onMapClickOptions={{
+		    hitTolerance: 10
+		  }}
 		  protomapsApiKey={protomapsApiKey}
 		  protomapsStyles={getMapStyle({
 		    apiKey: protomapsApiKey,
