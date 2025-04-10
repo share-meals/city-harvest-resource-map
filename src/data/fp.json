@@ -1,0 +1,5416 @@
+[
+	{
+		"name": "Jesus Is the Answer",
+		"streetAddress": "103-02 171st St",
+		"lastVerified": "2023-03-03T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:23:29",
+		"id": "005cae17-7587-4a9a-b8c1-b54daf146fcb",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 908-6303",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11435",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.78871,
+				40.70747
+			]
+		},
+		"notes": "- Sometimes offers Kosher and Halal options\n- Food pantry starts at 3PM and runs until supplies last",
+		"hours": [
+			{
+				"days": [
+					"Tu",
+					"Sa"
+				],
+				"timeStart": "15:00:00",
+				"timeEnd": "16:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://access.nyc.gov/location/jesus-is-the-answer/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "315",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1307",
+				"agency": "DSNY"
+			},
+			{
+				"id": "DSNY-BRS-1311",
+				"agency": "DSNY"
+			},
+			{
+				"id": "DSNY-BRS-1377",
+				"agency": "DSNY"
+			},
+			{
+				"id": "85323",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Asian Americans for Equality, Residential Pantry",
+		"streetAddress": "108 Norfolk St, #1",
+		"lastVerified": "2022-03-09T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "00953893-82d6-4118-a9ab-c78f262f857a",
+		"phoneNumbers": null,
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10002",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.986804,
+				40.71908748
+			]
+		},
+		"notes": "- Open to all on a first come, first served basis",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "13:00:00",
+				"timeEnd": "17:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "askaafe@aafe.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.aafe.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "foodPantry"
+	},
+	{
+		"name": "St. Edmunds Youth Programs, Inc.",
+		"streetAddress": "1905 Morris Ave",
+		"lastVerified": "2024-03-22T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-12T18:30:04",
+		"id": "00ac1f60-c7cd-46e6-a6da-ec6b451c551d",
+		"phoneNumbers": null,
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10453",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9082118,
+				40.8499279
+			]
+		},
+		"notes": "- Open to everyone\n- need masks\n- occasionally has perishable foods for distribution on Mondays but cannot confirm time/dates since it is an open window\n- Need to get ticket around 9AM on Thursday",
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "12:00:00",
+				"timeEnd": "14:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.foodpantries.org/li/st._edmunds_youth_programs_inc._10453",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "R699",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "81316",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Our Lady of Refuge R.C. Church",
+		"streetAddress": "2020 Foster Ave",
+		"lastVerified": "2023-04-24T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "00f84e71-86e9-4d2d-8a74-7356b6b3db19",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 434-2090",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11210",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9578425,
+				40.6362333
+			]
+		},
+		"notes": "- Picture ID is required\n- Please bring your own bags or cart\n- Located in the parking lot\n- Open to all\n- Kosher and Halal is offered when available",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "9:30:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "olrefuge@aol.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://olrbrooklyn.org/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "R88",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "80347",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Gethsemane Baptist Church",
+		"streetAddress": "771 Fairmount Pl",
+		"lastVerified": "2024-04-26T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-12T18:35:02",
+		"id": "00fe74ab-4962-4f57-b4a9-eb517f80977c",
+		"phoneNumbers": null,
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10460",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.889481,
+				40.84309
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "8:00:00",
+				"timeEnd": "10:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "gethsemanebaptistchurchbx@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "http://gethsemanebaptistchurchbronx.com/about-us/contact-us/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "253",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1658",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R731",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "80065",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Little Jerusalem House of Prayer",
+		"streetAddress": "447 Herzl St",
+		"lastVerified": "2023-10-10T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "01a0127f-e228-47b5-8758-0764b2484918",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(917) 992-5975",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(718) 922-7446",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11212",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9126282,
+				40.6589423
+			]
+		},
+		"notes": "- Open every 2nd and 4th Saturday of the month\n- Arrive early to avoid long lines\n- ID is only required if picking up food for someone else",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "13:00:00",
+				"timeEnd": "14:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "jerusalemhouseofprayer@optimum.net",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.facebook.com/pages/Little-Jerusalem-House-of-Prayer/117775478248001",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1298",
+				"agency": "DSNY"
+			},
+			{
+				"id": "85262",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Bronx Bethany Community Corporation",
+		"streetAddress": "971 E 227th St",
+		"lastVerified": "2023-04-27T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:17:38",
+		"id": "01d3eeeb-58b6-4aa0-81c2-c06ea66a55a9",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 231-5276",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10466",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.8512592,
+				40.8868063
+			]
+		},
+		"notes": "- Food pickups limited to twice per month, or every other week, per family",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "11:00:00"
+			},
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "15:00:00",
+				"timeEnd": "18:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "roodlyne.altidor@bcnyc.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.bbccnyc.com",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1281",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R15047",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "85109",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Tomchei Shabbos of Queens",
+		"streetAddress": "129-01 Metropolitan Ave",
+		"lastVerified": "2021-07-13T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "023db787-b338-4f39-b1ad-f3b878e7e714",
+		"phoneNumbers": null,
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11415",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.823262,
+				40.703977
+			]
+		},
+		"notes": "- Serves the Jewish community in Queens\n- Delivers food on Wednesday nights.  See website for delivery schedule.\n- Kosher food only\n- Have option for cooked food\n- Offers pickup, delivery, or supermarket style",
+		"hours": null,
+		"emailAddresses": [
+			{
+				"email": "info@tsqinc.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.tsqinc.org/",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"kosher"
+		],
+		"externalIds": [],
+		"type": "foodPantry"
+	},
+	{
+		"name": "NW Bronx Food Justice Coalition, St. Stephen's",
+		"streetAddress": "146 W 228th St",
+		"lastVerified": "2025-03-12T18:53:55",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-12T18:53:55",
+		"id": "02baeab5-2aee-4110-812a-d37a05aec62a",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 562-8692",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(718) 884-5900",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10463",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9089685,
+				40.87787087
+			]
+		},
+		"notes": "- Senior Center for ages of 60. Serves food. Senior come for the whole day to do different activities and that's when lunch is served. \n- Noon- lunch monday-friday\n- Only for members over 60+ years old\n",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "12:00:00",
+				"timeEnd": "14:30:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "foodjusticebronx@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.facebook.com/nwbronxfood",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Manna of Life Ministries, Inc. - Soup Kitchen",
+		"streetAddress": "1101 Boston Rd",
+		"lastVerified": "2023-06-21T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:18:42",
+		"id": "02eb2a68-629a-40bf-939f-11cd2a8def27",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(917) 549-8595",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10456",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9056808,
+				40.8274358
+			]
+		},
+		"notes": "- Serving hot grab-and-go meals\n- by appointment, by the app plentiful ",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "12:00:00",
+				"timeEnd": "16:00:00"
+			},
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "0:00:00",
+				"timeEnd": "16:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "ercobian@mannaoflife.org",
+				"isPrivate": false
+			}
+		],
+		"website": "http://mannaoflife.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "84177",
+				"agency": "EFRO"
+			}
+		],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Trinity Evangelical Lutheran Church - Food Pantry",
+		"streetAddress": "716 Route 25A",
+		"lastVerified": "2023-11-13T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "031ded07-f097-4abc-b1f6-df44bc8faba3",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(631) 744-9355",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Staten Island",
+		"addressRegion": "NY",
+		"postalCode": "10304",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-71.2527348,
+				42.0995492
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "12:00:00"
+			},
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "17:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "thefishchurch25a@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "http://www.thefishchurch.com",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "R714",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "81046",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Harvest of Souls / Holy Ghost",
+		"streetAddress": "13-15 E 125th St",
+		"lastVerified": "2021-10-26T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "04197525-1d47-40f0-b165-baad99e6d0b6",
+		"phoneNumbers": null,
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10035",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.941566,
+				40.8064324
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Fr"
+				],
+				"timeStart": "11:00:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "http://holyghostpfc.org/upcomingevents.html",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1673",
+				"agency": "DSNY"
+			},
+			{
+				"id": "83570",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "New York City Relief - Mobile Sites",
+		"streetAddress": "BROOKE AVE (BTWN 147TH & 148TH ST)",
+		"lastVerified": "2022-10-28T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0497f636-b61b-4420-9b9a-a7288357cf82",
+		"phoneNumbers": null,
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10451",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9153478,
+				40.8142782
+			]
+		},
+		"notes": "- Stops at Brooke Avenue (Between 147th and 148th Street)\n- This location has soup, bread, beverages, socks, hygiene kits",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "11:00:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "newyorkcityrelief.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "81768",
+				"agency": "EFRO"
+			}
+		],
+		"type": "mobileSoupKitchen"
+	},
+	{
+		"name": "Faith Based Food Distribution and Development Corp",
+		"streetAddress": "121 Chauncey St",
+		"lastVerified": "2023-05-02T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "049af996-daad-46ad-8142-462b9a475750",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(917) 995-6891",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11233",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9305859,
+				40.6804356
+			]
+		},
+		"notes": "- Connected with NYC Public School free meal distribution plan\n- Identification required for proof of name, food distributed by last name groups on rotation for equal opportunity in the line\n- Halal options are sometimes available \n- Food is offered on a long table for the client's choosing to adhere to social distancing guidelines",
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "7:00:00",
+				"timeEnd": "16:30:00"
+			},
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "8:00:00",
+				"timeEnd": "14:00:00"
+			},
+			{
+				"days": [
+					"Su"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "12:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://networks.whyhunger.org/organization/view/32386",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"halal"
+		],
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1999",
+				"agency": "DSNY"
+			},
+			{
+				"id": "83993",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "National Sorority of Phi Delta Kappa",
+		"streetAddress": "117-08 Merrick Blvd",
+		"lastVerified": "2023-03-03T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:25:01",
+		"id": "04e3f304-c289-4b35-8331-b5ab07aa3606",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 723-1119",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11434",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.7746964,
+				40.6867025
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "11:00:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.facebook.com/NSPDKBetaOmicron/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1272",
+				"agency": "DSNY"
+			},
+			{
+				"id": "84887",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "East Flatbush Village, inc.",
+		"streetAddress": "1011 Utica Ave",
+		"lastVerified": "2023-04-24T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "06153b42-ad90-4e2c-a0e3-e3218d106cee",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 826-0807",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11210",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.937164,
+				40.636757
+			]
+		},
+		"notes": "- This location will be moving around during the month of May. \n    - Current address 1011 Utica Ave\n- Donations: accepts perishables and non-perishables. ",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "16:00:00",
+				"timeEnd": "17:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "admin@eastflatbushvillage.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://eastflatbushvillage.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "1381",
+				"agency": "Plentiful"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Family Integration Ministry Food Pantry",
+		"streetAddress": "1875 Amsterdam Ave",
+		"lastVerified": "2023-09-29T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T18:38:36",
+		"id": "061cf327-a55e-44cc-a9f4-147bc5a7b022",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(347) 459-4445",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10031",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9439041,
+				40.8300414
+			]
+		},
+		"notes": "- Kosher/halal foods are offered when available\n- First-time users must bring ID\n- Offers cold food and dry food at this time\n- Later on, they are working on expanding hours and services (in about a month)",
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "8:00:00",
+				"timeEnd": "10:30:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "facebook.com/ChristianMinistryOfFamilyIntegration/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "623",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1637",
+				"agency": "DSNY"
+			},
+			{
+				"id": "85473",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Bronx Academy for Multi Media",
+		"streetAddress": "730 Bryant Ave",
+		"lastVerified": "2024-05-03T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:20:12",
+		"id": "0668529f-8ee0-4e7a-84ee-94f0ba30b0e3",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 328-1972",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10474",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.8853003,
+				40.8157147
+			]
+		},
+		"notes": "    - By invite only and serving members of school area only.\n- Serves residents of zip codes 10474 and 10459\n- Food availability depends on delivery supply. Please call before visiting to learn if and when food is available.",
+		"hours": [
+			{
+				"days": [
+					"We",
+					"Th"
+				],
+				"timeStart": "15:00:00",
+				"timeEnd": "17:00:00",
+				"notes": "Subject to change"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "Roger.ball@bammnyc.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://bronxacademyformultimedia.squarespace.com",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "84728",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "The Red Door Place (Hope for Our Neighbors in Need) - Food Pantry",
+		"streetAddress": "201 W 13th St",
+		"lastVerified": "2024-05-03T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "06c92692-c316-429c-be48-32afcd02c2e5",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(347) 497-9718",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10011",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.0003114,
+				40.7381373
+			]
+		},
+		"notes": "- Bags given at the 7th Avenue door are for those who are able to cook\n- Bags given at the 13th Avenue door are for those who want \"no cook\" items\n- need appointment through plentiful, if not you can still come but at 4:30PM",
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "14:00:00",
+				"timeEnd": "17:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.churchofthevillage.org/hnn",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "81917",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Crossroads Community Services - Food Pantry",
+		"streetAddress": "108 E 51st St",
+		"lastVerified": "2025-03-14T18:04:22",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T18:04:22",
+		"id": "07125ae2-ee9c-454e-bd34-0367b83f64f5",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 378-0234 x3",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10022",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9727561,
+				40.7573397
+			]
+		},
+		"notes": "- By appointment only\n- Each household allowed to receive once every month\n- Family size determines the amount of food that each family will receive.\n- Bring current identification with proof of address for all household members on your first day.\nAs of 2025 this stands true, they must call that phone number and extension to make the appointment.",
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "9:30:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "pantry@crossroadsnyc.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.crossroadsnyc.org/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "329",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1621",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R499",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "80739",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "University Settlement Senior Center",
+		"streetAddress": "189 Allen St",
+		"lastVerified": "2022-02-25T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0742b9e6-56c5-4ccb-9a1a-8071b156682f",
+		"phoneNumbers": null,
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10002",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9893848,
+				40.7223013
+			]
+		},
+		"notes": "- Serves ages 60+ years only",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "13:00:00",
+				"notes": "Last Wednesdays of the Month"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "info@universitysettlement.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.universitysettlement.org/us/programs/older_adults/neighborhood_center/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "87318",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "New York City Love Kitchen - Food Pantry",
+		"streetAddress": "3816 9th Ave",
+		"lastVerified": "2023-02-09T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-28T18:54:59",
+		"id": "08007580-131e-41c7-a87f-8396cd0f128f",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 942-4204",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10034",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9184841,
+				40.8622334
+			]
+		},
+		"notes": "- Visitors need to call to register before arriving to pick up food\n- They serve mostly canned goods, and fresh fruits and vegetables.\n- Entrance is at the corner of 204th street and 9th avenue\n- Visitors will be assigned a specific date to come collect the food",
+		"hours": [
+			{
+				"days": [
+					"We",
+					"Mo",
+					"Tu",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "14:00:00",
+				"timeEnd": "16:00:00",
+				"notes": ""
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.nyclovekitchen.com",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1743",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R788",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "81246",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "First United Methodist Church of Jamaica",
+		"streetAddress": "162-10 Highland Ave",
+		"lastVerified": "2023-03-03T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:26:39",
+		"id": "081beb6d-0cdf-4aca-bb9c-6171c8077c2f",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 739-2269",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11432",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.8000523,
+				40.7098724
+			]
+		},
+		"notes": "- ID is required for first-timers. Participants fill out a card and receive a schedule for when they will pick up food. \n- Food donations: sealed foods only - cans and packaged goods. \n- You must live in the area serviced \n- Enter through the Social Hall on the ground level, adjacent to the parking lot off 87th Road.\n- Thursday hours are only until the end of October",
+		"hours": [
+			{
+				"days": [
+					"Mo"
+				],
+				"timeStart": "8:30:00",
+				"timeEnd": "9:30:00"
+			},
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "18:00:00",
+				"timeEnd": "19:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "uncofjamaica@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "http://www.fumcoj.com",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "1457",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1646",
+				"agency": "DSNY"
+			},
+			{
+				"id": "80904",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Masbia of Boro Park - Soup Kitchen",
+		"streetAddress": "5402 New Utrecht Ave",
+		"lastVerified": "2023-12-04T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0843b412-2ceb-4830-81d0-58af2da48f06",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 972-4446 x203",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11219",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9955253,
+				40.6323632
+			]
+		},
+		"notes": "- Serving to-go meals\n- Allow walk-ins",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th"
+				],
+				"timeStart": "15:00:00",
+				"timeEnd": "20:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.masbia.org/masbia_boro_park",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"kosher"
+		],
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1717",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R793",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "85090",
+				"agency": "EFRO"
+			}
+		],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Project Hospitality, Cedar Grove Ave - Mobile Food Pantry",
+		"streetAddress": "Cedar Grove Ave & Topping St",
+		"lastVerified": "2022-10-13T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "08b7746d-be26-4966-8df9-f85263ed4497",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 815-0800",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Staten Island",
+		"addressRegion": "NY",
+		"postalCode": "10306",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.09962396,
+				40.56238684
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Fr"
+				],
+				"timeStart": "11:30:00",
+				"timeEnd": "12:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://projecthospitality.org/wp-content/uploads/2021/07/mobile-pantry-july-2021-eng-spanish.jpg",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "mobileFoodPantry"
+	},
+	{
+		"name": "Resurrection Power and Living Bread Ministries International",
+		"streetAddress": "4132 Park Ave",
+		"lastVerified": "2023-04-21T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:21:19",
+		"id": "091b7e35-6bf1-4a34-8142-6fb8e3324231",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 716-3021",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10457",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.8998705,
+				40.8457649
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "14:00:00",
+				"timeEnd": "16:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.facebook.com/REPLIBUSA/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "85385",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Queens Tabernacle Church",
+		"streetAddress": "114-3 Colfax St",
+		"lastVerified": "2023-05-04T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:28:49",
+		"id": "091cc237-f3b9-4fb8-b681-3d6ef833f2ef",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 465-4448",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11411",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.7435873,
+				40.7028363
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "8:00:00",
+				"timeEnd": "9:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.queenstabernacle.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "R638",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "84720",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Project Hospitality Food Pantry",
+		"streetAddress": "205 Canal St",
+		"lastVerified": "2023-11-13T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0958a20d-11bb-4fb7-bdf0-d791b4f16c1c",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 815-0800",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Staten Island",
+		"addressRegion": "NY",
+		"postalCode": "10304",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.0769411,
+				40.6293768
+			]
+		},
+		"notes": "- ID required\n- Please bring your own bags or cart\n- Soup kitchen on either Tuesdays or Thursdays",
+		"hours": [
+			{
+				"days": [
+					"Tu",
+					"Th"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "11:30:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://projecthospitality.org/wp-content/uploads/2021/07/mobile-pantry-july-2021-eng-spanish.jpg",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "408",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "1512",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1079",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R15640",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "85437",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Fort Greene Hazel Brooks - Food Pantry",
+		"streetAddress": "961 Ocean Ave",
+		"lastVerified": "2023-04-24T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0989d282-9a97-4f39-923b-92c93329dc7a",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(347) 435-3287",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11226",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.958689,
+				40.6389946
+			]
+		},
+		"notes": "- Seniors only\n- Grab-n-go meals\n- Must call Mo-We to make an appt",
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "12:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.facebook.com/fgchazelbrooks/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "441",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "R24",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "85290",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Part of the Solution (POTS) - Community Kitchen",
+		"streetAddress": "2759 Webster Ave",
+		"lastVerified": "2024-03-22T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:22:36",
+		"id": "09a2ef29-d743-4383-b17d-d3ee9e231afe",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 220-4892 x2 x102",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10458",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.8863601,
+				40.8654811
+			]
+		},
+		"notes": "- Meals served to-go only",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "12:30:00",
+				"timeEnd": "15:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "serve@potsbronx.org",
+				"isPrivate": false
+			}
+		],
+		"website": "http://www.potsbronx.org/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1233",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R232",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "83550",
+				"agency": "EFRO"
+			}
+		],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Mexican American Students' Alliance (MASA)",
+		"streetAddress": "2770 3rd Ave, 1st Floor",
+		"lastVerified": "2023-03-01T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:23:47",
+		"id": "09c484bc-e3cb-4574-8e93-2fd1b126c0f0",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(646_ 481-5890",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10455",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.80739,
+				40.82238
+			]
+		},
+		"notes": "- By appointment only",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "17:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": null,
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "foodPantry"
+	},
+	{
+		"name": "New York Common Pantry, Nourish",
+		"streetAddress": "423 E 138th St, 2nd Floor",
+		"lastVerified": "2025-03-12T19:12:25",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-12T19:12:25",
+		"id": "0a17e04e-38fa-4176-98a3-76c5cf423179",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(917) 982-2564",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10454",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9386835,
+				40.7915793
+			]
+		},
+		"notes": "- Still operating\n- Proof of income and state ID required\n- For seniors only. To be eligible, seniors need to be 60 years old or older, have a New York state address and meet the financial eligibility requirements. Most seniors who qualify for SNAP will be eligible for Nourish. Once a senior is signed up, they can pick up a food package on a monthly basis.\n\n",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "17:00:00"
+			},
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "http://nycommonpantry.org/home/what-we-do/programs/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "85379",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "First Baptist Church/H.O. Scott Education & Community Center - Food Pantry",
+		"streetAddress": "15-10 Redfern Ave",
+		"lastVerified": "2024-03-15T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:32:30",
+		"id": "0b0869a6-7fbe-4b6e-910a-ce7b8673fd3a",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 327-2208",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11691",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.7522446,
+				40.6084986
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Mo"
+				],
+				"timeStart": "8:30:00",
+				"timeEnd": "16:00:00"
+			},
+			{
+				"days": [
+					"Mo"
+				],
+				"timeStart": "8:30:00",
+				"timeEnd": "15:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.nycservice.org/organizations/index.php?org_id=611",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "83501",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Bethany United Methodist Church",
+		"streetAddress": "1208 St Johns Pl",
+		"lastVerified": "2023-11-20T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0b1c3015-6ad3-4e33-bede-d0742fd2efcc",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 774-5689",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11213",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9382554,
+				40.6706308
+			]
+		},
+		"notes": "- Every other Thursdays 05:00PM-0700PM, grab and go hot meals are available. ",
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "12:30:00",
+				"timeEnd": "14:30:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "bethanyumcchurch@aol.com",
+				"isPrivate": false
+			}
+		],
+		"website": "http://bethanyumcbk.org/history",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1549",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R170",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "81460",
+				"agency": "EFRO"
+			}
+		],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Council Towers II",
+		"streetAddress": "99 Vandalia Ave",
+		"lastVerified": "2024-02-28T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0b3c9db1-9594-4326-910d-493efd96720e",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 922-5860",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11239",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.8854076,
+				40.6507973
+			]
+		},
+		"notes": "- Food pantry operations not following usual schedule during COVID-19 pandemic. Hours vary.\n- Food is being prepared and distributed outside or delivered to peoples' homes",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "17:00:00"
+			},
+			{
+				"days": [
+					"Fr"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "15:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "mfinke@metcouncil.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.publichousing.com/details/ny_council-towers-ii",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "84599",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Shout for Joy Baptist Church",
+		"streetAddress": "456 White Plains Rd ",
+		"lastVerified": "2025-03-12T19:17:28",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-12T19:17:28",
+		"id": "0b58723b-6cdf-4f98-b1ab-8b192a2309ce",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(347) 400-0409",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10451",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9295985,
+				40.8319964
+			]
+		},
+		"notes": "- Still operating \n",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "08:00:00",
+				"timeEnd": "10:00:00",
+				"notes": "- Closed July and August"
+			}
+		],
+		"emailAddresses": null,
+		"website": "http://www.bcc.cuny.edu/wp-content/uploads/2020/09/arc-directory-of-food-pantry-resources-revised-9-18-20.pdf",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "326",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1958",
+				"agency": "DSNY"
+			},
+			{
+				"id": "83382",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Grace Tabernacle - Food Pantry",
+		"streetAddress": "1745 Pacific St",
+		"lastVerified": "2021-03-01T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0b968f4c-dcd8-4d9f-83cc-170de8b232b5",
+		"phoneNumbers": null,
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11213",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.932369,
+				40.676702
+			]
+		},
+		"notes": null,
+		"hours": null,
+		"emailAddresses": null,
+		"website": "http://www.gracetabernacle.info/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Grand Central Food Program, Chinatown",
+		"streetAddress": "Lafayette St & Leonard St",
+		"lastVerified": "2022-10-25T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-21T18:28:50",
+		"id": "0bbdf4a1-bca8-4d84-9809-1e10baa1b486",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 776-2000",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10013",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.00254014,
+				40.71629602
+			]
+		},
+		"notes": "- Mobile truck moves through different areas of the city in the evening. To find out when it will visit a neighborhood near you, please check website.\n- Trucks are at each location for about 5-10 minutes.",
+		"hours": [
+			{
+				"days": [
+					"Su",
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr",
+					"Sa"
+				],
+				"timeStart": "19:45:00",
+				"timeEnd": "19:55:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "Info@cfthomeless.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.coalitionforthehomeless.org/our-programs/food/grand-central-food-program/grand-central-food-program-routes/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "mobileSoupKitchen"
+	},
+	{
+		"name": "Unity Faith Outreach",
+		"streetAddress": "179 Ralph Ave",
+		"lastVerified": "2024-03-15T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0c56c146-d3d4-4e17-8e61-0f67505f4802",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 443-4194",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11233",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.922411,
+				40.6825166
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Fr"
+				],
+				"timeStart": "13:00:00",
+				"timeEnd": "15:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.homelessshelterdirectory.org/cgi-bin/id/foodbank.cgi?foodbank=4140",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1994",
+				"agency": "DSNY"
+			},
+			{
+				"id": "DSNY-BRS-2150",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R72",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "82056",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Department of Probation, Bronx",
+		"streetAddress": "198 E 161st St",
+		"lastVerified": "2023-02-09T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:24:21",
+		"id": "0ca1c9b3-bf18-4ecc-b25b-f3a61678b376",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 537-5395",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10451",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.921089,
+				40.825856
+			]
+		},
+		"notes": "- Once COVID pandemic is over, a limited number of visits per month may be reimplemented",
+		"hours": [
+			{
+				"days": [
+					"Tu",
+					"Fr"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "12:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www1.nyc.gov/site/neon/programs/nutrition-kitchen.page",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"kosher",
+			"halal"
+		],
+		"externalIds": [
+			{
+				"id": "85344",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Holy Temple Church, Inc.",
+		"streetAddress": "136-25 Springfield Blvd",
+		"lastVerified": "2023-05-04T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:35:01",
+		"id": "0ceae73e-5652-4e51-80ae-fc0a85c5d68f",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(917) 658-6337",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(718) 276-4536",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11413",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.7550854,
+				40.6771016
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"We",
+					"Sa"
+				],
+				"timeStart": "11:00:00",
+				"timeEnd": "12:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "homelessSupport@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.homelessshelterdirectory.org/cgi-bin/id/foodbank.cgi?foodbank=4213",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1687",
+				"agency": "DSNY"
+			},
+			{
+				"id": "82077",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Riverdale Community School",
+		"streetAddress": "76 Riverdale Ave",
+		"lastVerified": "2021-11-05T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0d497bab-7eeb-44be-a666-bed28d23e035",
+		"phoneNumbers": null,
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11212",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9134779,
+				40.6600103
+			]
+		},
+		"notes": "- Only serves local students and families\n- Must fill out a request slip in the main entrance to the school and drop it in the box\n- Also offers hygiene and cleaning products for families\n- they also help the mentally disable , early childhood services.",
+		"hours": null,
+		"emailAddresses": [
+			{
+				"email": "abrann@riverdaleavenuebrooklyn.org",
+				"isPrivate": false
+			}
+		],
+		"website": "http://www.riverdaleavenuebrooklyn.org/main/racspantry/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "85462",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Met Council Project, Abraham Residence I",
+		"streetAddress": "3915 Neptune Ave",
+		"lastVerified": "2023-04-21T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0d9be621-04c4-4a06-ad21-8b7efc503e61",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 453-9526",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(212) 453-9500",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(718) 449-7145",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11224",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.0085485,
+				40.5765313
+			]
+		},
+		"notes": "- Open to Residents only",
+		"hours": [
+			{
+				"days": [
+					"Fr"
+				],
+				"timeStart": "11:00:00",
+				"timeEnd": "14:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "info@metcouncil.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.metcouncil.org/housing-for-the-homeless",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-2032",
+				"agency": "DSNY"
+			},
+			{
+				"id": "82784",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "God's Deliverance Temple, Inc",
+		"streetAddress": "438 Ralph Ave",
+		"lastVerified": "2024-03-15T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0dc70dfd-7a8e-4ef8-a033-1e6c2b95b828",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(347) 234-3828",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11233",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.922411,
+				40.674171
+			]
+		},
+		"notes": "- If you do not have ID on your first visit, they will still provide you with food\n- kosher and halal available sometimes, call to confirm",
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "11:00:00",
+				"timeEnd": "12:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "fsh@yahoo.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://networks.whyhunger.org/organization/view/5389",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1663",
+				"agency": "DSNY"
+			},
+			{
+				"id": "83282",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Worldwide Missionary Movement / Centro Evangelistico Mmm, Inc",
+		"streetAddress": "148 Post Ave",
+		"lastVerified": "2023-03-02T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0ddc35e6-ef16-4c4f-a866-0d4aa1666421",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 567-5620",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(646) 545-7696",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10034",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9190511,
+				40.8653582
+			]
+		},
+		"notes": "- Spanish-language only",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://foodpantry.business.site",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1860",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R434",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "84349",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Project Hospitality, Shiloh Zion Church - Mobile Food Pantry",
+		"streetAddress": "779 Henderson Ave",
+		"lastVerified": "2022-10-13T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0e036533-52b6-461e-8e5d-b2124b402dd7",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 815-0800",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Staten Island",
+		"addressRegion": "NY",
+		"postalCode": "10310",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.11852557,
+				40.63713812
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Su"
+				],
+				"timeStart": "13:00:00",
+				"timeEnd": "13:30:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://projecthospitality.org/wp-content/uploads/2021/07/mobile-pantry-july-2021-eng-spanish.jpg",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "mobileFoodPantry"
+	},
+	{
+		"name": "Co-op City SDA Church Food Pantry",
+		"streetAddress": "1010 Baychester Ave",
+		"lastVerified": "2023-10-23T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:25:43",
+		"id": "0e801a5b-bfc0-4b41-8897-c3e03a8794c7",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(646) 851-8591",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(914) 420-3544",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10475",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.831498,
+				40.88021
+			]
+		},
+		"notes": "- Open to NorthEast Bronx residents only- \n         10466, 10469, 10475\n- Photo ID with resident's address is required\n- Please bring your own bags or cart\n- Food is handed out through last name\n- 3rd Wednesday of the month are last names from A-M \n- 2nd and 4th Wednesdays of the month are M-Z \n- Closed every 5th Wednesday ",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "17:00:00",
+				"timeEnd": "19:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "Glenneta@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://coopcitycongregationny.adventistchurch.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "83",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1615",
+				"agency": "DSNY"
+			},
+			{
+				"id": "DSNY-BRS-2147",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R15048",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "85307",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Greater Central Baptist Church",
+		"streetAddress": "2152 5th Ave",
+		"lastVerified": "2022-12-02T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0e83e74e-b291-498a-8e0a-7590dc560d64",
+		"phoneNumbers": null,
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10037",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9394264,
+				40.8108101
+			]
+		},
+		"notes": "- Due to Covid, food pantry open once or twice a month, dependent on volunteer workers ",
+		"hours": null,
+		"emailAddresses": null,
+		"website": "https://greatercentralbc.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1441",
+				"agency": "DSNY"
+			},
+			{
+				"id": "80589",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Vanderbilt Avenue Moravian Church",
+		"streetAddress": "285 Vanderbilt Ave",
+		"lastVerified": "2022-10-13T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0e85f2e6-5bb6-4f83-b96b-a8b2f1732a21",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 447-2966",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Staten Island",
+		"addressRegion": "NY",
+		"postalCode": "10304",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.080902,
+				40.618507
+			]
+		},
+		"notes": "- Open to all\n- Meals served to go",
+		"hours": [
+			{
+				"days": [
+					"Su"
+				],
+				"timeStart": "16:30:00",
+				"timeEnd": "18:30:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "Office@VanderbiltMoravian.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.vanderbiltmoravian.org/mission-projects/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Our Lady of Good Counsel, Manhattan",
+		"streetAddress": "230 E 90th St",
+		"lastVerified": "2025-03-28T19:55:07",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-28T19:55:07",
+		"id": "0f6ef3ca-93bc-4e18-ad0f-d2e69f6a399d",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 862-6401",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(347) 803-6822",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10128",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9509988,
+				40.7806053
+			]
+		},
+		"notes": "- Must bring proof of address and ID\n- Bagged meals will be distributed in front of the OLGC Parish Hall\n- Participants can only pick up once per month; There is a 30 day waiting period\nupdated 2025 - the above information, days and times remains true",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "carmen.reyes@archny.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://olgcstm.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "81528",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "St. John the Divine - Cathedral Kitchen",
+		"streetAddress": "1047 Amsterdam Ave",
+		"lastVerified": "2023-04-20T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0fdb1c85-34d3-4dc6-b618-7cdbf20b691a",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 316-7540 x7583",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10025",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9618358,
+				40.8038206
+			]
+		},
+		"notes": "- Grab-and-go lunches only\n- Lines begin at 9:30AM\n- Closes at 3:00PM or until food runs out\n- Community fridge that distributes food daily\n    - on Sat/Sun, time depends on how much food is distributed\n- Part of Plentiful Program --> sign up to get bags of food\n    - Plentiful is operational Thursday only, date is determined and functions similarly to an appointment",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "16:30:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "info@stjohndivine.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.stjohndivine.org/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1571",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R511",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "80801",
+				"agency": "EFRO"
+			}
+		],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Recovery House of Worship Brooklyn - Food Pantry",
+		"streetAddress": "360 Schermerhorn St",
+		"lastVerified": "2023-05-12T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "0ff5b26e-0bc2-4313-9f1d-05d268505fc2",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 875-1858 x108",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11217",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9803445,
+				40.6865313
+			]
+		},
+		"notes": "- Provides prepacked grocery bags",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "10:30:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.rhowbk.org/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "R804",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "80204",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Masbia of Rego Park - Soup Kitchen",
+		"streetAddress": "98-08 Queens Blvd",
+		"lastVerified": "2023-02-02T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:38:56",
+		"id": "104635c2-4ed8-4eb2-a151-08c3966ad4bb",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 972-4446",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11374",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.8580001,
+				40.7281738
+			]
+		},
+		"notes": "- Offers dine-in option as well as dinner to-go",
+		"hours": [
+			{
+				"days": [
+					"Su",
+					"Mo",
+					"Tu",
+					"We",
+					"Th"
+				],
+				"timeStart": "14:00:00",
+				"timeEnd": "19:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "queens@masbia.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.masbia.org/rego_park",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Christ and St. Stephen's Church - Brown Bag Program",
+		"streetAddress": "120 W 69th St",
+		"lastVerified": "2023-11-15T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T18:14:06",
+		"id": "1072011e-7007-4b28-bf47-b7ec7db6e893",
+		"phoneNumbers": null,
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10023",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9810512,
+				40.7757285
+			]
+		},
+		"notes": "- Serving grab-and-go meals\n- Food donations: non-perishables preferred\n- Every MLK Day, hot lunches are served sit-down style",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "9:30:00",
+				"timeEnd": "10:30:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "brownbag@csschurch.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.csschurch.org/ministry-life/worship/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1129",
+				"agency": "DSNY"
+			},
+			{
+				"id": "80517",
+				"agency": "EFRO"
+			}
+		],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Tolentine Zeiser Community Life Center @ Sacred Heart",
+		"streetAddress": "1261 Shakespeare Ave",
+		"lastVerified": "2024-05-03T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:26:41",
+		"id": "1089d591-2b53-41f9-a233-75b6ef6c77ec",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 220-2824",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10452",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.923054,
+				40.838905
+			]
+		},
+		"notes": "- Open to everyone",
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "11:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://catholiccharitiesny.org/our-agencies/tolentine-zeiser-community-life-center-inc",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "80077",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Pakistani American Skilled Women Organization",
+		"streetAddress": "1115 Coney Island Ave",
+		"lastVerified": "2023-04-24T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "11624b56-06b0-4c8b-b673-be5486c226dd",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(646) 775-0844",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11230",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.96594484,
+				40.63066994
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "13:00:00",
+				"timeEnd": "15:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "paswo955@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.paswo.org",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"kosher",
+			"halal"
+		],
+		"externalIds": [],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Chambers Memorial Baptist Church/Love Offering",
+		"streetAddress": "219 E 123rd St",
+		"lastVerified": "2023-11-22T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-21T18:52:54",
+		"id": "1197847b-72fb-4d4e-806c-1b706ee52c64",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(347) 600-9820",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10035",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9358673,
+				40.8022648
+			]
+		},
+		"notes": "- Must register on Tuesdays from 12PM-1PM. After registration, you'll receive a card to come on any Wednesday.\n    - ID required for registration only for the first time \n- Please bring your own bags or cart\n- Operates until the food runs out",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "http://www.chambersmemorialbc.org/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1940",
+				"agency": "DSNY"
+			},
+			{
+				"id": "81641",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Iglesia de Dios de la Profecia",
+		"streetAddress": "414 Hooper St",
+		"lastVerified": "2024-05-03T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "11a6ce0f-c566-410d-bef5-2cb4cd704783",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 218-8567",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11211",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9516146,
+				40.7104244
+			]
+		},
+		"notes": "- Arrive early to avoid long lines",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "12:30:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "http://www.cristoeslasolucion.org/contact.html",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "85065",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Catholic Charities Brooklyn and Queens, St. Raphael - Food Pantry",
+		"streetAddress": "35-20 Greenpoint Ave",
+		"lastVerified": "2025-03-14T13:50:24",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:50:24",
+		"id": "11ca6650-fb4c-4aff-adb8-749f6a491ee7",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(347) 957-2450",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(718) 729-8957",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(718) 722-6001 Hotline",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11101",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9304187,
+				40.7368759
+			]
+		},
+		"notes": "- Food donations: non-perishables only. \n- May accept frozen foods as well as fresh produce\n- Halal or Kosher options are available but rarely",
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "10:30:00",
+				"timeEnd": "12:00:00"
+			},
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "13:30:00",
+				"timeEnd": "15:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "straphaelrectory@yahoo.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.ccbq.org/service/food-pantry-network/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1825",
+				"agency": "DSNY"
+			},
+			{
+				"id": "83628",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Love Gospel Assembly - The Love Kitchen",
+		"streetAddress": "2315 Grand Concourse",
+		"lastVerified": "2021-04-27T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "125a4a2c-8698-436b-a712-df0d6fda710f",
+		"phoneNumbers": null,
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10458",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9001118,
+				40.8581476
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "12:00:00",
+				"timeEnd": "14:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "http://www.lgabronx.com/site/page.asp?link=ministries&id=15&t=ministries",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Hebron SDA French Church - Food Pantry",
+		"streetAddress": "1256 Dean St",
+		"lastVerified": "2023-11-03T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "126385b2-0199-4d81-8157-3ea9d0de22cf",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 778-6454",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11216",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9475088,
+				40.6764879
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "10:30:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "oserge1974@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.hebronsda.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1676",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R65",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "80292",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "New Covenant Community Development Corporation",
+		"streetAddress": "1175 Boston Rd",
+		"lastVerified": "2023-08-02T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:29:16",
+		"id": "12aa3353-4303-486b-8ec1-ce28652db174",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 328-6072 x4",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10456",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9033961,
+				40.8290875
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "0:undefined:00",
+				"notes": "02:00PM-04:00PM"
+			},
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "amacathy@nccmin.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://newcovenantdevelopmentcorp.org/food-pantry/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "217",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1264",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R785",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "84268",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Religious Society of Friends (Quakers), Brooklyn Monthly Meeting",
+		"streetAddress": "110 Schermerhorn St",
+		"lastVerified": "2021-07-18T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "12d0ed92-fded-4f2d-a548-27790bc9dd85",
+		"phoneNumbers": null,
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11201",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.98946,
+				40.69009
+			]
+		},
+		"notes": "- To-go bag of non-perishables and free clothes available",
+		"hours": [
+			{
+				"days": [
+					"Su"
+				],
+				"timeStart": "14:00:00",
+				"timeEnd": "17:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": null,
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Campaign Against Hunger, Andrew Jackson Housing Dev - Mobile Food Pantry",
+		"streetAddress": "785 Courtlandt Ave",
+		"lastVerified": "2022-10-24T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:31:05",
+		"id": "12d82e7f-9657-48fc-a344-7a0e9eb4a592",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 773-3551",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10451",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.917138,
+				40.8226111
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr",
+					"Sa"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "17:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "info@tcahnyc.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.tcahnyc.org/freshvibes/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "mobileFoodPantry"
+	},
+	{
+		"name": "St. Teresa of Avila Human Service",
+		"streetAddress": "560 Sterling Pl",
+		"lastVerified": "2024-03-22T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "139ad6a5-d859-4ba5-80ce-afea7e8f81df",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 622-6500",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11238",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9601827,
+				40.6737299
+			]
+		},
+		"notes": "- ID and proof of address required\n- Food donations: dry food only",
+		"hours": [
+			{
+				"days": [
+					"Mo"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "11:00:00"
+			},
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "11:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "stasap.conlon@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://access.nyc.gov/location/st-teresa-of-avila/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1126",
+				"agency": "DSNY"
+			},
+			{
+				"id": "80403",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "APNA Brighton Beach Food Pantry",
+		"streetAddress": "236 Neptune Ave",
+		"lastVerified": "2024-03-08T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "147c3308-f44e-4207-a821-f35fa41bb331",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 648-4300",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(718) 513-4700",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11235",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9614028,
+				40.5819631
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "14:00:00",
+				"timeEnd": "16:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "info@apnabrooklyn.com",
+				"isPrivate": false
+			}
+		],
+		"website": "http://www.apnabrooklyn.com/latest-news/food-bank-for-new-york-city-and-rethink-food-nyc/",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"halal",
+			"kosher"
+		],
+		"externalIds": [
+			{
+				"id": "1093",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "85537",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Sky Light Center",
+		"streetAddress": "307 St Marks Pl",
+		"lastVerified": "2023-04-25T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "14a3b751-2017-46b1-b2fd-e93a61643fb6",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 720-2585  x217",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Staten Island",
+		"addressRegion": "NY",
+		"postalCode": "10301",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.078038,
+				40.64262
+			]
+		},
+		"notes": "-   Registration is done on the first visit, Need ID for that\n-   ID preferred, not required during COVID-19\n-   Please bring your own bags or cart",
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "14:00:00",
+				"timeEnd": "15:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "http://www.skylightcenter.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1797",
+				"agency": "DSNY"
+			},
+			{
+				"id": "85449",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Pomonok - Soup Kitchen",
+		"streetAddress": "67-09 Kissena Blvd",
+		"lastVerified": "2022-02-17T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "14db27c9-d8a4-47de-b7e2-8e48ccc4e218",
+		"phoneNumbers": null,
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11367",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.8143766,
+				40.7349436
+			]
+		},
+		"notes": "- Food Pantry is open Tuesday and  Thursday between 10am and 1pm.\n- soup Kitchen closed \n",
+		"hours": [
+			{
+				"days": [
+					"Tu",
+					"Th"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "ppinchinat@qchnyc.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.qchnyc.org/locations?location=pomonok",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Hebrew Educational Society",
+		"streetAddress": "9502 Seaview Ave",
+		"lastVerified": "2024-03-14T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "151c6ab4-5064-48a8-92f4-fa4f46da4176",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 241-3000",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11236",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.8906954,
+				40.632485
+			]
+		},
+		"notes": "-  Food pantry by appointment only. Make an appointment by visiting the organization's website or call (718) 241-3000 x4. (digital food pantry)\n- For first time people, go to their organization to register for food pantry ",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"We",
+					"Th"
+				],
+				"timeStart": "9:30:00",
+				"timeEnd": "14:00:00"
+			},
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "13:00:00",
+				"timeEnd": "18:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.thehes.org/food-pantry/",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"kosher"
+		],
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1675",
+				"agency": "DSNY"
+			},
+			{
+				"id": "85512",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Church of God Seventh Day Pentecostal Church/Manna Ministries - Food Pantry",
+		"streetAddress": "922 St Marks Ave",
+		"lastVerified": "2023-04-24T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "15c4c049-f068-4f3c-af11-e83a46cded59",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 221-9718",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11213",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.941613,
+				40.674498
+			]
+		},
+		"notes": "- Proof of address and ID required",
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "17:00:00",
+				"timeEnd": "18:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.homelessshelterdirectory.org/cgi-bin/id/foodbank.cgi?foodbank=4056",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "164",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1590",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R691",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "84944",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Mercy College, Mav Market Manhattan",
+		"streetAddress": "47 W 34th St",
+		"lastVerified": "2023-03-03T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-28T17:37:52",
+		"id": "165f0f7f-a068-459d-a415-abaee2308e5f",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 615-3300",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10001",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.987189,
+				40.7497577
+			]
+		},
+		"notes": "-   Open to Mercy students, faculty, and staff only",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "20:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "mavmarket@mercy.edu",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.mercy.edu/student-affairs/mav-market",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "85521",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Make the Road New York, Brooklyn",
+		"streetAddress": "301 Grove St",
+		"lastVerified": "2023-11-09T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "168ce282-0705-4ede-89bf-75b8f696d5d2",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 418-7690",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(866) 365-2724 x333",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11237",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9158805,
+				40.6984668
+			]
+		},
+		"notes": "- Food available by appointment only. To make an appointment please call and leave a message with all your info: (866) 365-2724 x333.",
+		"hours": [
+			{
+				"days": [
+					"Fr"
+				],
+				"timeStart": "7:30:00",
+				"timeEnd": "11:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://maketheroadny.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "64",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1715",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R15937",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "83811",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Mount Sinai SDA Church",
+		"streetAddress": "217-10 93rd Ave",
+		"lastVerified": "2023-05-04T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:45:12",
+		"id": "16a8129c-e212-4902-baa3-1b628632424b",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 465-8988",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(917) 664-5406 Pantry Director",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11428",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.739936,
+				40.721129
+			]
+		},
+		"notes": "- ID required if under 18\n- Halal and kosher food sometimes available by request",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "17:00:00",
+				"timeEnd": "19:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "clerk@mountsinaisda.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.mountsinaisda.org/connect",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1735",
+				"agency": "DSNY"
+			},
+			{
+				"id": "85221",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Staten Island SDA Church",
+		"streetAddress": "80 Union Ave",
+		"lastVerified": "2023-05-04T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "173b6746-0786-45ed-8fe2-23f2a7a16271",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 442-4806",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Staten Island",
+		"addressRegion": "NY",
+		"postalCode": "10303",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.1583333,
+				40.6347856
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Su"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "14:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://statenislandny.adventistchurch.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "419",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1230",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R661",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "83521",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Inspirational Gospel Assembly",
+		"streetAddress": "1211 Brook Ave",
+		"lastVerified": "2025-03-12T19:30:22",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-12T19:30:22",
+		"id": "173db3e7-5afb-4d04-9930-b6becc887fda",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 640-7800",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(347) 758-6447",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10456",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9093929,
+				40.8313843
+			]
+		},
+		"notes": "- ID is recommended but not necessary \n- They give out whatever food (kosher or halal) they get from the food bank. ",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "11:00:00",
+				"timeEnd": "13:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "darkwahus@yahoo.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.igaonline.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "311",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1692",
+				"agency": "DSNY"
+			},
+			{
+				"id": "85285",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Mount Olivet Baptist Church Community Meals Program - Food Pantry",
+		"streetAddress": "201 Malcolm X Blvd",
+		"lastVerified": "2023-12-14T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-28T17:54:31",
+		"id": "177dac06-23c6-40ac-9d44-ded97b258157",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 864-1155",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10027",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9480598,
+				40.8049454
+			]
+		},
+		"notes": "- Current photo ID required, preferably government-issued\n- Arrive early for the best chance of receiving food",
+		"hours": [
+			{
+				"days": [
+					"Tu",
+					"We"
+				],
+				"timeStart": "10:30:00",
+				"timeEnd": "11:30:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "http://mountolivetbaptistchurch.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1240",
+				"agency": "DSNY"
+			},
+			{
+				"id": "83699",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Brooklyn Faith SDA Church",
+		"streetAddress": "5518 Church Ave",
+		"lastVerified": "2023-05-09T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "17b1f3e4-89b7-40bd-868e-ed10f0c132a0",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 342-6712",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11203",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.924915,
+				40.6523248
+			]
+		},
+		"notes": null,
+		"hours": null,
+		"emailAddresses": null,
+		"website": "https://www.brooklynfaith.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "1477",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1393",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R176",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "83274",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Muslim Ummah of North America (MUNA), Center of South Jamaica",
+		"streetAddress": "164-38 108th Ave",
+		"lastVerified": "2025-03-14T13:50:48",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:50:48",
+		"id": "17fcd745-0f30-4e11-b4c7-8519d078496e",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(347) 605-2931",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(347) 659-5498",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11433",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.78904786,
+				40.69748823
+			]
+		},
+		"notes": "- 2 days a month, usually mondays",
+		"hours": [
+			{
+				"days": [
+					"Mo"
+				],
+				"timeStart": "8:00:00",
+				"timeEnd": "16:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "mcsjny@gmail.com",
+				"isPrivate": false
+			},
+			{
+				"email": "contact@munasocialservice.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://mcsjny.org/?fbclid=IwAR23WK_8opKAtQux3dt-dweRsRVU1z8Zo6LtHde9NIyL-Cr7D6M0sNqNMrU",
+		"idRequired": false,
+		"dietaryAccomodations": [],
+		"externalIds": [],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Borough of Manhattan Community College - Food Pantry",
+		"streetAddress": "199 Chambers St",
+		"lastVerified": "2025-03-21T20:00:55",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-21T20:00:55",
+		"id": "18151522-db26-4ab5-b54e-f4c279230364",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 220-8195",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10007",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.0122469,
+				40.7174546
+			]
+		},
+		"notes": "- Serves students only\n- Walk-in \n2025 notes\n- BMCC students only have access to the fresh produce and the healthier goods, other CUNY students can come once a week as well but they are only eligible for a pre-packaged meal.\n- They are open the whole week, but students are only allowed one drop a week and are meant to ration it. ",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "17:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "singlestop@bmcc.cuny.edu",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.bmcc.cuny.edu/student-affairs/single-stop/panther-pantry/",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"halal",
+			"kosher"
+		],
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-2112",
+				"agency": "DSNY"
+			},
+			{
+				"id": "85471",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Masbia of Flatbush - Soup Kitchen",
+		"streetAddress": "1372 Coney Island Ave",
+		"lastVerified": "2023-05-01T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "18188e09-45e2-4aa6-8eab-cb28283ed0ab",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 972-4446 x203",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11230",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9652911,
+				40.6240702
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Su",
+					"Mo",
+					"Tu",
+					"We",
+					"Th"
+				],
+				"timeStart": "14:00:00",
+				"timeEnd": "19:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "info@masiba.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.masbia.org/masbia_of_flatbush",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"kosher"
+		],
+		"externalIds": [
+			{
+				"id": "R321",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "85170",
+				"agency": "EFRO"
+			}
+		],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Part of the Solution (POTS) - Food Pantry",
+		"streetAddress": "2759 Webster Ave",
+		"lastVerified": "2024-03-22T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:32:15",
+		"id": "183dafec-f0be-431d-b4f4-e13197966faa",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 220-4892 x2",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "x102",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10458",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.8863601,
+				40.8654811
+			]
+		},
+		"notes": "- Registration is required. To register, call (718) 220-4892, x101, and intake will arrange appointments.\n- Groceries are currently being distributed via pre-packaged bags\n- Get hot meals registration is not required",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "7:30:00",
+				"timeEnd": "9:30:00"
+			},
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr",
+					"Sa"
+				],
+				"timeStart": "8:30:00",
+				"timeEnd": "11:30:00"
+			},
+			{
+				"days": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr",
+					"Sa"
+				],
+				"timeStart": "12:30:00",
+				"timeEnd": "15:30:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "serve@potsbronx.org",
+				"isPrivate": false
+			}
+		],
+		"website": "http://www.potsbronx.org/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "80121",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Hunter College Purple Apron Food Pantry",
+		"streetAddress": "695 Park Ave",
+		"lastVerified": "2023-04-27T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-21T20:18:58",
+		"id": "185ecb30-b0e0-422a-8d20-3bd62c608a66",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 396-6418",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10065",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9651879,
+				40.7685437
+			]
+		},
+		"notes": "- Serves Hunter College and CUNY students only\n- Please bring your own bags or cart",
+		"hours": [
+			{
+				"days": [
+					"Mo",
+					"Tu"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "16:00:00"
+			},
+			{
+				"days": [
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "11:00:00",
+				"timeEnd": "17:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "ca748@hunter.cuny.edu",
+				"isPrivate": false
+			}
+		],
+		"website": "https://ww2.hunter.cuny.edu/students/student-life/emergency-support-and-resources/food-pantry-the-purple-apron/",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"kosher"
+		],
+		"externalIds": [
+			{
+				"id": "85530",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Jamaica Seventh Day Adventist Church",
+		"streetAddress": "88-28 163rd St",
+		"lastVerified": "2023-03-03T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T13:52:01",
+		"id": "1888d8c2-2cb6-4959-9357-c5d40d0760d2",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(347) 444-3087",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(718) 658-9784",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Queens",
+		"addressRegion": "NY",
+		"postalCode": "11432",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.7990202,
+				40.7078263
+			]
+		},
+		"notes": "- ID required for the first visit\n- Please bring your own bags or cart",
+		"hours": [
+			{
+				"days": [
+					"Su"
+				],
+				"timeStart": "9:30:00",
+				"timeEnd": "11:30:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.jamaicasdachurch.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "167",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1220",
+				"agency": "DSNY"
+			},
+			{
+				"id": "83296",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Thurston Memorial Outreach Ministries - Food Pantry",
+		"streetAddress": "1243 Bushwick Ave",
+		"lastVerified": "2023-04-21T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "189bd108-39ee-49a5-979f-fab38883667f",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 452-3646",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(718) 452-3260",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(917) 432-7614",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11221",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9146261,
+				40.687878
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "17:00:00",
+				"timeEnd": "19:30:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "tmom1243@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "http://www.thurstonoutreach.org/soup-kitchen--food-pantry.html",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1267",
+				"agency": "DSNY"
+			},
+			{
+				"id": "84354",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "West End Collegiate Church",
+		"streetAddress": "245 W 77th St",
+		"lastVerified": "2023-11-15T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "18b28331-4e7d-459d-b4c2-2a6a783becfd",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 787-1566",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10024",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.981245,
+				40.782664
+			]
+		},
+		"notes": "- Food donations: non-perishables preferred (not currently) only on Tuesdays\n- Starts at 4 pm (Prayer until 4:15 pm) and goes until the food is gone\n- Feeds everyone",
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "16:00:00",
+				"timeEnd": "17:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "skinsman@westendchurch.org",
+				"isPrivate": false
+			}
+		],
+		"website": "http://www.westendchurch.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "BRS-1071",
+				"agency": "DSNY"
+			}
+		],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Vineyard International Christian Ministries/Vineyard Food Pantry",
+		"streetAddress": "1140 Teller Ave",
+		"lastVerified": "2022-10-27T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "18b945c4-5d14-4452-95f6-996146bbe74a",
+		"phoneNumbers": null,
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10456",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9121459,
+				40.8306638
+			]
+		},
+		"notes": "- Please bring your own bags or cart",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "12:00:00",
+				"timeEnd": "16:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "contact@vicmusa.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.foodpantries.org/li/vineyard_international_christian_ministries_food_pantry_10456",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "R220",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "84129",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Project Hospitality, Dongan Hills Head Start - Mobile Food Pantry",
+		"streetAddress": "44 Dongan Hills Ave",
+		"lastVerified": "2022-09-29T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "18fd83f9-25f6-4824-8e6b-c82db6e6df34",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 815-0800",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Staten Island",
+		"addressRegion": "NY",
+		"postalCode": "10306",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.10084703,
+				40.58810185
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Tu"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "11:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://projecthospitality.org/wp-content/uploads/2021/07/mobile-pantry-july-2021-eng-spanish.jpg",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "mobileFoodPantry"
+	},
+	{
+		"name": "Trinity Human Services",
+		"streetAddress": "153 Johnson Ave",
+		"lastVerified": "2024-04-26T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "1951fafd-b5f9-4c9d-8d38-b07cc8f7d34d",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 388-3176",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11206",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9442462,
+				40.7066091
+			]
+		},
+		"notes": "- ID and proof of address required\n- Not offering supermarket-style pantry currently, only outdoor pickup\n- Open to all",
+		"hours": [
+			{
+				"days": [
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "9:00:00",
+				"timeEnd": "15:30:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://trinityhumanservices.org/contact/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "91",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1128",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R730",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "80421",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Holy Cross Roman Catholic Church - Food Pantry",
+		"streetAddress": "2520 Church Ave",
+		"lastVerified": "2023-11-20T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "1973e7f5-a3fc-4cbc-b997-86b98a0085cb",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 469-5900",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11226",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9535015,
+				40.6503815
+			]
+		},
+		"notes": "-   Picture ID and proof of address required\n-   Located outside of the school\n-   Please bring bags or a shopping cart",
+		"hours": [
+			{
+				"days": [
+					"Tu",
+					"Th"
+				],
+				"timeStart": "14:00:00",
+				"timeEnd": "15:30:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "http://www.holycrossrcchurch.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "120",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "80296",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "St. Peter's Food Pantry",
+		"streetAddress": "53 Saint Marks Pl",
+		"lastVerified": "2023-05-04T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "1a039715-3344-4fda-b26c-09c23b67fff6",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 447-6362",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Staten Island",
+		"addressRegion": "NY",
+		"postalCode": "10301",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.08431,
+				40.64711
+			]
+		},
+		"notes": "- ID preferred but not required\n- If there is a 5th Wednesday in a Month, they will not be open",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "13:00:00",
+				"timeEnd": "14:00:00",
+				"notes": "Excluding any 5th Wednesday of the month"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "assumptionstpaulsi@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://assumptionstpaulsi.com/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "501",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1077",
+				"agency": "DSNY"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Bethel Holy Church - Food Pantry",
+		"streetAddress": "922 Saint Nicholas Ave",
+		"lastVerified": "2023-03-02T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-21T19:07:12",
+		"id": "1a7b21f8-1617-47c6-b876-e3e57ebffae6",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(646) 719-1391",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10032",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9408271,
+				40.8315344
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "12:00:00",
+				"timeEnd": "14:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "bethelholychurchnewyork@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.bethelholychurch.com",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "81631",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Church of St. Paul the Apostle - Food Pantry",
+		"streetAddress": "405 W 59th St",
+		"lastVerified": "2023-10-12T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T17:00:17",
+		"id": "1ab88776-b835-4511-9f44-81e6ee2374a9",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 265-3495",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10019",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9870774,
+				40.7699659
+			]
+		},
+		"notes": "- Formal ID required \n- Offering bags for groceries food\n- ",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "8:00:00",
+				"timeEnd": "11:30:00",
+				"notes": "3rd Saturday of the month"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "Gsacci@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://stpaultheapostle.org/direction-hours.php",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "82022",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "BronxWorks Morris Senior Center",
+		"streetAddress": "80 E 181st St",
+		"lastVerified": "2024-03-22T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:33:57",
+		"id": "1ae3be9b-c419-43ef-9fad-19988d293ca5",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 933-5300",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10453",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9043377,
+				40.8549764
+			]
+		},
+		"notes": "- Offering emergency food pantry by appointment only. Call listed number to schedule an appointment.\n- also takes referrals \n- For once a month, they have a food pantry open to the public by appointment only\n- They also have a food pantry for their senior residents once a month\n- However, they have not been opening their food pantry for a few months due to lack of donations\n- 150 people limit and the appointments are first come, first serve\n- Second Friday of the month for seniors\n- Last Friday of the month for general public",
+		"hours": [
+			{
+				"days": [
+					"Fr"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "12:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "rluongo@bronxworks.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.nycservice.org/organizations/2290",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "1483",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "84841",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Coalition for the Homeless",
+		"streetAddress": "E 124th St",
+		"lastVerified": "2023-12-14T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T17:35:27",
+		"id": "1b149611-b1c1-4494-acf3-8d47582e563f",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 776-2002",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(212) 360-6273",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10035",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.93568062,
+				40.80270291
+			]
+		},
+		"notes": "- Routes for the mobile soup kitchen can be found at: https://www.coalitionforthehomeless.org/our-programs/food/grand-central-food-program/grand-central-food-program-routes/",
+		"hours": [
+			{
+				"days": [
+					"Su",
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr",
+					"Sa"
+				],
+				"timeStart": "19:30:00",
+				"timeEnd": "21:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "info@cfthomeless.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.coalitionforthehomeless.org",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "mobileSoupKitchen"
+	},
+	{
+		"name": "National Council of Jewish Women - Community Kitchen",
+		"streetAddress": "241 W 72nd St",
+		"lastVerified": "2023-04-19T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-28T18:34:03",
+		"id": "1bb4c1e7-e114-430e-b698-aa04699e840f",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 687-5030 x463",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10023",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9830259,
+				40.7794675
+			]
+		},
+		"notes": "- Grab-and-go pre-packed bags\n- Dine-in available",
+		"hours": [
+			{
+				"days": [
+					"We"
+				],
+				"timeStart": "16:30:00"
+			},
+			{
+				"days": [
+					"Su"
+				],
+				"timeStart": "11:30:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.ncjwny.org/programs/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "80730",
+				"agency": "EFRO"
+			}
+		],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Missionary Church of Christ, Inc.",
+		"streetAddress": "937 Teller Ave",
+		"lastVerified": "2025-03-25T19:40:06",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-25T19:40:06",
+		"id": "1c11c20a-900a-4a52-bdc1-0f5ee1ae5fb6",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 588-4545",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(917) 488-8413",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Bronx",
+		"addressRegion": "NY",
+		"postalCode": "10451",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9158079,
+				40.8260061
+			]
+		},
+		"notes": "- Survey to see the income and eligibility once a year.",
+		"hours": [
+			{
+				"days": [
+					"Sa"
+				],
+				"timeStart": "10:00:00",
+				"timeEnd": "12:00:00",
+				"notes": "- 2nd and 4th Saturday every month."
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "contacto@iglesiacristomisionera.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.iglesiacristomisionera.org/",
+		"idRequired": false,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1339",
+				"agency": "DSNY"
+			},
+			{
+				"id": "83658",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "Brooklyn SDA Food Pantry",
+		"streetAddress": "1260 Ocean Ave",
+		"lastVerified": "2022-12-02T05:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "1c1f48b7-2cf0-4a88-85e8-bc67c60f17ff",
+		"phoneNumbers": null,
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11230",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9577601,
+				40.63166668
+			]
+		},
+		"notes": "- Food donations:\n    - perishables and non-perishables\n    - no pork\n- Don't serve meat",
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "16:00:00",
+				"timeEnd": "18:00:00",
+				"notes": "3rd Thursday of the month"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "info@brooklynsda.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.brooklynsda.com",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [],
+		"type": "foodPantry"
+	},
+	{
+		"name": "God's Love We Deliver",
+		"streetAddress": "166 6th Ave",
+		"lastVerified": "2024-03-18T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": "2025-03-14T19:26:56",
+		"id": "1c3e1cf5-cca5-4e21-87a9-2ab9376555c8",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(212) 294-8100",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "New York",
+		"addressRegion": "NY",
+		"postalCode": "10013",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-74.0036553,
+				40.725573
+			]
+		},
+		"notes": "- Medically tailored, home-delivered meals to patients who are too sick to shop or cook for themselves ",
+		"hours": [
+			{
+				"days": [
+					"Su",
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"timeStart": "6:30:00",
+				"timeEnd": "20:00:00"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "info@glwd.org",
+				"isPrivate": false
+			}
+		],
+		"website": "https://www.glwd.org/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1920",
+				"agency": "DSNY"
+			},
+			{
+				"id": "R15911",
+				"agency": "City Harvest"
+			},
+			{
+				"id": "81458",
+				"agency": "EFRO"
+			}
+		],
+		"type": "soupKitchen"
+	},
+	{
+		"name": "Bedford Central Presbyterian Church",
+		"streetAddress": "1200 Dean St",
+		"lastVerified": "2023-05-09T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "1dd2827e-b641-4367-8b9e-48e14e4e2d2a",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 467-0740",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11216",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9496212,
+				40.6764792
+			]
+		},
+		"notes": null,
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "9:30:00",
+				"timeEnd": "11:00:00"
+			}
+		],
+		"emailAddresses": null,
+		"website": "https://www.bedfordcentralchurch.org/events/",
+		"idRequired": true,
+		"dietaryAccomodations": null,
+		"externalIds": [
+			{
+				"id": "455",
+				"agency": "Plentiful"
+			},
+			{
+				"id": "DSNY-BRS-1289",
+				"agency": "DSNY"
+			},
+			{
+				"id": "85182",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	},
+	{
+		"name": "St. Catherine of Genoa",
+		"streetAddress": "520 Linden Blvd",
+		"lastVerified": "2023-10-19T04:00:00",
+		"status": "open",
+		"lastAttemptedVerify": null,
+		"id": "1e22fb22-ea4d-484c-85d0-9cacc80c62cd",
+		"phoneNumbers": [
+			{
+				"phoneNumber": "(718) 282-7162",
+				"isPrivate": false
+			},
+			{
+				"phoneNumber": "(718) 604-8163",
+				"isPrivate": false
+			}
+		],
+		"addressLocality": "Brooklyn",
+		"addressRegion": "NY",
+		"postalCode": "11203",
+		"addressCountry": "US",
+		"geolocation": {
+			"type": "Point",
+			"coordinates": [
+				-73.9397708,
+				40.6529516
+			]
+		},
+		"notes": "- ID required but will still serve if a visitor does not have one\n- Closed until September 7th",
+		"hours": [
+			{
+				"days": [
+					"Th"
+				],
+				"timeStart": "10:30:00",
+				"timeEnd": "13:30:00",
+				"notes": "Every other Thursday"
+			}
+		],
+		"emailAddresses": [
+			{
+				"email": "520genoacatherine@gmail.com",
+				"isPrivate": false
+			}
+		],
+		"website": "https://stcatherinegenoabrooklyn.com",
+		"idRequired": true,
+		"dietaryAccomodations": [
+			"kosher"
+		],
+		"externalIds": [
+			{
+				"id": "DSNY-BRS-1798",
+				"agency": "DSNY"
+			},
+			{
+				"id": "80386",
+				"agency": "EFRO"
+			}
+		],
+		"type": "foodPantry"
+	}
+]
