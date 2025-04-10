@@ -85,7 +85,7 @@ export const render = (data) => {
   if(contacts.length > 0){
     payload.push('---');
     payload.push('**Contact Information**');
-    payload.push(contacts.join('  \n'));
+    payload.push(contacts.join('\n\n'));
   }
 
   if(data.notes){
