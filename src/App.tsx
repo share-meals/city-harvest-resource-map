@@ -55,7 +55,6 @@ import soup_kitchens from './data/soup_kitchens.json';
 import mms from './data/mms.json';
 import mm_truck from './data/mm_truck.svg';
 import cpds from './data/cpds.json';
-import cpd_truck from './data/cpd_truck.svg';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -92,13 +91,15 @@ const geojsonify = ({geolocation, ...data}) => {
   }
 };
 
+
 const layers: MapLayerProps[] = [
   {
     name: 'Community Partner Distributions',
     geojson: cpds,
-    fillColor: '#D25B73',
+    featureRadius: 10,
+    featureWidth: 4,
+    fillColor: 'rgba(210, 91, 115, 0.75)',
     strokeColor: 'white',
-    icon: cpd_truck,
     type: 'vector'
   },
   {
@@ -275,21 +276,20 @@ export const App = () => {
 		name: 'Food Pantries',
 		featureRadius: 10,
 		featureWidth: 4,
-		fillColor: 'rgba(100, 167, 11, .5)',
+		fillColor: 'rgba(100, 167, 11, 0.75)',
 		// @ts-ignore
 		geojson: {
 		  type: 'FeatureCollection',
 		  features: foodPantries
 		},
 		strokeColor: 'white',
-		textScale: 1.5,
 		type: 'vector',
 	      },
 	      {
 		name: 'Soup Kitchens',
 		featureRadius: 10,
 		featureWidth: 4,
-		fillColor: 'rgba(137, 59, 103, .5)',
+		fillColor: 'rgba(137, 59, 103, 0.75)',
 		geojson: {
 		  type: 'FeatureCollection',
 		  features: soupKitchens
