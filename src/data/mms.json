@@ -6,8 +6,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          40.821764152033175,
-          -73.9201780573605
+	  -73.92025045584433,
+	  40.82167210786891
         ]
       },
       "properties": {
@@ -19,19 +19,17 @@
         "geolocation": {
           "type": "Point",
           "coordinates": [
-            0,
-            0
+	  -73.92025045584433,
+	  40.82167210786891
           ]
         },
         "status": "open",
         "addressCountry": "US",
         "hours": [
           {
-            "days": [
-              null
-            ],
-            "timeStart": "9:30:00",
-            "timeEnd": "11:30:00",
+            "days": [null],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
             "notes": "Only 2nd Saturday and 4th Wednesday of each month"
           }
         ],
@@ -56,19 +54,17 @@
         "geolocation": {
           "type": "Point",
           "coordinates": [
-            0,
-            0
+          -74.01912045298224,
+          40.64859633888526
           ]
         },
         "status": "open",
         "addressCountry": "US",
         "hours": [
           {
-            "days": [
-              null
-            ],
-            "timeStart": "10:00:00",
-            "timeEnd": "12:00:00",
+            "days": [null],
+            "timeStart": "10:00",
+            "timeEnd": "12:00",
             "notes": "Only 2nd Friday and 4th Saturday of each month"
           }
         ],
@@ -93,19 +89,17 @@
         "geolocation": {
           "type": "Point",
           "coordinates": [
-            0,
-            0
+          -73.94461675532463,
+          40.75572388187865
           ]
         },
         "status": "open",
         "addressCountry": "US",
         "hours": [
           {
-            "days": [
-              null
-            ],
-            "timeStart": "9:30:00",
-            "timeEnd": "11:30:00",
+            "days": [null],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
             "notes": "Only 1st Wednesday and 3rd Saturday of each month"
           }
         ],
@@ -130,19 +124,17 @@
         "geolocation": {
           "type": "Point",
           "coordinates": [
-            0,
-            0
+          -73.9418728744004,
+          40.83101156812198
           ]
         },
         "status": "open",
         "addressCountry": "US",
         "hours": [
           {
-            "days": [
-              null
-            ],
-            "timeStart": "9:30:00",
-            "timeEnd": "11:30:00",
+            "days": [null],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
             "notes": "Only 2nd Thursday and 4th Saturday of each month"
           }
         ],
@@ -167,19 +159,17 @@
         "geolocation": {
           "type": "Point",
           "coordinates": [
-            0,
-            0
+          -73.93326110863056,
+          40.77275790484195
           ]
         },
         "status": "open",
         "addressCountry": "US",
         "hours": [
           {
-            "days": [
-              null
-            ],
-            "timeStart": "9:30:00",
-            "timeEnd": "11:30:00",
+            "days": [null],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
             "notes": "Only 1st Wednesday and 3rd Saturday of each month"
           }
         ],
@@ -204,19 +194,17 @@
         "geolocation": {
           "type": "Point",
           "coordinates": [
-            0,
-            0
+          -73.92396613706121,
+          40.860276796509666
           ]
         },
         "status": "open",
         "addressCountry": "US",
         "hours": [
           {
-            "days": [
-              null
-            ],
-            "timeStart": "9:30:00",
-            "timeEnd": "11:30:00",
+            "days": [null],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
             "notes": "Only 2nd Wednesday and 4th Saturday of each month"
           }
         ],
@@ -228,32 +216,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.08059617257648,
-          40.62239680879554
+            -74.081849,
+          40.621053
         ]
       },
       "properties": {
         "name": "City Harvest Mobile Market, Stapleton",
-        "streetAddress": "Tennis courts at Stapleton Houses, behind 75 Hill Street",
+        "streetAddress": "Corner of Warren St. (Cheryl White) and Hill St.",
         "addressLocality": "Staten Island",
         "addressRegion": "NY",
         "postalCode": "10304",
         "geolocation": {
           "type": "Point",
           "coordinates": [
-            0,
-            0
+            -74.081849,
+            40.621053
           ]
         },
         "status": "open",
         "addressCountry": "US",
         "hours": [
           {
-            "days": [
-              null
-            ],
-            "timeStart": "9:30:00",
-            "timeEnd": "11:30:00",
+            "days": [null],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
             "notes": "Only 1st Tuesday and 3rd Saturday of each month"
           }
         ],
@@ -278,20 +264,18 @@
         "geolocation": {
           "type": "Point",
           "coordinates": [
-            0,
-            0
+          -73.94612087257494,
+          40.696197243224255
           ]
         },
         "status": "open",
         "addressCountry": "US",
         "hours": [
           {
-            "days": [
-              null
-            ],
-            "timeStart": "9:30:00",
-            "timeEnd": "13:30:00",
-            "notes": "Only 1st Saturday and 3rd Wednesday of each month"
+            "days": [null],
+            "timeStart": "9:30",
+            "timeEnd": "13:30",
+            "notes": "Only 3rd Wednesday and 1st Saturday of each month"
           }
         ],
         "notes": "- Must be a Brooklyn resident to receive food"
@@ -315,20 +299,18 @@
         "geolocation": {
           "type": "Point",
           "coordinates": [
-            0,
-            0
+          -73.90975084005572,
+            40.81520313463588
           ]
         },
         "status": "open",
         "addressCountry": "US",
         "hours": [
           {
-            "days": [
-              null
-            ],
-            "timeStart": "9:30:00",
-            "timeEnd": "11:30:00",
-            "notes": "2nd Saturday and 4th Tuesday of each month"
+            "days": [null],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
+            "notes": "Only 4th Tuesday and 2nd Saturday of each month"
           }
         ],
         "notes": "- Must be a Bronx resident to receive food"
