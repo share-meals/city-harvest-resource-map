@@ -17,6 +17,11 @@ export interface MapControl {
     element: React.JSX.Element
 };
 
+const getTimestampedZoom = (zoom: number) => ({
+  level: zoom,
+  timestamp: new Date()
+});
+
 export const ZoomButton = ({
     direction,
     ...props
@@ -28,12 +33,12 @@ export const ZoomButton = ({
 	zoom
     } = useMap();
     return <IonButton
-	       disabled={direction === '+' ? zoom! >= maxZoom : zoom! <= minZoom}
+	       disabled={direction === '+' ? zoom!.level >= maxZoom : zoom!.level <= minZoom}
 	       onClick={() => {
-		   const newZoom: number  = zoom! + (direction === '+' ? 1 : -1);
+		   const newZoom: number  = zoom!.level + (direction === '+' ? 1 : -1);
 		   setZoom(direction === '+'
-			 ? (newZoom > maxZoom ? maxZoom : newZoom)
-			 : (newZoom < minZoom ? minZoom : newZoom));
+			 ? (newZoom > maxZoom ? getTimestampedZoom(maxZoom) : getTimestampedZoom(newZoom))
+			 : (newZoom < minZoom ? getTimestampedZoom(minZoom) : getTimestampedZoom(newZoom)));
 	       }}
     {...props}
     >

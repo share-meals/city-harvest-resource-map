@@ -1,5 +1,6 @@
 const logFunctionUrl = 'https://us-east1-city-harvest-423311.cloudfunctions.net';
 const protomapsApiKey = 'dae8f6c71066c020';
+const googleMapsApiKey = 'AIzaSyDtyONI51lo6s-FWi3tAa2jiHh-O13CMmY';
 
 import {RControl} from 'rlayers';
 
@@ -21,8 +22,7 @@ import {
 } from '@ionic/react';
 import {
   getMapStyle,
-  GeocoderInput,
-  GeocoderProvider,
+  Geocoder,
   Map,
   MapProvider,
   LayerToggles,
@@ -114,6 +114,33 @@ const layers: MapLayerProps[] = [
 
 setupIonicReact();
 
+const GeocoderWrapper: React.FC<{
+  modal?: React.RefObject<HTMLIonModalElement>,
+  setCenter: any
+}> = ({modal, setCenter}) => {
+  const {setZoom} = useMap();
+  return <Geocoder
+	   apiKey={googleMapsApiKey}
+	   onGeocode={(results) => {
+	     const result = results[0];
+	     setCenter({
+	       lat: result.geometry.location.lat(),
+	       lng: result.geometry.location.lng(),
+	       timestamp: new Date()
+	     });
+	     setZoom({
+	       level: 16,
+	       timestamp: new Date()
+	     });
+	     if(modal){
+	       modal.current?.dismiss();
+	     }
+	     // TODO: log
+	   }}
+	   helperText='To find food near you, please enter your address, city, and zip code'
+  />
+};
+
 const InfoModal = ({trigger}: {trigger: string}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   useEffect(() => {
@@ -153,13 +180,14 @@ const LayerTogglesModal = () => {
   </IonModal>;
 }
 
-const logGeocode = ({latlng, address}: onGeocode) => {
+const logGeocode = (results: onGeocode) => {
+  /*
   const options = {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({address, ...latlng})
+    body: JSON.stringify(results)
   };
   fetch(`${logFunctionUrl}/log-geocode`, options)
     .then((response) => {
@@ -167,10 +195,13 @@ const logGeocode = ({latlng, address}: onGeocode) => {
     .catch((error) => {
       console.log(error);
     });
+  */
 };
 
 
-const GeocoderModal = () => {
+const GeocoderModal: React.FC<{
+  setCenter: any
+}> = ({setCenter}) => {
   const modal = useRef<HTMLIonModalElement>(null);
   return <IonModal ref={modal} trigger='openGeocoderModal'>
     <IonHeader>
@@ -186,13 +217,7 @@ const GeocoderModal = () => {
       </IonToolbar>
     </IonHeader>
     <IonContent className='ion-padding'>
-      <GeocoderInput
-	onGeocode={(args) => {
-	  modal.current?.dismiss();
-	  logGeocode(args);
-	}}
-	helperText='To find food near you, please enter your address, city, and zip code'
-      />
+      <GeocoderWrapper modal={modal} setCenter={setCenter}/>
     </IonContent>
   </IonModal>;
 }
@@ -200,6 +225,10 @@ const GeocoderModal = () => {
 export const App = () => {
   const [foodPantries, setFoodPantries] = useState<any>([]);
   const [soupKitchens, setSoupKitchens] = useState<any>([]);
+  const [center, setCenter] = useState<any>({
+    lat: 40.7127281,
+    lng: -74.0060152
+  });
   const size: {
     height: number | null,
     width: number | null
@@ -229,12 +258,12 @@ export const App = () => {
 	  },
 	  body: JSON.stringify({id: d.id, lat, lng})
 	};
-    fetch(`${logFunctionUrl}/log-feature-click`, options)
-      .then((response) => {
-      })
-      .catch((error) => {
-	console.log(error);
-      });
+	fetch(`${logFunctionUrl}/log-feature-click`, options)
+	  .then((response) => {
+	  })
+	  .catch((error) => {
+	    console.log(error);
+	  });
       }
     }
     if(isMobile){
@@ -266,10 +295,7 @@ export const App = () => {
       <IonContent>
 	<div style={{height: '100vh', width: '100vw'}}>
 	  <MapProvider
-	    center={{
-	      lat: 40.7127281,
-	      lng: -74.0060152
-	    }}
+	    center={center}
 	    layers={[
 	      ...layers,
 	      {
@@ -300,58 +326,50 @@ export const App = () => {
 	    ]}
 	    maxZoom={16}
 	    minZoom={10}>
-	    <GeocoderProvider
-	      platform='nominatim'
-	      url='https://nominatim.openstreetmap.org/search'>
-	      {!isMobile &&
-	       <IonGrid>
-		 <IonRow style={{height: '100vh'}}>
-		   <IonCol>
-		     <Map
-		       controls={controls.slice(0, 1)}
-		       onMapClick={onMapClick}
-		       onMapClickOptions={{
-			 hitTolerance: 10
-		       }}
-		       protomapsApiKey={protomapsApiKey}
-		       protomapsStyles={getMapStyle({
-			 apiKey: protomapsApiKey,
-			 theme: 'light'
-		       })}
-		       scalingLookup={scalingLookup}
-		     />
-		   </IonCol>
-		   <IonCol>
-		     <LayerToggles />
-		     <GeocoderInput
-		       onGeocode={logGeocode}
-		       onGeocodeZoom={17}
-		       helperText='To find food near you, please enter your address, city, and zip code'
-		     />
-		     <Renderer />
-		   </IonCol>
-		 </IonRow>
-	       </IonGrid>
-	      }
-	      {isMobile && <>
-		<Map
-		  controls={controls}
-		  onMapClick={onMapClick}
-		  onMapClickOptions={{
-		    hitTolerance: 10
-		  }}
-		  protomapsApiKey={protomapsApiKey}
-		  protomapsStyles={getMapStyle({
-		    apiKey: protomapsApiKey,
-		    theme: 'light'
-		  })}
-		  scalingLookup={scalingLookup}
-		/>
-		<InfoModal trigger={infoTrigger} />
-		<GeocoderModal />
-		<LayerTogglesModal />
-	      </>}
-	    </GeocoderProvider>
+	    {!isMobile &&
+	     <IonGrid>
+	       <IonRow style={{height: '100vh'}}>
+		 <IonCol>
+		   <Map
+		     controls={controls.slice(0, 1)}
+		     onMapClick={onMapClick}
+		     onMapClickOptions={{
+		       hitTolerance: 10
+		     }}
+		     protomapsApiKey={protomapsApiKey}
+		     protomapsStyles={getMapStyle({
+		       apiKey: protomapsApiKey,
+		       theme: 'light'
+		     })}
+		     scalingLookup={scalingLookup}
+		   />
+		 </IonCol>
+		 <IonCol>
+		   <LayerToggles />
+		   <GeocoderWrapper setCenter={setCenter} />
+		   <Renderer />
+		 </IonCol>
+	       </IonRow>
+	     </IonGrid>
+	    }
+	    {isMobile && <>
+	      <Map
+		controls={controls}
+		onMapClick={onMapClick}
+		onMapClickOptions={{
+		  hitTolerance: 10
+		}}
+		protomapsApiKey={protomapsApiKey}
+		protomapsStyles={getMapStyle({
+		  apiKey: protomapsApiKey,
+		  theme: 'light'
+		})}
+		scalingLookup={scalingLookup}
+	      />
+	      <InfoModal trigger={infoTrigger} />
+	      <GeocoderModal setCenter={setCenter} />
+	      <LayerTogglesModal />
+	    </>}
 	  </MapProvider>
 	</div>
       </IonContent>
