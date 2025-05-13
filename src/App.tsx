@@ -176,7 +176,7 @@ const LayerTogglesModal = () => {
   </IonModal>;
 }
 
-const logGeocode = (result: onGeocode) => {
+const logGeocode = (result: onGeocode[number]) => {
   const options = {
     method: 'POST',
     headers: {
