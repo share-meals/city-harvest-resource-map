@@ -1,7 +1,3 @@
-const logFunctionUrl = 'https://us-east1-city-harvest-423311.cloudfunctions.net';
-const protomapsApiKey = 'dae8f6c71066c020';
-const googleMapsApiKey = 'AIzaSyDtyONI51lo6s-FWi3tAa2jiHh-O13CMmY';
-
 import {RControl} from 'rlayers';
 
 import {
@@ -82,6 +78,8 @@ const scalingLookup = {
   15: 1.25
 }
 
+console.log(import.meta.env.VITE_PROTOMAPS_API_KEY);
+
 // @ts-ignore
 const geojsonify = ({geolocation, ...data}) => {
   return {
@@ -120,7 +118,7 @@ const GeocoderWrapper: React.FC<{
 }> = ({modal, setCenter}) => {
   const {setZoom} = useMap();
   return <Geocoder
-	   apiKey={googleMapsApiKey}
+	   apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}
 	   onGeocode={(results) => {
 	     const result = results[0];
 	     setCenter({
@@ -258,7 +256,7 @@ export const App = () => {
 	  },
 	  body: JSON.stringify({id: d.id, lat, lng})
 	};
-	fetch(`${logFunctionUrl}/log-feature-click`, options)
+	fetch(`${import.meta.env.LOG_FUNCTION_URL}/log-feature-click`, options)
 	  .then((response) => {
 	  })
 	  .catch((error) => {
@@ -336,9 +334,9 @@ export const App = () => {
 		     onMapClickOptions={{
 		       hitTolerance: 10
 		     }}
-		     protomapsApiKey={protomapsApiKey}
+		     protomapsApiKey={import.meta.env.VITE_PROTOMAPS_API_KEY}
 		     protomapsStyles={getMapStyle({
-		       apiKey: protomapsApiKey,
+		       apiKey: import.meta.env.VITE_PROTOMAPS_API_KEY,
 		       theme: 'light'
 		     })}
 		     scalingLookup={scalingLookup}
@@ -359,9 +357,9 @@ export const App = () => {
 		onMapClickOptions={{
 		  hitTolerance: 10
 		}}
-		protomapsApiKey={protomapsApiKey}
+		protomapsApiKey={import.meta.env.PROTOMAPS_API_KEY}
 		protomapsStyles={getMapStyle({
-		  apiKey: protomapsApiKey,
+		  apiKey: import.meta.env.PROTOMAPS_API_KEY,
 		  theme: 'light'
 		})}
 		scalingLookup={scalingLookup}
