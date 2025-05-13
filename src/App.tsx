@@ -40,7 +40,7 @@ import {
 import {useWindowSize} from '@uidotdev/usehooks';
 import {
   closeSharp,
-  homeSharp,
+  searchSharp,
   layersSharp
 } from 'ionicons/icons';
 
@@ -77,8 +77,6 @@ const scalingLookup = {
   14: 1,
   15: 1.25
 }
-
-console.log(import.meta.env.VITE_PROTOMAPS_API_KEY);
 
 // @ts-ignore
 const geojsonify = ({geolocation, ...data}) => {
@@ -133,7 +131,7 @@ const GeocoderWrapper: React.FC<{
 	     if(modal){
 	       modal.current?.dismiss();
 	     }
-	     // TODO: log
+	     logGeocode(result);
 	   }}
 	   helperText='To find food near you, please enter your address, city, and zip code'
   />
@@ -178,22 +176,24 @@ const LayerTogglesModal = () => {
   </IonModal>;
 }
 
-const logGeocode = (results: onGeocode) => {
-  /*
+const logGeocode = (result: onGeocode) => {
   const options = {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(results)
+    body: JSON.stringify({
+    address: result.formatted_address, // TODO: maybe we should also capture the raw address entered?
+    lat: result.geometry.location.lat(),
+    lng: result.geometry.location.lng(),
+  })
   };
-  fetch(`${logFunctionUrl}/log-geocode`, options)
+  fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}/log-geocode`, options)
     .then((response) => {
     })
     .catch((error) => {
       console.log(error);
     });
-  */
 };
 
 
@@ -241,7 +241,7 @@ export const App = () => {
 	<IonIcon slot='icon-only' icon={layersSharp} />
       </IonButton>
       <IonButton id='openGeocoderModal'>
-	<IonIcon slot='icon-only' icon={homeSharp} />
+	<IonIcon slot='icon-only' icon={searchSharp} />
       </IonButton>
     </span>
   ];
@@ -256,7 +256,7 @@ export const App = () => {
 	  },
 	  body: JSON.stringify({id: d.id, lat, lng})
 	};
-	fetch(`${import.meta.env.LOG_FUNCTION_URL}/log-feature-click`, options)
+	fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}/log-feature-click`, options)
 	  .then((response) => {
 	  })
 	  .catch((error) => {
@@ -357,9 +357,9 @@ export const App = () => {
 		onMapClickOptions={{
 		  hitTolerance: 10
 		}}
-		protomapsApiKey={import.meta.env.PROTOMAPS_API_KEY}
+		protomapsApiKey={import.meta.env.VITE_PROTOMAPS_API_KEY}
 		protomapsStyles={getMapStyle({
-		  apiKey: import.meta.env.PROTOMAPS_API_KEY,
+		  apiKey: import.meta.env.VITE_PROTOMAPS_API_KEY,
 		  theme: 'light'
 		})}
 		scalingLookup={scalingLookup}
@@ -367,7 +367,8 @@ export const App = () => {
 	      <InfoModal trigger={infoTrigger} />
 	      <GeocoderModal setCenter={setCenter} />
 	      <LayerTogglesModal />
-	    </>}
+	    </>
+	    }
 	  </MapProvider>
 	</div>
       </IonContent>
