@@ -133,7 +133,7 @@ const GeocoderWrapper: React.FC<{
 	     }
 	     logGeocode(result);
 	   }}
-	   helperText='To find food near you, please enter your address, city, and zip code'
+	   helperText='To find free food near you, please enter your address, city, and zip code'
   />
 };
 
