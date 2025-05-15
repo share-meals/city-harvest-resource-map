@@ -325,7 +325,7 @@ export const App = () => {
 	    maxZoom={16}
 	    minZoom={10}>
 	    {!isMobile &&
-	     <IonGrid>
+	     <IonGrid className='ion-no-padding'>
 	       <IonRow style={{height: '100vh'}}>
 		 <IonCol>
 		   <Map
