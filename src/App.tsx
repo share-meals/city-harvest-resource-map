@@ -117,6 +117,10 @@ const GeocoderWrapper: React.FC<{
   const {setZoom} = useMap();
   return <Geocoder
 	   apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}
+  components={{
+    administrativeArea: 'NY',
+    locality: 'New York'
+  }}
 	   onGeocode={(results) => {
 	     const result = results[0];
 	     setCenter({
