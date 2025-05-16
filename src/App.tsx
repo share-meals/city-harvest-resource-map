@@ -343,9 +343,11 @@ export const App = () => {
 		   />
 		 </IonCol>
 		 <IonCol>
-		   <LayerToggles />
-		   <GeocoderWrapper setCenter={setCenter} />
-		   <Renderer />
+		   <div className='ion-padding'>
+		     <LayerToggles />
+		     <GeocoderWrapper setCenter={setCenter} />
+		     <Renderer />
+		   </div>
 		 </IonCol>
 	       </IonRow>
 	     </IonGrid>
