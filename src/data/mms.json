@@ -63,8 +63,8 @@
         "hours": [
           {
             "days": [null],
-            "timeStart": "10:00",
-            "timeEnd": "12:00",
+            "timeStart": "9:30",
+            "timeEnd": "10:30",
             "notes": "Only 2nd Friday and 4th Saturday of each month"
           }
         ],
