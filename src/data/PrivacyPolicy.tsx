@@ -20,7 +20,7 @@ import {
 import ReactMarkdown from 'react-markdown';
 
 
-const privacyPolicy: string = `We want to ensure transparency and clarity about the data collection practices related to the Food Access Map hosted on our website. The Hunter College NYC Food Policy Center and City Harvest are committed to enhancing food access and conducting valuable research to benefit our community. To achieve this, we collect anonymous aggregated data, and we would like to emphasize that your privacy and personal information remain paramount to us.
+const privacyPolicy: string = `We want to ensure transparency and clarity about the data collection practices related to the Food Access Map hosted on our website. The Center for Food as Medicine & Longevity and City Harvest are committed to enhancing food access and conducting valuable research to benefit our community. To achieve this, we collect anonymous aggregated data, and we would like to emphasize that your privacy and personal information remain paramount to us.
 
 **Data Collection and Usage**
 
@@ -45,7 +45,7 @@ export const PrivacyPolicy = () => {
 	    </IonText>
 	    <IonText>
 		<p>
-		    Your Privacy Matters: Hunter College NYC Food Policy Center and City Harvest collect only anonymous, aggregated data from the Food Access Map. No personalized information is used or stored, ensuring your privacy. This data aids research and enhances food access without the use of cookies or local storage. <a id='open-privacy-policy' style={{cursor: 'pointer'}}>Read more.</a>
+		    Your Privacy Matters: The Center for Food as Medicine & Longevity and City Harvest collect only anonymous, aggregated data from the Food Access Map. No personalized information is used or stored, ensuring your privacy. This data aids research and enhances food access without the use of cookies or local storage. <a id='open-privacy-policy' style={{cursor: 'pointer'}}>Read more.</a>
 		</p>
 	    </IonText>
 	    <Modal {...{modal}} />

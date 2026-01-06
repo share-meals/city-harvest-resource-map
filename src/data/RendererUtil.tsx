@@ -1,6 +1,8 @@
-// @ts-nocheck
 
-const daysLookup = {
+
+const daysLookup: {
+  [key: string]: string
+} = {
   Su: 'Sundays',
   Mo: 'Mondays',
   Tu: 'Tuesdays',
@@ -10,10 +12,11 @@ const daysLookup = {
   Sa: 'Saturdays',
 }
 
-const renderList = (arr) => arr.length < 3 ? arr.join(' and ') : `${arr.slice(0, -1).join(', ')}, and ${arr[arr.length - 1]}`;
+const renderList = (arr: any[]) => arr.length < 3 ? arr.join(' and ') : `${arr.slice(0, -1).join(', ')}, and ${arr[arr.length - 1]}`;
 
-function renderTime(timeStr) {
-  if(timeStr === undefined){
+function renderTime(timeStr: string) {
+  if(timeStr === undefined
+     || timeStr === null){
     return 'unknown';
   }
   // Split the time string into hours, minutes, seconds
@@ -35,16 +38,16 @@ function renderTime(timeStr) {
   return `${hours12}:${mm.toString().padStart(2, '0')}${period}`;
 }
 
-const renderHours = (allHours) => {
+const renderHours = (allHours: any[]) => {
   return allHours.map((hours) => {
-    const days = hours.days ? renderList(hours.days.map((day) => daysLookup[day])) : 'unknown';
+    const days = hours.days ? renderList(hours.days.map((day: string) => daysLookup[day])) : 'unknown';
     const time = hours.timeStart ? `${renderTime(hours.timeStart)} - ${renderTime(hours.timeEnd)}` : 'All Day';
     return `${days}  \n${time}${hours.notes ? '  \n' + hours.notes : ''}`;
   })
   .join('\n\n');;
 };
 
-export const render = (data) => {
+export const render = (data: any) => {
   let payload = [];
   payload.push(`# ${data.name}`);
   payload.push(`${data.streetAddress}\n${data.addressLocality}, ${data.addressRegion} ${data.postalCode}`);
@@ -75,11 +78,17 @@ export const render = (data) => {
   }
   
   if(data.emailAddresses){
-    contacts.push(data.emailAddresses.map((e) => `[${e.email}](mailto:${e.email})`).join('\n'));
+    contacts.push(data.emailAddresses.map((e: {
+      email: string,
+      isPrivate: boolean
+    }) => `[${e.email}](mailto:${e.email})`).join('\n'));
   }
 
   if(data.phoneNumbers){
-    contacts.push(data.phoneNumbers.map((p) => p.phoneNumber).join('\n'));
+    contacts.push(data.phoneNumbers.map((p: {
+      phoneNumber: string,
+      isPrivate: boolean
+    }) => p.phoneNumber).join('\n'));
   }
 
   if(contacts.length > 0){
