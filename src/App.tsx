@@ -46,8 +46,6 @@ import {
 
 import './App.scss';
 
-import food_pantries from './data/fp.json';
-import soup_kitchens from './data/soup_kitchens.json';
 import mms from './data/mms.json';
 import mm_truck from './data/mm_truck.svg';
 import cpds from './data/cpds.json';
@@ -280,7 +278,7 @@ export const App = () => {
   }, [isMobile, infoTrigger, setInfoTrigger]);
 
   useEffect(() => {
-    fetch('https://data-bundles.s3.us-east-2.amazonaws.com/allOpenFoodPantries.json')
+    fetch('http://nycfoodaccess.foodmedcenter.org:8055/file-by-filename/foodPantriesOpen.json')
       .then(response => response.json())
       .then(async (response) => {
 	const fp = response.filter((r: any) => r.type === 'foodPantry').map(geojsonify);
