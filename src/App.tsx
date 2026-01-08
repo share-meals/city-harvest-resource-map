@@ -278,7 +278,7 @@ export const App = () => {
   }, [isMobile, infoTrigger, setInfoTrigger]);
 
   useEffect(() => {
-    fetch('http://nycfoodaccess.foodmedcenter.org:8055/file-by-filename/foodPantriesOpen.json')
+    fetch('https://nfa-admin.foodmedcenter.org/file-by-filename/foodPantriesOpen.json')
       .then(response => response.json())
       .then(async (response) => {
 	const fp = response.filter((r: any) => r.type === 'foodPantry').map(geojsonify);
