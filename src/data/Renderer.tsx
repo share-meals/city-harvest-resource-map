@@ -15,14 +15,16 @@ import {
   useEffect,
   useState
 } from 'react';
+import {useTranslation} from 'react-i18next';
 import rehypeExternalLinks from 'rehype-external-links';
 import {PrivacyPolicy} from './PrivacyPolicy';
-import {useMap} from '@share-meals/frg-ui';
+import {useMap} from '../map';
 import {render} from './RendererUtil.js';
 import ReactMarkdown from 'react-markdown';
 
 export const Renderer = () => {
   const {clickedFeatures} = useMap();
+  const {t, i18n} = useTranslation();
   const [page, setPage] = useState<number>(0);
   useEffect(() => {
     setPage(0);
@@ -33,7 +35,7 @@ export const Renderer = () => {
     case 1:
       return <IonText>
 	<ReactMarkdown
-	  children={render(clickedFeatures[0])}
+	  children={render(clickedFeatures[0], t, i18n.language)}
 	  rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
 	/>
       </IonText>;
@@ -57,7 +59,7 @@ export const Renderer = () => {
 	    <IonTitle className='ion-text-center' size='small'>
 	      <IonText>
 		<strong>
-		  {page + 1} of {clickedFeatures.length}
+		  {t('renderer.pageOf', {page: page + 1, total: clickedFeatures.length})}
 		</strong>
 	      </IonText>
 	    </IonTitle>
@@ -77,7 +79,7 @@ export const Renderer = () => {
 	  </IonToolbar>
 	</IonHeader>
 	<ReactMarkdown
-	  children={render(clickedFeatures[page])}
+	  children={render(clickedFeatures[page], t, i18n.language)}
 	rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
 	/>
       </>;

@@ -1,5 +1,3 @@
-import {RControl} from 'rlayers';
-
 import {
   IonApp,
   IonButton,
@@ -17,26 +15,25 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import {
-  getMapStyle,
   Geocoder,
-  Map,
-  MapProvider,
+  LanguageSelector,
   LayerToggles,
+  MapProvider,
+  MapView,
   useMap,
-} from '@share-meals/frg-ui';
+} from './map';
+import type {MapLayerConfig} from './map';
+import type {MapRef} from 'react-map-gl/maplibre';
 
 import {ZoomButtons} from './ZoomButtons';
-
-import type {
-  MapLayerProps,
-  onGeocode
-} from '@share-meals/frg-ui';
 import {Renderer} from './data/Renderer';
 import {
   useEffect,
+  useMemo,
   useRef,
   useState
 } from 'react';
+import {useTranslation} from 'react-i18next';
 import {useWindowSize} from '@uidotdev/usehooks';
 import {
   closeSharp,
@@ -69,13 +66,6 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const scalingLookup = {
-  10: 0.5,
-  12: 0.75,
-  14: 1,
-  15: 1.25
-}
-
 // @ts-ignore
 const geojsonify = ({geolocation, ...data}) => {
   return {
@@ -85,27 +75,6 @@ const geojsonify = ({geolocation, ...data}) => {
   }
 };
 
-
-const layers: MapLayerProps[] = [
-  {
-    name: 'Community Partner Distributions',
-    geojson: cpds,
-    featureRadius: 10,
-    featureWidth: 4,
-    fillColor: 'rgba(210, 91, 115, 0.75)',
-    strokeColor: 'white',
-    type: 'vector'
-  },
-  {
-    name: 'Mobile Markets',
-    geojson: mms,
-    fillColor: '#006747',
-    strokeColor: 'white',
-    icon: mm_truck,
-    type: 'vector'
-  }
-];
-
 setupIonicReact();
 
 const GeocoderWrapper: React.FC<{
@@ -113,29 +82,30 @@ const GeocoderWrapper: React.FC<{
   setCenter: any
 }> = ({modal, setCenter}) => {
   const {setZoom} = useMap();
+  const {t, i18n} = useTranslation();
   return <Geocoder
-	   apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}
-  components={{
-    administrativeArea: 'NY',
-    locality: 'New York'
-  }}
-	   onGeocode={(results) => {
-	     const result = results[0];
-	     setCenter({
-	       lat: result.geometry.location.lat(),
-	       lng: result.geometry.location.lng(),
-	       timestamp: new Date()
-	     });
-	     setZoom({
-	       level: 16,
-	       timestamp: new Date()
-	     });
-	     if(modal){
-	       modal.current?.dismiss();
-	     }
-	     logGeocode(result);
-	   }}
-	   helperText='To find free food near you, please enter your address, city, and zip code'
+    apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}
+    components={{
+      administrativeArea: 'NY',
+      locality: 'New York'
+    }}
+    onGeocode={(results) => {
+      const result = results[0];
+      setCenter({
+        lat: result.geometry.location.lat(),
+        lng: result.geometry.location.lng(),
+        timestamp: new Date()
+      });
+      setZoom({
+        level: 16,
+        timestamp: new Date()
+      });
+      if(modal){
+        modal.current?.dismiss();
+      }
+      logGeocode(result, i18n.language);
+    }}
+    helperText={t('geocoder.helperText')}
   />
 };
 
@@ -157,7 +127,7 @@ const InfoModal = ({trigger}: {trigger: string}) => {
     <IonContent className='ion-padding'>
       <Renderer />
     </IonContent>
-  </IonModal>; 
+  </IonModal>;
 }
 
 const LayerTogglesModal = () => {
@@ -178,16 +148,17 @@ const LayerTogglesModal = () => {
   </IonModal>;
 }
 
-const logGeocode = (result: onGeocode[number]) => {
+const logGeocode = (result: google.maps.GeocoderResult, language: string) => {
   const options = {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-    address: result.formatted_address, // TODO: maybe we should also capture the raw address entered?
+    address: result.formatted_address,
     lat: result.geometry.location.lat(),
     lng: result.geometry.location.lng(),
+    language,
   })
   };
   fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}/log-geocode`, options)
@@ -203,11 +174,12 @@ const GeocoderModal: React.FC<{
   setCenter: any
 }> = ({setCenter}) => {
   const modal = useRef<HTMLIonModalElement>(null);
+  const {t} = useTranslation();
   return <IonModal ref={modal} trigger='openGeocoderModal'>
     <IonHeader>
       <IonToolbar>
 	<IonTitle>
-	  Go to an address
+	  {t('geocoder.modalTitle')}
 	</IonTitle>
 	<IonButtons slot='end'>
 	  <IonButton onClick={() => {modal.current?.dismiss();}}>
@@ -223,12 +195,14 @@ const GeocoderModal: React.FC<{
 }
 
 export const App = () => {
+  const {t, i18n} = useTranslation();
   const [foodPantries, setFoodPantries] = useState<any>([]);
   const [soupKitchens, setSoupKitchens] = useState<any>([]);
   const [center, setCenter] = useState<any>({
     lat: 40.7127281,
     lng: -74.0060152
   });
+  const mapRef = useRef<MapRef>(null);
   const size: {
     height: number | null,
     width: number | null
@@ -249,14 +223,14 @@ export const App = () => {
   ];
   const onMapClick = ({data, lat, lng}: {data: any, lat: number, lng: number}) => {
     if(data.length > 0
-       && data.length <= 5){ // don't log anything larger than 5 so as no to clog up logs
+       && data.length <= 5){
       for(const d of data){
 	const options = {
 	  method: 'POST',
 	  headers: {
 	    'Content-Type': 'application/json'
 	  },
-	  body: JSON.stringify({id: d.id, lat, lng})
+	  body: JSON.stringify({id: d.id, lat, lng, language: i18n.language})
 	};
 	fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}/log-feature-click`, options)
 	  .then((response) => {
@@ -278,74 +252,98 @@ export const App = () => {
   }, [isMobile, infoTrigger, setInfoTrigger]);
 
   useEffect(() => {
-    fetch('https://nfa-admin.foodmedcenter.org/file-by-filename/foodPantriesOpen.json')
+    const lang = i18n.language;
+    const filename = `foodPantriesOpen.${lang}.json`;
+    fetch(`${import.meta.env.VITE_DATA_URL}/${filename}`)
       .then(response => response.json())
-      .then(async (response) => {
-	const fp = response.filter((r: any) => r.type === 'foodPantry').map(geojsonify);
-	const sk = response.filter((r: any) => r.type === 'soupKitchen').map(geojsonify);
+      .then((response) => {
+	const items = Array.isArray(response) ? response : response.data;
+	const fp = items.filter((r: any) => r.type === 'foodPantry').map(geojsonify);
+	const sk = items.filter((r: any) => r.type === 'soupKitchen').map(geojsonify);
 	setFoodPantries(fp);
 	setSoupKitchens(sk);
       })
       .catch((error) => {
 	console.log(error);
       });
-  }, []);
+  }, [i18n.language]);
+
+  const staticLayers: MapLayerConfig[] = useMemo(() => [
+    {
+      id: 'cpd',
+      name: t('layers.cpd'),
+      geojson: cpds,
+      featureRadius: 10,
+      featureWidth: 4,
+      fillColor: 'rgba(210, 91, 115, 0.75)',
+      strokeColor: 'white',
+      type: 'vector'
+    },
+    {
+      id: 'mobile-markets',
+      name: t('layers.mobileMarkets'),
+      geojson: mms,
+      fillColor: '#006747',
+      strokeColor: 'white',
+      icon: mm_truck,
+      type: 'vector'
+    }
+  ], [t]);
+
+  const allLayers: MapLayerConfig[] = useMemo(() => [
+    ...staticLayers,
+    {
+      id: 'food-pantries',
+      name: t('layers.foodPantries'),
+      featureRadius: 10,
+      featureWidth: 4,
+      fillColor: 'rgba(100, 167, 11, 0.75)',
+      geojson: {
+        type: 'FeatureCollection' as const,
+        features: foodPantries
+      },
+      strokeColor: 'white',
+      type: 'vector',
+    },
+    {
+      id: 'soup-kitchens',
+      name: t('layers.soupKitchens'),
+      featureRadius: 10,
+      featureWidth: 4,
+      fillColor: 'rgba(137, 59, 103, 0.75)',
+      geojson: {
+        type: 'FeatureCollection' as const,
+        features: soupKitchens
+      },
+      strokeColor: 'white',
+      type: 'vector',
+    }
+  ], [staticLayers, foodPantries, soupKitchens, t]);
+
   return <IonApp>
     <IonPage>
       <IonContent>
 	<div style={{height: '100vh', width: '100vw'}}>
 	  <MapProvider
 	    center={center}
-	    layers={[
-	      ...layers,
-	      {
-		name: 'Food Pantries',
-		featureRadius: 10,
-		featureWidth: 4,
-		fillColor: 'rgba(100, 167, 11, 0.75)',
-		// @ts-ignore
-		geojson: {
-		  type: 'FeatureCollection',
-		  features: foodPantries
-		},
-		strokeColor: 'white',
-		type: 'vector',
-	      },
-	      {
-		name: 'Soup Kitchens',
-		featureRadius: 10,
-		featureWidth: 4,
-		fillColor: 'rgba(137, 59, 103, 0.75)',
-		geojson: {
-		  type: 'FeatureCollection',
-		  features: soupKitchens
-		},
-		strokeColor: 'white',
-		type: 'vector',
-	      }
-	    ]}
+	    layers={allLayers}
 	    maxZoom={16}
-	    minZoom={10}>
+	    minZoom={10}
+	    mapRef={mapRef}>
 	    {!isMobile &&
 	     <IonGrid className='ion-no-padding'>
 	       <IonRow style={{height: '100vh'}}>
 		 <IonCol>
-		   <Map
+		   <MapView
 		     controls={controls.slice(0, 1)}
+		     mapRef={mapRef}
 		     onMapClick={onMapClick}
-		     onMapClickOptions={{
-		       hitTolerance: 10
-		     }}
 		     protomapsApiKey={import.meta.env.VITE_PROTOMAPS_API_KEY}
-		     protomapsStyles={getMapStyle({
-		       apiKey: import.meta.env.VITE_PROTOMAPS_API_KEY,
-		       theme: 'light'
-		     })}
-		     scalingLookup={scalingLookup}
 		   />
 		 </IonCol>
 		 <IonCol>
 		   <div className='ion-padding'>
+		     <LanguageSelector />
 		     <LayerToggles />
 		     <GeocoderWrapper setCenter={setCenter} />
 		     <Renderer />
@@ -355,18 +353,11 @@ export const App = () => {
 	     </IonGrid>
 	    }
 	    {isMobile && <>
-	      <Map
-		controls={controls}
+	      <MapView
+		controls={<>{controls}</>}
+		mapRef={mapRef}
 		onMapClick={onMapClick}
-		onMapClickOptions={{
-		  hitTolerance: 10
-		}}
 		protomapsApiKey={import.meta.env.VITE_PROTOMAPS_API_KEY}
-		protomapsStyles={getMapStyle({
-		  apiKey: import.meta.env.VITE_PROTOMAPS_API_KEY,
-		  theme: 'light'
-		})}
-		scalingLookup={scalingLookup}
 	      />
 	      <InfoModal trigger={infoTrigger} />
 	      <GeocoderModal setCenter={setCenter} />
