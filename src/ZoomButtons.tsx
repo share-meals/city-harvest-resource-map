@@ -6,7 +6,7 @@ import {
     IonButton,
     IonIcon
 } from '@ionic/react';
-import {useMap} from '@share-meals/frg-ui';
+import {useMap} from './map';
 
 export interface ZoomButton extends Omit<React.ComponentProps<typeof IonButton>, 'disabled'>{
     direction: '-' | '+'

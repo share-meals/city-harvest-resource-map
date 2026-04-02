@@ -1,0 +1,111 @@
+# City Harvest Resource Map
+
+An interactive map for finding free food resources in New York City, built with React, Ionic, and MapLibre GL.
+
+## Setup
+
+```bash
+yarn install
+```
+
+### Environment Variables
+
+Copy the example and fill in your values:
+
+```bash
+cp .env.example .env.development
+cp .env.example .env.production
+```
+
+Required variables:
+
+| Variable | Description |
+|---|---|
+| `VITE_PROTOMAPS_API_KEY` | API key for Protomaps vector tiles |
+| `VITE_GOOGLE_MAPS_API_KEY` | Google Maps API key (geocoding) |
+| `VITE_LOG_FUNCTION_URL` | Base URL for the logging Cloud Function |
+| `VITE_DATA_URL` | Base URL for food pantry data endpoint |
+
+- `.env.development` is loaded during `yarn dev`
+- `.env.production` is loaded during `yarn build`
+
+## Development
+
+```bash
+yarn dev
+```
+
+Runs at http://localhost:5173. In development, the Vite dev server proxies `/data/*` requests to `http://localhost:8055` (local Directus instance) to avoid CORS issues with redirects.
+
+### Local Directus
+
+The app expects a Directus instance running on port 8055 serving translated food pantry data at:
+
+```
+http://localhost:8055/file-by-filename/foodPantriesOpen.{lang}.json
+```
+
+Where `{lang}` is `en`, `es`, `zh`, or `ko`.
+
+## Production Build
+
+```bash
+yarn build
+yarn preview
+```
+
+In production, `VITE_DATA_URL` should point directly to the data server (e.g. `https://nfa-admin.foodmedcenter.org/file-by-filename`).
+
+## Internationalization
+
+The app supports 4 languages via react-i18next:
+
+- English (`en`)
+- Spanish (`es`) - Espanol
+- Chinese (`zh`) - 中文
+- Korean (`ko`) - 한국어
+
+UI translations are in `src/i18n/locales/`. Feature data (food pantry names, hours, notes) is translated server-side and loaded from the localized JSON endpoint.
+
+## Map Layers
+
+| Layer | Source | Color |
+|---|---|---|
+| Community Partner Distributions | `src/data/cpds.json` (static) | Pink |
+| Mobile Markets | `src/data/mms.json` (static) | Green (truck icon) |
+| Food Pantries | Remote API (per language) | Green |
+| Soup Kitchens | Remote API (per language) | Purple |
+
+## Logging
+
+Two analytics events are logged to `VITE_LOG_FUNCTION_URL`:
+
+- **`/log-geocode`** - POST `{address, lat, lng, language}` when a user searches an address
+- **`/log-feature-click`** - POST `{id, lat, lng, language}` when a user clicks a map feature
+
+## Project Structure
+
+```
+src/
+  i18n/
+    config.ts          # i18next initialization
+    locales/           # Translation JSON files (en, es, zh, ko)
+  map/
+    MapContext.tsx      # React context for map state
+    MapView.tsx         # MapLibre GL map component
+    MapLayers.tsx       # GeoJSON layer rendering
+    LayerToggles.tsx    # Layer visibility checkboxes
+    Geocoder.tsx        # Google Maps address search
+    LanguageSelector.tsx # Language dropdown
+    mapStyle.ts         # Protomaps style generation
+    types.ts            # Shared TypeScript interfaces
+  data/
+    Renderer.tsx        # Feature detail display
+    RendererUtil.tsx    # Feature data formatting
+    PrivacyPolicy.tsx   # Privacy policy component
+    cpds.json           # Community Partner Distributions data
+    mms.json            # Mobile Markets data
+    mm_truck.svg        # Mobile Markets icon
+  App.tsx               # Main app component
+  App.scss              # App styles
+```

@@ -8,6 +8,16 @@ export default defineConfig({
     react(),
     legacy()
   ],
+  server: {
+    proxy: {
+      '/data': {
+        target: 'http://localhost:8055',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/data/, ''),
+        followRedirects: true,
+      },
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',

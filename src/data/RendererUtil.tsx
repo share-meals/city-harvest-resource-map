@@ -1,82 +1,65 @@
-
-
-const daysLookup: {
-  [key: string]: string
-} = {
-  Su: 'Sundays',
-  Mo: 'Mondays',
-  Tu: 'Tuesdays',
-  We: 'Wednesdays',
-  Th: 'Thursdays',
-  Fr: 'Fridays',
-  Sa: 'Saturdays',
-}
+import type {TFunction} from 'i18next';
 
 const renderList = (arr: any[]) => arr.length < 3 ? arr.join(' and ') : `${arr.slice(0, -1).join(', ')}, and ${arr[arr.length - 1]}`;
 
-function renderTime(timeStr: string) {
+function renderTime(timeStr: string, t: TFunction) {
   if(timeStr === undefined
      || timeStr === null){
-    return 'unknown';
+    return t('renderer.unknown');
   }
-  // Split the time string into hours, minutes, seconds
   const [hh, mm, ss] = timeStr.split(':').map(Number);
-  
-  // Validate the time components
+
   if (hh < 0 || hh > 23 || mm < 0 || mm > 59 || ss < 0 || ss > 59) {
     throw new Error('Invalid time format. Expected hh:mm:ss with valid time values.');
   }
-  
-  // Determine AM or PM
-  const period = hh >= 12 ? 'PM' : 'AM';
-  
-  // Convert to 12-hour format
+
+  const period = hh >= 12 ? t('renderer.pm') : t('renderer.am');
+
   let hours12 = hh % 12;
-  hours12 = hours12 === 0 ? 12 : hours12; // 0 should become 12 (12 AM or 12 PM)
-  
-  // Format the time string without leading zero for hours
+  hours12 = hours12 === 0 ? 12 : hours12;
+
   return `${hours12}:${mm.toString().padStart(2, '0')}${period}`;
 }
 
-const renderHours = (allHours: any[]) => {
+const renderHours = (allHours: any[], t: TFunction) => {
   return allHours.map((hours) => {
-    const days = hours.days ? renderList(hours.days.map((day: string) => daysLookup[day])) : 'unknown';
-    const time = hours.timeStart ? `${renderTime(hours.timeStart)} - ${renderTime(hours.timeEnd)}` : 'All Day';
+    const days = hours.days ? renderList(hours.days.map((day: string) => t(`days.${day}`))) : t('renderer.unknown');
+    const time = hours.timeStart ? `${renderTime(hours.timeStart, t)} - ${renderTime(hours.timeEnd, t)}` : t('renderer.allDay');
     return `${days}  \n${time}${hours.notes ? '  \n' + hours.notes : ''}`;
   })
   .join('\n\n');;
 };
 
-export const render = (data: any) => {
+export const render = (data: any, t: TFunction, locale: string = 'en') => {
   let payload = [];
   payload.push(`# ${data.name}`);
   payload.push(`${data.streetAddress}\n${data.addressLocality}, ${data.addressRegion} ${data.postalCode}`);
 
   if(data.dietaryAccomodations){
-    payload.push(`This location has **${renderList(data.dietaryAccomodations)}** food.`);
+    payload.push(t('renderer.dietaryAccommodations', {list: `**${renderList(data.dietaryAccomodations)}**`}));
   }
 
   switch(data.idRequired){
     case true:
-      payload.push(`**ID is required**`);
+      payload.push(t('renderer.idRequired'));
       break;
     case false:
-      payload.push(`**ID is not required**`);
+      payload.push(t('renderer.idNotRequired'));
       break;
   }
-  
+
   if(data.hours){
     payload.push('---');
-    payload.push('**Hours**');
-    payload.push(renderHours(data.hours));
+    payload.push(t('renderer.hours'));
+    payload.push(renderHours(data.hours, t));
   }
 
   let contacts = [];
 
   if(data.website){
-    contacts.push(`[Website](${data.website})`);
+    contacts.push(`[${t('renderer.website')}](${data.website})`);
   }
-  
+
   if(data.emailAddresses){
     contacts.push(data.emailAddresses.map((e: {
       email: string,
@@ -93,24 +76,24 @@ export const render = (data: any) => {
 
   if(contacts.length > 0){
     payload.push('---');
-    payload.push('**Contact Information**');
+    payload.push(t('renderer.contactInfo'));
     payload.push(contacts.join('\n\n'));
   }
 
   if(data.notes){
     payload.push('---');
-    payload.push('**Notes**');
+    payload.push(t('renderer.notes'));
     payload.push(`${data.notes}`);
   }
 
-
   if(data.lastVerified){
     const humanReadable = new Date(data.lastVerified.split('T')[0]);
-    const formatter = new Intl.DateTimeFormat('en-US', {
+    const localeMap: Record<string, string> = {en: 'en-US', es: 'es-ES', zh: 'zh-CN', ko: 'ko-KR'};
+    const formatter = new Intl.DateTimeFormat(localeMap[locale] || locale, {
       dateStyle: 'medium'
     });
-    payload.push(`Last verified: ${formatter.format(humanReadable)}`);
+    payload.push(t('renderer.lastVerified', {date: formatter.format(humanReadable)}));
   }
-  
+
   return payload.join('\n\n');
 };
