@@ -272,7 +272,7 @@ export const App = () => {
     {
       id: 'cpd',
       name: t('layers.cpd'),
-      geojson: cpds,
+      geojson: cpds as GeoJSON.GeoJSON,
       featureRadius: 10,
       featureWidth: 4,
       fillColor: 'rgba(210, 91, 115, 0.75)',
@@ -282,7 +282,7 @@ export const App = () => {
     {
       id: 'mobile-markets',
       name: t('layers.mobileMarkets'),
-      geojson: mms,
+      geojson: mms as GeoJSON.GeoJSON,
       fillColor: '#006747',
       strokeColor: 'white',
       icon: mm_truck,
