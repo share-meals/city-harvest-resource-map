@@ -1,6 +1,7 @@
 import {useCallback, useEffect, useMemo, useRef} from 'react';
 import MapGL, {type MapLayerMouseEvent, type ViewStateChangeEvent} from 'react-map-gl/maplibre';
 import type {MapRef} from 'react-map-gl/maplibre';
+import {useTranslation} from 'react-i18next';
 import {useMap} from './MapContext';
 import {MapLayers} from './MapLayers';
 import {getMapStyle} from './mapStyle';
@@ -33,6 +34,7 @@ function parseFeatureProperties(properties: Record<string, any>): Record<string,
 }
 
 export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapViewProps) {
+  const {t} = useTranslation();
   const {
     center,
     layers,
@@ -129,7 +131,7 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
   );
 
   return (
-    <div style={{width: '100%', height: '100%', position: 'relative'}}>
+    <div role="region" aria-label={t('aria.map')} style={{width: '100%', height: '100%', position: 'relative'}}>
       <MapGL
         ref={mapRef as React.Ref<MapRef>}
         initialViewState={{

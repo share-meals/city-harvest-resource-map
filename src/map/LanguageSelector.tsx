@@ -10,11 +10,13 @@ const languages = [
 ];
 
 export function LanguageSelector() {
-  const {i18n} = useTranslation();
+  const {t, i18n} = useTranslation();
   const {setClickedFeatures} = useMap();
 
   return (
     <IonSelect
+      label={t('language')}
+      labelPlacement="stacked"
       value={i18n.language}
       onIonChange={(e) => {
         i18n.changeLanguage(e.detail.value);

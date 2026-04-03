@@ -6,6 +6,7 @@ import {
     IonButton,
     IonIcon
 } from '@ionic/react';
+import {useTranslation} from 'react-i18next';
 import {useMap} from './map';
 
 export interface ZoomButton extends Omit<React.ComponentProps<typeof IonButton>, 'disabled'>{
@@ -32,7 +33,9 @@ export const ZoomButton = ({
 	setZoom,
 	zoom
     } = useMap();
+    const {t} = useTranslation();
     return <IonButton
+	       aria-label={direction === '+' ? t('aria.zoomIn') : t('aria.zoomOut')}
 	       disabled={direction === '+' ? zoom!.level >= maxZoom : zoom!.level <= minZoom}
 	       onClick={() => {
 		   const newZoom: number  = zoom!.level + (direction === '+' ? 1 : -1);

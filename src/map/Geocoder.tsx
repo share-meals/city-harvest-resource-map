@@ -47,15 +47,16 @@ export function Geocoder({apiKey, components, onGeocode, helperText}: GeocoderPr
 
   const {t} = useTranslation();
 
-  if (!isLoaded) return <IonSpinner />;
+  if (!isLoaded) return <IonSpinner aria-label={t('geocoder.search')} />;
 
   return (
     <div>
       <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
         <IonInput
           ref={inputRef}
+          label={helperText}
+          labelPlacement="stacked"
           placeholder={t('geocoder.placeholder')}
-          helperText={helperText}
           style={{flex: 1}}
           onKeyDown={(e) => {
             if (e.key === 'Enter') handleGeocode();

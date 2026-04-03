@@ -45,6 +45,7 @@ export const Renderer = () => {
 	  <IonToolbar>
 	    <IonButtons slot='start'>
 	      <IonButton
+		aria-label={t('aria.previousPage')}
 		disabled={page === 0}
 		fill='clear'
 		size='small'
@@ -65,6 +66,7 @@ export const Renderer = () => {
 	    </IonTitle>
 	    <IonButtons slot='end'>
 	      <IonButton
+		aria-label={t('aria.nextPage')}
 		disabled={page === clickedFeatures.length - 1}
 		fill='clear'
 		size='small'
