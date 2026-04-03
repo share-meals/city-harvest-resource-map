@@ -34,7 +34,7 @@ function parseFeatureProperties(properties: Record<string, any>): Record<string,
 }
 
 export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapViewProps) {
-  const {t} = useTranslation();
+  const {t, i18n} = useTranslation();
   const {
     center,
     layers,
@@ -45,7 +45,7 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
     setClickedFeatures,
   } = useMap();
 
-  const mapStyle = useMemo(() => getMapStyle(protomapsApiKey, 'light'), [protomapsApiKey]);
+  const mapStyle = useMemo(() => getMapStyle(protomapsApiKey, 'light', i18n.language), [protomapsApiKey, i18n.language]);
   const layerIds = useMemo(() => layers.map((l) => `layer-${l.id}`), [layers]);
   const layerIdsRef = useRef(layerIds);
   layerIdsRef.current = layerIds;
