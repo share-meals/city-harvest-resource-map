@@ -1,6 +1,6 @@
 import {Source, Layer, useMap as useMapGL} from 'react-map-gl/maplibre';
 import {useMap} from './MapContext';
-import {useEffect, useState} from 'react';
+import {useEffect, useState, useCallback} from 'react';
 
 function loadSvgImage(map: maplibregl.Map, id: string, url: string, size: number = 40): Promise<void> {
   return new Promise((resolve) => {
@@ -28,26 +28,46 @@ export function MapLayers() {
   const {current: mapInstance} = useMapGL();
   const [iconsLoaded, setIconsLoaded] = useState(false);
 
+  const addIcons = useCallback(async () => {
+    const map = mapInstance?.getMap();
+    if (!map) return;
+    const iconLayers = layers.filter((l) => l.icon);
+    if (iconLayers.length === 0) { setIconsLoaded(true); return; }
+    await Promise.all(
+      iconLayers.map((l) => loadSvgImage(map, `icon-${l.id}`, l.icon!))
+    );
+    setIconsLoaded(true);
+    map.triggerRepaint();
+  }, [mapInstance, layers]);
+
+  // Load icons when map is ready, and reload after style changes (which clear images)
   useEffect(() => {
     const map = mapInstance?.getMap();
     if (!map) return;
 
-    const addIcons = async () => {
-      const iconLayers = layers.filter((l) => l.icon);
-      await Promise.all(
-        iconLayers.map((l) => loadSvgImage(map, `icon-${l.id}`, l.icon!))
-      );
-      setIconsLoaded(true);
-      map.triggerRepaint();
+    const onStyleLoad = () => {
+      setIconsLoaded(false);
+      addIcons();
     };
 
+    // style.load may have already fired before this effect runs,
+    // so poll briefly if the style isn't loaded yet
     if (map.isStyleLoaded()) {
       addIcons();
     } else {
-      map.on('style.load', addIcons);
-      return () => { map.off('style.load', addIcons); };
+      const interval = setInterval(() => {
+        if (map.isStyleLoaded()) {
+          clearInterval(interval);
+          addIcons();
+        }
+      }, 100);
+      // Clean up polling after 5 seconds as a safety net
+      setTimeout(() => clearInterval(interval), 5000);
     }
-  }, [mapInstance, layers]);
+
+    map.on('style.load', onStyleLoad);
+    return () => { map.off('style.load', onStyleLoad); };
+  }, [mapInstance, addIcons]);
 
   const scalingStops: [number, number][] = [
     [10, 0.5],
@@ -76,7 +96,6 @@ export function MapLayers() {
         const layerId = `layer-${layer.id}`;
 
         if (layer.icon) {
-          // Don't render symbol layer until icons are loaded
           if (!iconsLoaded) return null;
           return (
             <Source key={sourceId} id={sourceId} type="geojson" data={layer.geojson}>

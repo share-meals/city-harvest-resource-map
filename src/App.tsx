@@ -159,25 +159,29 @@ const LayerTogglesModal = () => {
   </IonModal>;
 }
 
-const logGeocode = (result: google.maps.GeocoderResult, language: string) => {
-  const options = {
+const DEBUG = import.meta.env.VITE_DEBUG === 'true';
+
+const logToServer = (endpoint: string, payload: Record<string, any>) => {
+  if (DEBUG) {
+    console.log(`[DEBUG] ${endpoint}`, payload);
+    return;
+  }
+  fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}${endpoint}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(payload),
+  }).catch((error) => {
+    console.log(error);
+  });
+};
+
+const logGeocode = (result: google.maps.GeocoderResult, language: string) => {
+  logToServer('/log-geocode', {
     address: result.formatted_address,
     lat: result.geometry.location.lat(),
     lng: result.geometry.location.lng(),
     language,
-  })
-  };
-  fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}/log-geocode`, options)
-    .then((response) => {
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  });
 };
 
 
@@ -242,19 +246,7 @@ export const App = () => {
     if(data.length > 0
        && data.length <= 5){
       for(const d of data){
-	const options = {
-	  method: 'POST',
-	  headers: {
-	    'Content-Type': 'application/json'
-	  },
-	  body: JSON.stringify({id: d.id, lat, lng, language: i18n.language})
-	};
-	fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}/log-feature-click`, options)
-	  .then((response) => {
-	  })
-	  .catch((error) => {
-	    console.log(error);
-	  });
+	logToServer('/log-feature-click', {id: d.id, lat, lng, language: i18n.language});
       }
     }
     if(isMobile){
