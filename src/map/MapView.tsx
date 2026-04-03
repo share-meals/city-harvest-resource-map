@@ -144,7 +144,7 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
         onZoomEnd={handleZoomEnd}
         style={{width: '100%', height: '100%'}}
       >
-        <MapLayers mapRef={mapRef} />
+        <MapLayers />
       </MapGL>
       {controls}
     </div>

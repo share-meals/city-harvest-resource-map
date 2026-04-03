@@ -1,39 +1,44 @@
-import {Source, Layer} from 'react-map-gl/maplibre';
+import {Source, Layer, useMap as useMapGL} from 'react-map-gl/maplibre';
 import {useMap} from './MapContext';
-import {useEffect} from 'react';
-import type {MapRef} from 'react-map-gl/maplibre';
+import {useEffect, useState} from 'react';
 
-function loadSvgImage(map: maplibregl.Map, id: string, url: string, size: number = 40) {
-  if (map.hasImage(id)) return;
-  const img = new Image();
-  img.crossOrigin = 'anonymous';
-  img.onload = () => {
-    if (map.hasImage(id)) return;
-    const canvas = document.createElement('canvas');
-    canvas.width = size;
-    canvas.height = size;
-    const ctx = canvas.getContext('2d')!;
-    ctx.drawImage(img, 0, 0, size, size);
-    const imageData = ctx.getImageData(0, 0, size, size);
-    map.addImage(id, {width: size, height: size, data: imageData.data});
-    map.triggerRepaint();
-  };
-  img.src = url;
+function loadSvgImage(map: maplibregl.Map, id: string, url: string, size: number = 40): Promise<void> {
+  return new Promise((resolve) => {
+    if (map.hasImage(id)) { resolve(); return; }
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => {
+      if (map.hasImage(id)) { resolve(); return; }
+      const canvas = document.createElement('canvas');
+      canvas.width = size;
+      canvas.height = size;
+      const ctx = canvas.getContext('2d')!;
+      ctx.drawImage(img, 0, 0, size, size);
+      const imageData = ctx.getImageData(0, 0, size, size);
+      map.addImage(id, {width: size, height: size, data: imageData.data});
+      resolve();
+    };
+    img.onerror = () => resolve();
+    img.src = url;
+  });
 }
 
-export function MapLayers({mapRef}: {mapRef: React.RefObject<MapRef | null>}) {
+export function MapLayers() {
   const {layers, visibleLayers} = useMap();
+  const {current: mapInstance} = useMapGL();
+  const [iconsLoaded, setIconsLoaded] = useState(false);
 
   useEffect(() => {
-    const map = mapRef.current?.getMap();
+    const map = mapInstance?.getMap();
     if (!map) return;
 
-    const addIcons = () => {
-      for (const layer of layers) {
-        if (layer.icon) {
-          loadSvgImage(map, `icon-${layer.id}`, layer.icon);
-        }
-      }
+    const addIcons = async () => {
+      const iconLayers = layers.filter((l) => l.icon);
+      await Promise.all(
+        iconLayers.map((l) => loadSvgImage(map, `icon-${l.id}`, l.icon!))
+      );
+      setIconsLoaded(true);
+      map.triggerRepaint();
     };
 
     if (map.isStyleLoaded()) {
@@ -42,7 +47,7 @@ export function MapLayers({mapRef}: {mapRef: React.RefObject<MapRef | null>}) {
       map.on('style.load', addIcons);
       return () => { map.off('style.load', addIcons); };
     }
-  }, [mapRef, layers]);
+  }, [mapInstance, layers]);
 
   const scalingStops: [number, number][] = [
     [10, 0.5],
@@ -71,6 +76,8 @@ export function MapLayers({mapRef}: {mapRef: React.RefObject<MapRef | null>}) {
         const layerId = `layer-${layer.id}`;
 
         if (layer.icon) {
+          // Don't render symbol layer until icons are loaded
+          if (!iconsLoaded) return null;
           return (
             <Source key={sourceId} id={sourceId} type="geojson" data={layer.geojson}>
               <Layer
