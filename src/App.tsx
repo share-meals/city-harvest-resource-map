@@ -344,7 +344,7 @@ export const App = () => {
 	  <MapProvider
 	    center={center}
 	    layers={allLayers}
-	    maxZoom={16}
+	    maxZoom={18}
 	    minZoom={10}
 	    mapRef={mapRef}>
 	    {!isMobile &&

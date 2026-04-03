@@ -61,18 +61,20 @@ In production, `VITE_DATA_URL` should point directly to the data server (e.g. `h
 The app supports 4 languages via react-i18next:
 
 - English (`en`)
-- Spanish (`es`) - Espanol
-- Chinese (`zh`) - 中文
+- Spanish (`es`) - Español
 - Korean (`ko`) - 한국어
+- Indonesian (`id`) - Bahasa Indonesia
 
-UI translations are in `src/i18n/locales/`. Feature data (food pantry names, hours, notes) is translated server-side and loaded from the localized JSON endpoint.
+Language is auto-detected from the `?lang=` URL parameter (for iframe embedding), then the browser's preferred language, then defaults to English.
+
+UI translations are in `src/i18n/locales/`. Static layer data (CPD, Mobile Markets) has pre-translated GeoJSON files (e.g. `cpds.es.json`). Food pantry/soup kitchen data is translated server-side and loaded from the localized JSON endpoint.
 
 ## Map Layers
 
 | Layer | Source | Color |
 |---|---|---|
-| Community Partner Distributions | `src/data/cpds.json` (static) | Pink |
-| Mobile Markets | `src/data/mms.json` (static) | Green (truck icon) |
+| Community Partner Distributions | `src/data/cpds.json` (static, translated) | Pink |
+| Mobile Markets | `src/data/mms.json` (static, translated) | Green (truck icon) |
 | Food Pantries | Remote API (per language) | Green |
 | Soup Kitchens | Remote API (per language) | Purple |
 
