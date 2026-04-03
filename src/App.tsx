@@ -43,9 +43,18 @@ import {
 
 import './App.scss';
 
-import mms from './data/mms.json';
+import mms_en from './data/mms.json';
+import mms_es from './data/mms.es.json';
+import mms_ko from './data/mms.ko.json';
+import mms_id from './data/mms.id.json';
 import mm_truck from './data/mm_truck.svg';
-import cpds from './data/cpds.json';
+import cpds_en from './data/cpds.json';
+import cpds_es from './data/cpds.es.json';
+import cpds_ko from './data/cpds.ko.json';
+import cpds_id from './data/cpds.id.json';
+
+const mmsByLang: Record<string, any> = {en: mms_en, es: mms_es, ko: mms_ko, id: mms_id};
+const cpdsByLang: Record<string, any> = {en: cpds_en, es: cpds_es, ko: cpds_ko, id: cpds_id};
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -280,7 +289,7 @@ export const App = () => {
     {
       id: 'cpd',
       name: t('layers.cpd'),
-      geojson: cpds as GeoJSON.GeoJSON,
+      geojson: (cpdsByLang[i18n.language] || cpdsByLang.en) as GeoJSON.GeoJSON,
       featureRadius: 10,
       featureWidth: 4,
       fillColor: 'rgba(210, 91, 115, 0.75)',
@@ -290,13 +299,13 @@ export const App = () => {
     {
       id: 'mobile-markets',
       name: t('layers.mobileMarkets'),
-      geojson: mms as GeoJSON.GeoJSON,
+      geojson: (mmsByLang[i18n.language] || mmsByLang.en) as GeoJSON.GeoJSON,
       fillColor: '#006747',
       strokeColor: 'white',
       icon: mm_truck,
       type: 'vector'
     }
-  ], [t]);
+  ], [t, i18n.language]);
 
   const allLayers: MapLayerConfig[] = useMemo(() => [
     ...staticLayers,

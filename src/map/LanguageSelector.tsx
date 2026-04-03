@@ -5,8 +5,8 @@ import {useMap} from './MapContext';
 const languages = [
   {code: 'en', label: 'English'},
   {code: 'es', label: 'Español'},
-  {code: 'zh', label: '中文'},
   {code: 'ko', label: '한국어'},
+  {code: 'id', label: 'Bahasa Indonesia'},
 ];
 
 export function LanguageSelector() {
