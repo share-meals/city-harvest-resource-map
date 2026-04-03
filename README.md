@@ -79,6 +79,10 @@ UI translations are in `src/i18n/locales/`. Static layer data (CPD, Mobile Marke
 | Food Pantries | Remote API (per language) | Green |
 | Soup Kitchens | Remote API (per language) | Purple |
 
+## Geocoder
+
+Searching an address flies the map to the location and places a red pin marker. The geocoder is restricted to New York City addresses.
+
 ## Logging
 
 Two analytics events are logged to `VITE_LOG_FUNCTION_URL`:

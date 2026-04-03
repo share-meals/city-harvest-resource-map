@@ -1,5 +1,5 @@
 import {useCallback, useEffect, useMemo, useRef} from 'react';
-import MapGL, {type MapLayerMouseEvent, type ViewStateChangeEvent} from 'react-map-gl/maplibre';
+import MapGL, {Marker, type MapLayerMouseEvent, type ViewStateChangeEvent} from 'react-map-gl/maplibre';
 import type {MapRef} from 'react-map-gl/maplibre';
 import {useTranslation} from 'react-i18next';
 import {useMap} from './MapContext';
@@ -50,20 +50,26 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
   const layerIdsRef = useRef(layerIds);
   layerIdsRef.current = layerIds;
 
+  const flyingTo = useRef(false);
+
   useEffect(() => {
     const map = mapRef.current?.getMap();
     if (!map || !center.timestamp) return;
+    flyingTo.current = true;
     map.flyTo({
       center: [center.lng, center.lat],
+      zoom: zoom.level,
       duration: 1500,
     });
+    map.once('moveend', () => { flyingTo.current = false; });
   }, [center, mapRef]);
 
   // When zoom is set programmatically (e.g. ZoomButtons, Geocoder), animate to it.
+  // Skip if a flyTo is already in progress (which handles zoom too).
   const programmaticZoom = useRef(false);
   useEffect(() => {
     const map = mapRef.current?.getMap();
-    if (!map || !zoom.timestamp) return;
+    if (!map || !zoom.timestamp || flyingTo.current) return;
     programmaticZoom.current = true;
     map.zoomTo(zoom.level, {duration: 300});
   }, [zoom, mapRef]);
@@ -150,6 +156,18 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
         style={{width: '100%', height: '100%'}}
       >
         <MapLayers />
+        {center.timestamp && (
+          <Marker
+            longitude={center.lng}
+            latitude={center.lat}
+            anchor="bottom"
+          >
+            <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 24 12 24s12-15 12-24c0-6.627-5.373-12-12-12z" fill="#E53935"/>
+              <circle cx="12" cy="12" r="5" fill="white"/>
+            </svg>
+          </Marker>
+        )}
       </MapGL>
       {controls}
     </div>

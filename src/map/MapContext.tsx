@@ -10,7 +10,6 @@ import type {
 
 interface MapContextValue {
   center: TimestampedLatLng;
-  setCenter: (center: TimestampedLatLng) => void;
   clickedFeatures: any[];
   setClickedFeatures: (features: any[]) => void;
   layers: MapLayerConfig[];
@@ -48,7 +47,8 @@ export function MapProvider({
   minZoom,
   mapRef,
 }: MapProviderProps) {
-  const [center, setCenter] = useState<TimestampedLatLng>(initialCenter);
+  const center = initialCenter;
+
   const [clickedFeatures, setClickedFeatures] = useState<any[]>([]);
   const [zoom, setZoom] = useState<TimestampedZoom>({level: 12, timestamp: new Date()});
   const [visibleLayers, setVisibleLayers] = useState<VisibleLayers>(() => {
@@ -76,7 +76,6 @@ export function MapProvider({
     <MapContext.Provider
       value={{
         center,
-        setCenter,
         clickedFeatures,
         setClickedFeatures,
         layers,
