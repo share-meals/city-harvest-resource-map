@@ -88,7 +88,7 @@ export const render = (data: any, t: TFunction, locale: string = 'en') => {
 
   if(data.lastVerified){
     const humanReadable = new Date(data.lastVerified.split('T')[0]);
-    const localeMap: Record<string, string> = {en: 'en-US', es: 'es-ES', zh: 'zh-CN', ko: 'ko-KR'};
+    const localeMap: Record<string, string> = {en: 'en-US', es: 'es-ES', ko: 'ko-KR', id: 'id-ID'};
     const formatter = new Intl.DateTimeFormat(localeMap[locale] || locale, {
       dateStyle: 'medium'
     });

@@ -3,10 +3,10 @@ import {initReactI18next} from 'react-i18next';
 
 import en from './locales/en.json';
 import es from './locales/es.json';
-import zh from './locales/zh.json';
 import ko from './locales/ko.json';
+import id from './locales/id.json';
 
-const SUPPORTED_LANGUAGES = ['en', 'es', 'zh', 'ko'];
+const SUPPORTED_LANGUAGES = ['en', 'es', 'ko', 'id'];
 
 function detectLanguage(): string {
   // 1. Check URL query parameter (?lang=es)
@@ -30,8 +30,8 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {translation: en},
     es: {translation: es},
-    zh: {translation: zh},
     ko: {translation: ko},
+    id: {translation: id},
   },
   lng: detectLanguage(),
   fallbackLng: 'en',
