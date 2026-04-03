@@ -32,7 +32,7 @@ export const PrivacyPolicy = () => {
 	    </IonText>
 	    <IonText>
 		<p>
-		    {t('privacy.summary')} <a id='open-privacy-policy' style={{cursor: 'pointer'}}>{t('privacy.readMore')}</a>
+		    {t('privacy.summary')} <button id='open-privacy-policy' style={{cursor: 'pointer', background: 'none', border: 'none', padding: 0, color: 'inherit', textDecoration: 'underline', font: 'inherit'}}>{t('privacy.readMore')}</button>
 		</p>
 	    </IonText>
 	    <Modal {...{modal}} />
@@ -45,14 +45,15 @@ const Modal: FC<{modal: RefObject<HTMLIonModalElement>}> = ({modal}) => {
     return <IonModal
 	       ref={modal}
 	       trigger='open-privacy-policy'
+	       aria-labelledby='privacy-modal-title'
 	   >
 	<IonHeader className='ion-no-border ion-padding'>
 	    <IonToolbar>
-		<IonTitle>
+		<IonTitle id='privacy-modal-title'>
 		    {t('privacy.modalTitle')}
 		</IonTitle>
 		<IonButtons slot='secondary'>
-		    <IonButton onClick={() => modal.current?.dismiss()}>
+		    <IonButton aria-label={t('aria.close')} onClick={() => modal.current?.dismiss()}>
 			<IonIcon
 			    icon={closeSharp}
 			    slot='icon-only' />

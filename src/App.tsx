@@ -111,14 +111,15 @@ const GeocoderWrapper: React.FC<{
 
 const InfoModal = ({trigger}: {trigger: string}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const {t} = useTranslation();
   useEffect(() => {
     setIsOpen(trigger !== '');
   }, [trigger]);
-  return <IonModal isOpen={isOpen}>
+  return <IonModal isOpen={isOpen} aria-label={t('aria.featureDetails')}>
     <IonHeader>
       <IonToolbar>
 	<IonButtons slot='end'>
-	  <IonButton onClick={() => {setIsOpen(false);}}>
+	  <IonButton aria-label={t('aria.close')} onClick={() => {setIsOpen(false);}}>
 	    <IonIcon slot='icon-only' icon={closeSharp} />
 	  </IonButton>
 	</IonButtons>
@@ -132,11 +133,12 @@ const InfoModal = ({trigger}: {trigger: string}) => {
 
 const LayerTogglesModal = () => {
   const modal = useRef<HTMLIonModalElement>(null);
-  return <IonModal ref={modal} trigger='openLayerTogglesModal'>
+  const {t} = useTranslation();
+  return <IonModal ref={modal} trigger='openLayerTogglesModal' aria-label={t('aria.layerSelection')}>
     <IonHeader>
       <IonToolbar>
 	<IonButtons slot='end'>
-	  <IonButton onClick={() => {modal.current?.dismiss();}}>
+	  <IonButton aria-label={t('aria.close')} onClick={() => {modal.current?.dismiss();}}>
 	    <IonIcon slot='icon-only' icon={closeSharp} />
 	  </IonButton>
 	</IonButtons>
@@ -175,14 +177,14 @@ const GeocoderModal: React.FC<{
 }> = ({setCenter}) => {
   const modal = useRef<HTMLIonModalElement>(null);
   const {t} = useTranslation();
-  return <IonModal ref={modal} trigger='openGeocoderModal'>
+  return <IonModal ref={modal} trigger='openGeocoderModal' aria-labelledby='geocoder-modal-title'>
     <IonHeader>
       <IonToolbar>
-	<IonTitle>
+	<IonTitle id='geocoder-modal-title'>
 	  {t('geocoder.modalTitle')}
 	</IonTitle>
 	<IonButtons slot='end'>
-	  <IonButton onClick={() => {modal.current?.dismiss();}}>
+	  <IonButton aria-label={t('aria.close')} onClick={() => {modal.current?.dismiss();}}>
 	    <IonIcon slot='icon-only' icon={closeSharp} />
 	  </IonButton>
 	</IonButtons>
@@ -196,6 +198,12 @@ const GeocoderModal: React.FC<{
 
 export const App = () => {
   const {t, i18n} = useTranslation();
+
+  // Update <html lang> attribute when language changes
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
+
   const [foodPantries, setFoodPantries] = useState<any>([]);
   const [soupKitchens, setSoupKitchens] = useState<any>([]);
   const [center, setCenter] = useState<any>({
@@ -213,10 +221,10 @@ export const App = () => {
       <ZoomButtons />
     </span>,
     <span className='secondaryButtons' key='secondaryButtons'>
-      <IonButton id='openLayerTogglesModal'>
+      <IonButton id='openLayerTogglesModal' aria-label={t('aria.toggleLayers')}>
 	<IonIcon slot='icon-only' icon={layersSharp} />
       </IonButton>
-      <IonButton id='openGeocoderModal'>
+      <IonButton id='openGeocoderModal' aria-label={t('aria.searchAddress')}>
 	<IonIcon slot='icon-only' icon={searchSharp} />
       </IonButton>
     </span>
