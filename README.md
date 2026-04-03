@@ -25,6 +25,7 @@ Required variables:
 | `VITE_GOOGLE_MAPS_API_KEY` | Google Maps API key (geocoding) |
 | `VITE_LOG_FUNCTION_URL` | Base URL for the logging Cloud Function |
 | `VITE_DATA_URL` | Base URL for food pantry data endpoint |
+| `VITE_DEBUG` | Set to `true` to log analytics to console instead of remote server |
 
 - `.env.development` is loaded during `yarn dev`
 - `.env.production` is loaded during `yarn build`

@@ -52,10 +52,10 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
 
   useEffect(() => {
     const map = mapRef.current?.getMap();
-    if (!map) return;
+    if (!map || !center.timestamp) return;
     map.flyTo({
       center: [center.lng, center.lat],
-      ...(center.timestamp ? {duration: 1500} : {duration: 0}),
+      duration: 1500,
     });
   }, [center, mapRef]);
 
@@ -108,7 +108,9 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
         [e.point.x + 10, e.point.y + 10],
       ];
 
-      const features = map.queryRenderedFeatures(bbox, {layers: layerIdsRef.current});
+      const existingLayers = layerIdsRef.current.filter((id) => map.getLayer(id));
+      if (existingLayers.length === 0) return;
+      const features = map.queryRenderedFeatures(bbox, {layers: existingLayers});
       const parsed = features.map((f) => {
         const props = parseFeatureProperties(f.properties ?? {});
         const id = props.id;
@@ -144,6 +146,7 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
         mapStyle={mapStyle}
         onClick={handleClick}
         onZoomEnd={handleZoomEnd}
+        trackResize={false}
         style={{width: '100%', height: '100%'}}
       >
         <MapLayers />
