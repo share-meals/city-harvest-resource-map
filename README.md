@@ -14,7 +14,7 @@ Copy the example and fill in your values:
 
 ```bash
 cp .env.example .env.development
-cp .env.example .env.production
+cp .env.example .env.live
 ```
 
 Required variables:
@@ -28,7 +28,7 @@ Required variables:
 | `VITE_DEBUG` | Set to `true` to log analytics to console instead of remote server |
 
 - `.env.development` is loaded during `yarn dev`
-- `.env.production` is loaded during `yarn build`
+- `.env.live` is loaded during `yarn build`
 
 ## Development
 
@@ -55,7 +55,7 @@ yarn build
 yarn preview
 ```
 
-In production, `VITE_DATA_URL` should point directly to the data server (e.g. `https://nfa-admin.foodmedcenter.org/file-by-filename`).
+In live, `VITE_DATA_URL` should point directly to the data server (e.g. `https://nfa-admin.foodmedcenter.org/file-by-filename`).
 
 ## Internationalization
 
