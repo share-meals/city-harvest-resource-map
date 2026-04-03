@@ -131,7 +131,7 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
   return (
     <div style={{width: '100%', height: '100%', position: 'relative'}}>
       <MapGL
-        ref={mapRef}
+        ref={mapRef as React.Ref<MapRef>}
         initialViewState={{
           longitude: center.lng,
           latitude: center.lat,

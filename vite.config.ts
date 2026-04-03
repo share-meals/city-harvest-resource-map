@@ -1,4 +1,3 @@
-import legacy from '@vitejs/plugin-legacy'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
@@ -6,8 +5,10 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [
     react(),
-    legacy()
   ],
+  build: {
+    target: 'es2022',
+  },
   server: {
     proxy: {
       '/data': {
