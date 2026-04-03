@@ -209,6 +209,32 @@ const GeocoderModal: React.FC<{
   </IonModal>;
 }
 
+const ENV_MODE = import.meta.env.MODE;
+if (ENV_MODE === 'live') {
+  console.log('Environment: live');
+}
+
+const EnvironmentBanner = () => {
+  if (ENV_MODE === 'live') return null;
+  return (
+    <div style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      zIndex: 99999,
+      background: '#ff9800',
+      color: 'white',
+      textAlign: 'center',
+      fontSize: '12px',
+      padding: '2px 0',
+      fontWeight: 'bold',
+    }}>
+      {ENV_MODE.toUpperCase()}
+    </div>
+  );
+};
+
 export const App = () => {
   const {t, i18n} = useTranslation();
 
@@ -330,6 +356,7 @@ export const App = () => {
   ], [staticLayers, foodPantries, soupKitchens, t]);
 
   return <IonApp>
+    <EnvironmentBanner />
     <IonPage>
       <IonContent>
 	<div style={{height: '100vh', width: '100vw'}}>
