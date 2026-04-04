@@ -23,11 +23,13 @@ function renderTime(timeStr: string, t: TFunction) {
 
 const renderHours = (allHours: any[], t: TFunction) => {
   return allHours.map((hours) => {
-    const days = hours.days ? renderList(hours.days.map((day: string) => t(`days.${day}`))) : t('renderer.unknown');
+    const validDays = hours.days ? hours.days.filter((d: any) => d != null) : [];
+    const days = validDays.length > 0 ? renderList(validDays.map((day: string) => t(`days.${day}`))) : '';
     const time = hours.timeStart ? `${renderTime(hours.timeStart, t)} - ${renderTime(hours.timeEnd, t)}` : t('renderer.allDay');
-    return `${days}  \n${time}${hours.notes ? '  \n' + hours.notes : ''}`;
+    const parts = [days, time, hours.notes].filter(Boolean);
+    return parts.join('  \n');
   })
-  .join('\n\n');;
+  .join('\n\n');
 };
 
 export const render = (data: any, t: TFunction, locale: string = 'en') => {
