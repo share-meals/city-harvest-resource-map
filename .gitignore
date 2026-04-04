@@ -13,13 +13,8 @@
 
 # misc
 .DS_Store
-.env
-.env.local
-.env.development
-.env.live
-.env.development.local
-.env.test.local
-.env.live.local
+.env*
+!.env.example
 /.vscode/*
 !/.vscode/extensions.json
 .idea
