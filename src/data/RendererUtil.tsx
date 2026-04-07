@@ -59,7 +59,8 @@ export const render = (data: any, t: TFunction, locale: string = 'en') => {
   let contacts = [];
 
   if(data.website){
-    contacts.push(`[${t('renderer.website')}](${data.website})`);
+    const websites = data.website.split(',').map((w: string) => w.trim()).filter(Boolean);
+    contacts.push(websites.map((w: string) => `[${w}](${w})`).join('  \n'));
   }
 
   if(data.emailAddresses){
@@ -73,7 +74,7 @@ export const render = (data: any, t: TFunction, locale: string = 'en') => {
     contacts.push(data.phoneNumbers.map((p: {
       phoneNumber: string,
       isPrivate: boolean
-    }) => p.phoneNumber).join('\n'));
+    }) => p.phoneNumber).join('\n\n'));
   }
 
   if(contacts.length > 0){
