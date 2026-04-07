@@ -1,5 +1,5 @@
-import {useCallback, useEffect, useMemo, useRef} from 'react';
-import MapGL, {Marker, type MapLayerMouseEvent, type ViewStateChangeEvent} from 'react-map-gl/maplibre';
+import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import MapGL, {Marker, Source, Layer, type MapLayerMouseEvent, type ViewStateChangeEvent} from 'react-map-gl/maplibre';
 import type {MapRef} from 'react-map-gl/maplibre';
 import {useTranslation} from 'react-i18next';
 import {useMap} from './MapContext';
@@ -12,6 +12,24 @@ interface MapViewProps {
   mapRef: React.RefObject<MapRef | null>;
   onMapClick?: (arg: {data: any[]; lat: number; lng: number}) => void;
   protomapsApiKey: string;
+}
+
+function createCircleGeoJSON(center: [number, number], radiusMeters: number, steps: number = 64): GeoJSON.Feature {
+  const coords: [number, number][] = [];
+  const km = radiusMeters / 1000;
+  for (let i = 0; i <= steps; i++) {
+    const angle = (i / steps) * 2 * Math.PI;
+    const dx = km * Math.cos(angle);
+    const dy = km * Math.sin(angle);
+    const lat = center[1] + (dy / 111.32);
+    const lng = center[0] + (dx / (111.32 * Math.cos(center[1] * Math.PI / 180)));
+    coords.push([lng, lat]);
+  }
+  return {
+    type: 'Feature',
+    geometry: {type: 'Polygon', coordinates: [coords]},
+    properties: {},
+  };
 }
 
 function parseFeatureProperties(properties: Record<string, any>): Record<string, any> {
@@ -49,6 +67,11 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
   const layerIds = useMemo(() => layers.map((l) => `layer-${l.id}`), [layers]);
   const layerIdsRef = useRef(layerIds);
   layerIdsRef.current = layerIds;
+
+  const [clickHighlight, setClickHighlight] = useState<{
+    center: [number, number];
+    radiusMeters: number;
+  } | null>(null);
 
   const flyingTo = useRef(false);
 
@@ -127,6 +150,17 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
       });
       setClickedFeatures(parsed);
 
+      if (parsed.length > 0) {
+        // Convert 10px hitbox to meters at current zoom/latitude
+        const metersPerPx = 156543.03 * Math.cos(e.lngLat.lat * Math.PI / 180) / Math.pow(2, map.getZoom());
+        setClickHighlight({
+          center: [e.lngLat.lng, e.lngLat.lat],
+          radiusMeters: metersPerPx * 10,
+        });
+      } else {
+        setClickHighlight(null);
+      }
+
       if (onMapClick) {
         onMapClick({
           data: parsed,
@@ -167,6 +201,21 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
               <circle cx="12" cy="12" r="5" fill="white"/>
             </svg>
           </Marker>
+        )}
+        {clickHighlight && (
+          <Source
+            id="click-highlight-area"
+            type="geojson"
+            data={createCircleGeoJSON(clickHighlight.center, clickHighlight.radiusMeters)}
+          >
+            <Layer
+              id="click-highlight-circle"
+              type="fill"
+              paint={{
+                'fill-color': 'rgba(25, 118, 210, 0.25)',
+              }}
+            />
+          </Source>
         )}
       </MapGL>
       {controls}
