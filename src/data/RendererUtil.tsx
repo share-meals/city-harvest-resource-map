@@ -32,10 +32,27 @@ const renderHours = (allHours: any[], t: TFunction) => {
   .join('\n\n');
 };
 
+export const formatAddress = (data: any): string => {
+  return `${data.streetAddress}\n${data.addressLocality}, ${data.addressRegion} ${data.postalCode}`;
+};
+
+export const getWebsites = (data: any): string[] => {
+  if (!data.website) return [];
+  return data.website.split(',').map((w: string) => w.trim()).filter(Boolean);
+};
+
+export const getPhoneNumbers = (data: any): string[] => {
+  if (!data.phoneNumbers) return [];
+  return data.phoneNumbers.map((p: {phoneNumber: string}) => p.phoneNumber).filter(Boolean);
+};
+
+export const getEmailAddresses = (data: any): string[] => {
+  if (!data.emailAddresses) return [];
+  return data.emailAddresses.map((e: {email: string}) => e.email).filter(Boolean);
+};
+
 export const render = (data: any, t: TFunction, locale: string = 'en') => {
   let payload = [];
-  payload.push(`# ${data.name}`);
-  payload.push(`${data.streetAddress}\n${data.addressLocality}, ${data.addressRegion} ${data.postalCode}`);
 
   if(data.dietaryAccomodations){
     payload.push(t('renderer.dietaryAccommodations', {list: `**${renderList(data.dietaryAccomodations)}**`}));
@@ -54,33 +71,6 @@ export const render = (data: any, t: TFunction, locale: string = 'en') => {
     payload.push('---');
     payload.push(t('renderer.hours'));
     payload.push(renderHours(data.hours, t));
-  }
-
-  let contacts = [];
-
-  if(data.website){
-    const websites = data.website.split(',').map((w: string) => w.trim()).filter(Boolean);
-    contacts.push(websites.map((w: string) => `[${w}](${w})`).join('  \n'));
-  }
-
-  if(data.emailAddresses){
-    contacts.push(data.emailAddresses.map((e: {
-      email: string,
-      isPrivate: boolean
-    }) => `[${e.email}](mailto:${e.email})`).join('\n'));
-  }
-
-  if(data.phoneNumbers){
-    contacts.push(data.phoneNumbers.map((p: {
-      phoneNumber: string,
-      isPrivate: boolean
-    }) => p.phoneNumber).join('\n\n'));
-  }
-
-  if(contacts.length > 0){
-    payload.push('---');
-    payload.push(t('renderer.contactInfo'));
-    payload.push(contacts.join('\n\n'));
   }
 
   if(data.notes){

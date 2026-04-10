@@ -54,6 +54,11 @@
     "featureDetails": "장소 세부 정보",
     "layerSelection": "레이어 선택",
     "map": "식품 자원 지도",
-    "layerTogglesLegend": "지도 레이어"
+    "layerTogglesLegend": "지도 레이어",
+    "copyAddress": "주소 복사",
+    "copyWebsite": "웹사이트 복사",
+    "copyEmail": "이메일 복사",
+    "copyPhone": "전화번호 복사",
+    "copied": "복사됨"
   }
 }

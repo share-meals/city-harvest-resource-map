@@ -54,6 +54,11 @@
     "featureDetails": "Detail lokasi",
     "layerSelection": "Pilihan lapisan",
     "map": "Peta sumber daya makanan",
-    "layerTogglesLegend": "Lapisan peta"
+    "layerTogglesLegend": "Lapisan peta",
+    "copyAddress": "Salin alamat",
+    "copyWebsite": "Salin situs web",
+    "copyEmail": "Salin email",
+    "copyPhone": "Salin nomor telepon",
+    "copied": "Disalin"
   }
 }
