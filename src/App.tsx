@@ -27,6 +27,7 @@ import type {MapRef} from 'react-map-gl/maplibre';
 
 import {ZoomButtons} from './ZoomButtons';
 import {Renderer} from './data/Renderer';
+import {logToServer} from './logging';
 import {
   useEffect,
   useMemo,
@@ -159,22 +160,6 @@ const LayerTogglesModal = () => {
   </IonModal>;
 }
 
-const DEBUG = import.meta.env.VITE_DEBUG === 'true';
-
-const logToServer = (endpoint: string, payload: Record<string, any>) => {
-  if (DEBUG) {
-    console.log(`[DEBUG] ${endpoint}`, payload);
-    return;
-  }
-  fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}${endpoint}`, {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(payload),
-  }).catch((error) => {
-    console.log(error);
-  });
-};
-
 const logGeocode = (result: google.maps.GeocoderResult, language: string) => {
   logToServer('/log-geocode', {
     address: result.formatted_address,
@@ -268,14 +253,8 @@ export const App = () => {
       </IonButton>
     </span>
   ];
-  const onMapClick = ({data, lat, lng}: {data: any, lat: number, lng: number}) => {
-    if(data.length > 0
-       && data.length <= 5){
-      for(const d of data){
-	logToServer('/log-feature-click', {id: d.id, lat, lng, language: i18n.language});
-      }
-    }
-    if(isMobile){
+  const onMapClick = ({data}: {data: any, lat: number, lng: number}) => {
+    if(isMobile && data.length > 0){
       setInfoTrigger((new Date()).toString());
     }
   };
