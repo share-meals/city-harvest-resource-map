@@ -125,9 +125,10 @@ const InfoModal = ({trigger}: {trigger: string}) => {
   useEffect(() => {
     setIsOpen(trigger !== '');
   }, [trigger]);
-  return <IonModal isOpen={isOpen} aria-label={t('aria.featureDetails')}>
-    <IonHeader>
+  return <IonModal isOpen={isOpen} aria-labelledby='info-modal-title'>
+    <IonHeader className='ion-no-border'>
       <IonToolbar>
+	<IonTitle id='info-modal-title'>{t('aria.featureDetails')}</IonTitle>
 	<IonButtons slot='end'>
 	  <IonButton aria-label={t('aria.close')} onClick={() => {setIsOpen(false);}}>
 	    <IonIcon slot='icon-only' icon={closeSharp} />
@@ -144,9 +145,10 @@ const InfoModal = ({trigger}: {trigger: string}) => {
 const LayerTogglesModal = () => {
   const modal = useRef<HTMLIonModalElement>(null);
   const {t} = useTranslation();
-  return <IonModal ref={modal} trigger='openLayerTogglesModal' aria-label={t('aria.layerSelection')}>
-    <IonHeader>
+  return <IonModal ref={modal} trigger='openLayerTogglesModal' aria-labelledby='layer-toggles-modal-title'>
+    <IonHeader className='ion-no-border'>
       <IonToolbar>
+	<IonTitle id='layer-toggles-modal-title'>{t('aria.layerSelection')}</IonTitle>
 	<IonButtons slot='end'>
 	  <IonButton aria-label={t('aria.close')} onClick={() => {modal.current?.dismiss();}}>
 	    <IonIcon slot='icon-only' icon={closeSharp} />
@@ -176,7 +178,7 @@ const GeocoderModal: React.FC<{
   const modal = useRef<HTMLIonModalElement>(null);
   const {t} = useTranslation();
   return <IonModal ref={modal} trigger='openGeocoderModal' aria-labelledby='geocoder-modal-title'>
-    <IonHeader>
+    <IonHeader className='ion-no-border'>
       <IonToolbar>
 	<IonTitle id='geocoder-modal-title'>
 	  {t('geocoder.modalTitle')}

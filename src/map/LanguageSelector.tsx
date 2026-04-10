@@ -23,6 +23,7 @@ export function LanguageSelector() {
         setClickedFeatures([]);
       }}
       interface="popover"
+      style={{marginBottom: '32px'}}
     >
       {languages.map((lang) => (
         <IonSelectOption key={lang.code} value={lang.code}>
