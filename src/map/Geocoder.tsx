@@ -1,6 +1,7 @@
 import {useRef, useCallback} from 'react';
 import {useJsApiLoader} from '@react-google-maps/api';
-import {IonInput, IonButton, IonSpinner} from '@ionic/react';
+import {IonInput, IonButton, IonIcon, IonSpinner, IonText} from '@ionic/react';
+import {searchSharp} from 'ionicons/icons';
 import {useTranslation} from 'react-i18next';
 
 const LIBRARIES: ('places')[] = ['places'];
@@ -51,19 +52,24 @@ export function Geocoder({apiKey, components, onGeocode, helperText}: GeocoderPr
 
   return (
     <div>
-      <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
+      {helperText && (
+        <IonText>
+          <p className='geocoder-helper-text'>{helperText}</p>
+        </IonText>
+      )}
+      <div style={{display: 'flex', alignItems: 'center', gap: '8px', width: '100%', marginBottom: '32px'}}>
         <IonInput
           ref={inputRef}
-          label={helperText}
-          labelPlacement="stacked"
+          aria-label={t('geocoder.placeholder')}
           placeholder={t('geocoder.placeholder')}
-          style={{flex: 1}}
+          fill="outline"
+          style={{flex: '1 1 0', minWidth: 0}}
           onKeyDown={(e) => {
             if (e.key === 'Enter') handleGeocode();
           }}
         />
-        <IonButton onClick={handleGeocode}>
-          {t('geocoder.search')}
+        <IonButton aria-label={t('geocoder.search')} style={{flexShrink: 0}} onClick={handleGeocode}>
+          <IonIcon slot='icon-only' icon={searchSharp} />
         </IonButton>
       </div>
     </div>

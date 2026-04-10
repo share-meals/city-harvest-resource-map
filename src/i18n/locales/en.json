@@ -54,6 +54,11 @@
     "featureDetails": "Location details",
     "layerSelection": "Layer selection",
     "map": "Food resource map",
-    "layerTogglesLegend": "Map layers"
+    "layerTogglesLegend": "Map layers",
+    "copyAddress": "Copy address",
+    "copyWebsite": "Copy website",
+    "copyEmail": "Copy email",
+    "copyPhone": "Copy phone number",
+    "copied": "Copied"
   }
 }

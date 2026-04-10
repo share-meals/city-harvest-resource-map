@@ -54,6 +54,11 @@
     "featureDetails": "Detalles del lugar",
     "layerSelection": "Selección de capas",
     "map": "Mapa de recursos alimentarios",
-    "layerTogglesLegend": "Capas del mapa"
+    "layerTogglesLegend": "Capas del mapa",
+    "copyAddress": "Copiar dirección",
+    "copyWebsite": "Copiar sitio web",
+    "copyEmail": "Copiar correo electrónico",
+    "copyPhone": "Copiar número de teléfono",
+    "copied": "Copiado"
   }
 }

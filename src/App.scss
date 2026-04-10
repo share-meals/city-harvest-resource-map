@@ -40,5 +40,15 @@
 
 hr {
     border-top: 1px solid #ccc !important;
-    
+
+}
+
+.geocoder-helper-text {
+    margin-top: 32px;
+}
+
+@media (max-width: 576px){
+    .geocoder-helper-text {
+	margin-top: 0;
+    }
 }

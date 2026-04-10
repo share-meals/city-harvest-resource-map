@@ -27,6 +27,7 @@ import type {MapRef} from 'react-map-gl/maplibre';
 
 import {ZoomButtons} from './ZoomButtons';
 import {Renderer} from './data/Renderer';
+import {logToServer} from './logging';
 import {
   useEffect,
   useMemo,
@@ -124,9 +125,10 @@ const InfoModal = ({trigger}: {trigger: string}) => {
   useEffect(() => {
     setIsOpen(trigger !== '');
   }, [trigger]);
-  return <IonModal isOpen={isOpen} aria-label={t('aria.featureDetails')}>
-    <IonHeader>
+  return <IonModal isOpen={isOpen} aria-labelledby='info-modal-title'>
+    <IonHeader className='ion-no-border'>
       <IonToolbar>
+	<IonTitle id='info-modal-title'>{t('aria.featureDetails')}</IonTitle>
 	<IonButtons slot='end'>
 	  <IonButton aria-label={t('aria.close')} onClick={() => {setIsOpen(false);}}>
 	    <IonIcon slot='icon-only' icon={closeSharp} />
@@ -143,9 +145,10 @@ const InfoModal = ({trigger}: {trigger: string}) => {
 const LayerTogglesModal = () => {
   const modal = useRef<HTMLIonModalElement>(null);
   const {t} = useTranslation();
-  return <IonModal ref={modal} trigger='openLayerTogglesModal' aria-label={t('aria.layerSelection')}>
-    <IonHeader>
+  return <IonModal ref={modal} trigger='openLayerTogglesModal' aria-labelledby='layer-toggles-modal-title'>
+    <IonHeader className='ion-no-border'>
       <IonToolbar>
+	<IonTitle id='layer-toggles-modal-title'>{t('aria.layerSelection')}</IonTitle>
 	<IonButtons slot='end'>
 	  <IonButton aria-label={t('aria.close')} onClick={() => {modal.current?.dismiss();}}>
 	    <IonIcon slot='icon-only' icon={closeSharp} />
@@ -158,22 +161,6 @@ const LayerTogglesModal = () => {
     </IonContent>
   </IonModal>;
 }
-
-const DEBUG = import.meta.env.VITE_DEBUG === 'true';
-
-const logToServer = (endpoint: string, payload: Record<string, any>) => {
-  if (DEBUG) {
-    console.log(`[DEBUG] ${endpoint}`, payload);
-    return;
-  }
-  fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}${endpoint}`, {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(payload),
-  }).catch((error) => {
-    console.log(error);
-  });
-};
 
 const logGeocode = (result: google.maps.GeocoderResult, language: string) => {
   logToServer('/log-geocode', {
@@ -191,7 +178,7 @@ const GeocoderModal: React.FC<{
   const modal = useRef<HTMLIonModalElement>(null);
   const {t} = useTranslation();
   return <IonModal ref={modal} trigger='openGeocoderModal' aria-labelledby='geocoder-modal-title'>
-    <IonHeader>
+    <IonHeader className='ion-no-border'>
       <IonToolbar>
 	<IonTitle id='geocoder-modal-title'>
 	  {t('geocoder.modalTitle')}
@@ -268,14 +255,8 @@ export const App = () => {
       </IonButton>
     </span>
   ];
-  const onMapClick = ({data, lat, lng}: {data: any, lat: number, lng: number}) => {
-    if(data.length > 0
-       && data.length <= 5){
-      for(const d of data){
-	logToServer('/log-feature-click', {id: d.id, lat, lng, language: i18n.language});
-      }
-    }
-    if(isMobile){
+  const onMapClick = ({data}: {data: any, lat: number, lng: number}) => {
+    if(isMobile && data.length > 0){
       setInfoTrigger((new Date()).toString());
     }
   };
