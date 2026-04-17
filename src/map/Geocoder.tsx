@@ -14,9 +14,10 @@ interface GeocoderProps {
   };
   onGeocode: (results: google.maps.GeocoderResult[]) => void;
   helperText?: string;
+  language?: string;
 }
 
-export function Geocoder({apiKey, components, onGeocode, helperText}: GeocoderProps) {
+export function Geocoder({apiKey, components, onGeocode, helperText, language}: GeocoderProps) {
   const {isLoaded} = useJsApiLoader({
     googleMapsApiKey: apiKey,
     libraries: LIBRARIES,
@@ -36,15 +37,20 @@ export function Geocoder({apiKey, components, onGeocode, helperText}: GeocoderPr
       componentRestrictions.locality = components.locality;
     }
 
+    const request: google.maps.GeocoderRequest = {address, componentRestrictions};
+    if (language) {
+      request.language = language;
+    }
+
     geocoder.geocode(
-      {address, componentRestrictions},
+      request,
       (results, status) => {
         if (status === 'OK' && results && results.length > 0) {
           onGeocode(results);
         }
       },
     );
-  }, [components, onGeocode]);
+  }, [components, onGeocode, language]);
 
   const {t} = useTranslation();
 
