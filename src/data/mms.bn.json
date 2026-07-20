@@ -1,0 +1,338 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92025045584433,
+          40.82167210786891
+        ]
+      },
+      "properties": {
+        "name": "City Harvest Mobile Market, Melrose",
+        "streetAddress": "286 E 156th St, at the Classic Center",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10451",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            -73.92025045584433,
+            40.82167210786891
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              null
+            ],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
+            "notes": "প্রতি মাসে ২ দিন ও ৪ম বুধবার"
+          }
+        ],
+        "notes": "- খাবার পেয়ে নিশ্চয়ই ব্রক্সের বাসিন্দা"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01912045298224,
+          40.64859633888526
+        ]
+      },
+      "properties": {
+        "name": "City Harvest Mobile Market, Sunset Park",
+        "streetAddress": "City Harvest Food Rescue Center, 52nd St and 1st Avenue",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11232",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            -74.01912045298224,
+            40.64859633888526
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              null
+            ],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
+            "notes": "প্রতি মাসে শুধুমাত্র ২ম শুক্রবার"
+          }
+        ],
+        "notes": "- খাবার পেতে ব্রুকলিনের বাসিন্দা হতে হবে"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94461675532463,
+          40.75572388187865
+        ]
+      },
+      "properties": {
+        "name": "City Harvest Mobile Market, Queensbridge",
+        "streetAddress": "Basketball court directly behind the Jacob A. Riis Neighborhood Settlement House at 40-07 Vernon Boulevard",
+        "addressLocality": "Queens",
+        "addressRegion": "NY",
+        "postalCode": "11101",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            -73.94461675532463,
+            40.75572388187865
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              null
+            ],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
+            "notes": "প্রতি মাসে মাত্র ১ দিন ও ৩য় শনিবার"
+          }
+        ],
+        "notes": "- খাবার পাওয়া একজন রানী হতে হবে"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9418728744004,
+          40.83101156812198
+        ]
+      },
+      "properties": {
+        "name": "City Harvest Mobile Market, Prince Hall",
+        "streetAddress": "Prince Hall Masonic Temple, 454 W 155th St, near the corner of St. Nicholas Avenue",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10032",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            -73.9418728744004,
+            40.83101156812198
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              null
+            ],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
+            "notes": "প্রতি মাসে শুধুমাত্র দ্বিতীয় রবিবার"
+          }
+        ],
+        "notes": "- খাবার পাওয়াটা নিশ্চয়ই ম্যানহ্যাটেনের বাসিন্দা"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93326110863056,
+          40.77275790484195
+        ]
+      },
+      "properties": {
+        "name": "City Harvest Mobile Market, Astoria",
+        "streetAddress": "Basketball court off of Astoria Boulevard, in the Astoria Houses",
+        "addressLocality": "Queens",
+        "addressRegion": "NY",
+        "postalCode": "11102",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            -73.93326110863056,
+            40.77275790484195
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              null
+            ],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
+            "notes": "প্রতি মাসে মাত্র ১ দিন ও ৩য় শনিবার"
+          }
+        ],
+        "notes": "- খাবার পাওয়া একজন রানী হতে হবে"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92396613706121,
+          40.860276796509666
+        ]
+      },
+      "properties": {
+        "name": "City Harvest Mobile Market, Washington Heights/Inwood",
+        "streetAddress": "Nagle Ave & 10th Ave on Dyckman St",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10034",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            -73.92396613706121,
+            40.860276796509666
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              null
+            ],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
+            "notes": "প্রতি মাসে শুধুমাত্র ২ দিন ও ৪ম শনিবার"
+          }
+        ],
+        "notes": "- খাবার পাওয়াটা নিশ্চয়ই ম্যানহ্যাটেনের বাসিন্দা"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.081849,
+          40.621053
+        ]
+      },
+      "properties": {
+        "name": "City Harvest Mobile Market, Stapleton",
+        "streetAddress": "Corner of Warren St. (Cheryl White) and Hill St.",
+        "addressLocality": "Staten Island",
+        "addressRegion": "NY",
+        "postalCode": "10304",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            -74.081849,
+            40.621053
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              null
+            ],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
+            "notes": "প্রতি মাসে ১টা মঙ্গলবার ও ৩য় শনিবার"
+          }
+        ],
+        "notes": "- হতে পারে একটা স্টেটস দ্বীপবাসী খাবার পেতে"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94612087257494,
+          40.696197243224255
+        ]
+      },
+      "properties": {
+        "name": "City Harvest Mobile Market, Bed Stuy",
+        "streetAddress": "Handball court of the Tompkins Houses on Myrtle Avenue, between Throop and Tompkins Avenues",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11206",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            -73.94612087257494,
+            40.696197243224255
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              null
+            ],
+            "timeStart": "9:30",
+            "timeEnd": "13:30",
+            "notes": "প্রতি মাসে ৩ দিন ও ১ম শনিবার"
+          }
+        ],
+        "notes": "- খাবার পেতে ব্রুকলিনের বাসিন্দা হতে হবে"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90975084005572,
+          40.81520313463588
+        ]
+      },
+      "properties": {
+        "name": "City Harvest Mobile Market, St. Mary's",
+        "streetAddress": "Parking Lot Adjacent to 595 Trinity Ave",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10455",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            -73.90975084005572,
+            40.81520313463588
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              null
+            ],
+            "timeStart": "9:30",
+            "timeEnd": "11:30",
+            "notes": "প্রতি মাসে ৪ মঙ্গলবার ও ২য় শনিবার"
+          }
+        ],
+        "notes": "- খাবার পেয়ে নিশ্চয়ই ব্রক্সের বাসিন্দা"
+      }
+    }
+  ]
+}

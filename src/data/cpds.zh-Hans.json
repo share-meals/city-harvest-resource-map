@@ -1,0 +1,649 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95827712883619,
+          40.66484362915894
+        ]
+      },
+      "properties": {
+        "name": "Ebbets Field Houses – Crown Heights (Brooklyn)",
+        "streetAddress": "Courtyard inside the Ebbets Field Apartment Houses - 1720 Bedford Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11225",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "9:30:00",
+            "timeEnd": "12:00:00",
+            "notes": "每个月的第一个星期二"
+          }
+        ],
+        "notes": "- 社区伙伴-Ebbets实地代际中心\n- 2015年10月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8674754435212,
+          40.66821779808902
+        ]
+      },
+      "properties": {
+        "name": "Pink Houses NYCHA – East New York (Brooklyn)",
+        "streetAddress": "Pink Houses parking lot behind 2628 Linden Blvd",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11208",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "每个月只有第二和第四个星期二"
+          }
+        ],
+        "notes": "- 社区伙伴 -- -- 河流基金\n- 2016年8月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97904995701182,
+          40.716975826029675
+        ]
+      },
+      "properties": {
+        "name": "Grand Street Settlement – Lower East Side (Manhattan)",
+        "streetAddress": "72 Columbia Street",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10002",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Mo"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00"
+          }
+        ],
+        "notes": "- 社区伙伴-大街道定居点\n- 2017年1月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.81893674351963,
+          40.758094419882205
+        ]
+      },
+      "properties": {
+        "name": "YWCA – Flushing (Queens)",
+        "streetAddress": "42-07 Parsons Blvd.",
+        "addressLocality": "Flushing",
+        "addressRegion": "NY",
+        "postalCode": "11355",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "14:00:00"
+          }
+        ],
+        "notes": "- 社区伙伴 -- -- 基督教女青年会\n- 2017年4月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99078500119481,
+          40.5998714481062
+        ]
+      },
+      "properties": {
+        "name": "Bensonhurst – (Brooklyn)",
+        "streetAddress": "2336 86th St",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11214",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "每个月的第1个星期四和第3个星期四"
+          }
+        ],
+        "notes": "- 社区伙伴-健康基本协会\n- 2018年6月开放\n"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95597998570271,
+          40.59899914418679
+        ]
+      },
+      "properties": {
+        "name": "Sheepshead Bay – (Brooklyn)",
+        "streetAddress": "Sidewalk on E 16 St - 1602 Avenue U",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11229",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Fr"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "每个月的第4个星期五"
+          }
+        ],
+        "notes": "- 社区伙伴-健康基本协会\n- 2018年10月开放\n- 这是一个直接分发网站."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9060831011938,
+          40.661146680563355
+        ]
+      },
+      "properties": {
+        "name": "Brownsville – (Brooklyn)",
+        "streetAddress": "Salvation Army - Brownsville – 280 Riverdale Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11212",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Fr"
+            ],
+            "timeStart": "13:00:00",
+            "timeEnd": "15:00:00",
+            "notes": "每个月的第1个和第3个星期五"
+          }
+        ],
+        "notes": "- 社区伙伴-救世军\n- 2018年11月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88871024352132,
+          40.6673365745202
+        ]
+      },
+      "properties": {
+        "name": "East New York – (Brooklyn)",
+        "streetAddress": "Fellowship Baptist Church – 509 Van Siclen Avenue",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11207",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "9:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "每个月的第2个星期二和第4个星期二"
+          }
+        ],
+        "notes": "- 社区伙伴 -- -- 浸会联谊会\n- 2019年5月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98679224351926,
+          40.77457266970479
+        ]
+      },
+      "properties": {
+        "name": "Upper West Side – (Manhattan)",
+        "streetAddress": "Sidewalk in front of Lincoln Square Neighborhood Center - 250 W 65th St",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10023",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "每个月只有第2和第4个星期四"
+          }
+        ],
+        "notes": "- 社区伙伴-林肯广场居民区中心和青少年食品正义组织"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.84647800119048,
+          40.842795035796264
+        ]
+      },
+      "properties": {
+        "name": "Westchester Square – (Bronx)",
+        "streetAddress": "Harvest Fields Community Church - 2626 East Tremont Avenue",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10461",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00"
+          }
+        ],
+        "notes": "- 社区伙伴 -- -- 基督家庭食品分配方案\n- 2019年9月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.78485683003126,
+          40.59368835262741
+        ]
+      },
+      "properties": {
+        "name": "Far Rockaway – (Queens)",
+        "streetAddress": "Social Center – Oceanside Apartments (NYCHA) – 339 Beach 54 St",
+        "addressLocality": "Arverne",
+        "addressRegion": "NY",
+        "postalCode": "11692",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Mo"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "每个月只有第二和第四个星期一"
+          }
+        ],
+        "notes": "- 社区伙伴 -- -- 多丽丝·麦克劳克林 -- -- 洋边公寓(纽约)\n- 2020年3月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93695723002686,
+          40.832081960133344
+        ]
+      },
+      "properties": {
+        "name": "Harlem – (Manhattan)",
+        "streetAddress": "Community Center – 3005 Frederick Douglass Blvd",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10039",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00",
+            "notes": "每个月的第1和3个星期二"
+          }
+        ],
+        "notes": "- 社区伙伴 -- -- 波罗地塔居民协会\n- 2020年7月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85795173002607,
+          40.8809745537125
+        ]
+      },
+      "properties": {
+        "name": "Williamsbridge – (Bronx)",
+        "streetAddress": "North Bronx SDA Church – 3743 Bronxwood Avenue",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10469",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00"
+          }
+        ],
+        "notes": "- 社区伙伴-北布朗克SDA教堂\n- 2020年8月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88776680119017,
+          40.85863770036734
+        ]
+      },
+      "properties": {
+        "name": "North Bronx (Little Italy)",
+        "streetAddress": "Madison Square Boys & Girls Club – Grimm Clubhouse – 543 E 189 st",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10458",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [],
+        "notes": "- 社区伙伴-麦迪逊广场男孩女孩俱乐部\n- 2020年9月开放\n- 请打电话(718)733-5500 索取更多信息"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96528114351888,
+          40.796437804068034
+        ]
+      },
+      "properties": {
+        "name": "Upper West Side 2 – (Manhattan)",
+        "streetAddress": "Douglass Houses NYCHA – 830 Columbus Avenue",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10025",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00",
+            "notes": "每个月只有第2和第4个星期四"
+          }
+        ],
+        "notes": "- 社区伙伴-道格拉斯住房居民委员会\n- 2020年9月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95548827235777,
+          40.64918511150437
+        ]
+      },
+      "properties": {
+        "name": "Flatbush (Brooklyn)",
+        "streetAddress": "Madison Square Boys & Girls Club – Thomas S. Murphy Clubhouse – 2245 Bedford Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11226",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [],
+        "notes": "- 社区伙伴-麦迪逊广场男孩女孩俱乐部\n- 2021年6月开放\n- 请打电话(718)462-6100 索取更多信息"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.75162245886739,
+          40.59415629910103
+        ]
+      },
+      "properties": {
+        "name": "Far Rockaway 2 (Queens)",
+        "streetAddress": "Ocean Park Apartments – 125 Beach 17 street – Far Rockaway, NY 11691",
+        "addressLocality": "Far Rockaway",
+        "addressRegion": "NY",
+        "postalCode": "11691",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "每个月的第三个星期三"
+          }
+        ],
+        "notes": "- 社区伙伴 -- -- 相关负担得起的基金会\n- 2021年9月开放"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14401037235919,
+          40.569936970461605
+        ]
+      },
+      "properties": {
+        "name": "Staten Island Community Partner Distribution",
+        "streetAddress": "Knights of Columbus – 397 Clarke Avenue",
+        "addressLocality": "Staten Island",
+        "addressRegion": "NY",
+        "postalCode": "10306",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "就每个月的第1和3个星期四"
+          }
+        ],
+        "notes": "- 社区伙伴-人人都吃SI公司,\n- 2022年7月开放"
+      }
+    }
+  ]
+}
