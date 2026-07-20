@@ -1,0 +1,68 @@
+{
+  "layers": {
+    "cpd": "Distributions des partenaires communautaires",
+    "mobileMarkets": "Marchés mobiles",
+    "foodPantries": "Pâtes alimentaires",
+    "soupKitchens": "Cuisines de soupe"
+  },
+  "geocoder": {
+    "placeholder": "Saisissez une adresse",
+    "search": "Rechercher",
+    "helperText": "Pour trouver de la nourriture gratuite près de chez vous, veuillez entrer votre adresse, votre ville et votre code postal",
+    "modalTitle": "Aller à une adresse"
+  },
+  "days": {
+    "Su": "Dimanches",
+    "Mo": "Lundis",
+    "Tu": "Mardis",
+    "We": "Mercredis",
+    "Th": "Jeudis",
+    "Fr": "Vendredis",
+    "Sa": "Samedis"
+  },
+  "renderer": {
+    "unknown": "inconnu",
+    "allDay": "Toute la journée",
+    "am": "AM",
+    "pm": "PM",
+    "dietaryAccommodations": "Cet endroit a **{list}}** nourriture.",
+    "idRequired": "** L'identification est requise**",
+    "idNotRequired": "**L'ID n'est pas requis**",
+    "hours": "**Heures**",
+    "contactInfo": "**Coordonnées**",
+    "notes": "**Notes**",
+    "lastVerified": "Dernière vérification : {{date}}",
+    "pageOf": "{{page}} de {{total}}",
+    "website": "Site Web"
+  },
+  "privacy": {
+    "title": "Avis de collecte de données importantes pour les utilisateurs de cartes d'accès aux aliments",
+    "summary": "Votre vie privée compte : le Centre pour les aliments en tant que médecine et longévité et City Harvest collecte uniquement des données anonymes et agrégées de la carte d'accès aux aliments. Aucune information personnalisée n'est utilisée ou stockée, assurant votre confidentialité. Ces données facilitent la recherche et améliorent l'accès aux aliments sans utilisation de cookies ou de stockage local.",
+    "readMore": "Lire plus.",
+    "modalTitle": "Politique de confidentialité",
+    "body": "Nous voulons assurer la transparence et la clarté des pratiques de collecte de données liées à la carte d'accès aux aliments présentée sur notre site Web. Le Centre pour l'alimentation en tant que médecine et longévité et City Harvest s'engage à améliorer l'accès aux aliments et à mener des recherches précieuses au profit de notre communauté. Pour y parvenir, nous recueillons des données agrégées anonymes, et nous tenons à souligner que votre vie privée et vos renseignements personnels demeurent essentiels pour nous.\n\n** Collecte de données et utilisation**\n\n- ** Données agrégées anonymes seulement** : Les données recueillies auprès des utilisateurs de la carte d'accès aux aliments sont entièrement anonymes et agrégées. Cela signifie qu'aucune information personnelle identifiable (IPI) ne sera associée aux données collectées. Nous ne nous intéressons qu'aux modèles, aux tendances et aux perspectives générales pour améliorer l'accès aux aliments.\n- **Aucun renseignement personnalisé** : Nous voulons vous assurer que nous ne recueillons, ne stockons ou n'utilisons aucune information personnalisée via la carte d'accès aux aliments. Votre vie privée est notre priorité, et nous avons pris des mesures pour nous assurer qu'aucune information personnelle ne sera liée aux données que vous fournissez.\n- **Recherche et amélioration** : Le but premier de la collecte de ces données est de faire de la recherche et d'améliorer l'accès aux aliments dans notre collectivité. En analysant les données agrégées, nous pouvons cerner les domaines à améliorer, cibler efficacement les ressources et élaborer des stratégies pour apporter des changements positifs.\n- **Aucuns cookies ni données locales**: Notre site Web n'utilise pas de cookies ni ne recueille aucune information de votre ordinateur ou de votre utilisation du site. Vous pouvez utiliser la carte d'accès aux aliments sans vous soucier des données stockées localement ou sur votre appareil.\n\nSoyez assuré que notre engagement en matière de confidentialité s'étend à tous les aspects de notre processus de collecte et d'analyse de données. Nous respectons des normes éthiques strictes et des exigences légales pour veiller à ce que votre confiance en nous soit bien placée.\n\nMerci d'avoir participé à nos efforts pour améliorer l'accès à la nourriture pour tous dans notre communauté. Si vous avez des questions ou des préoccupations au sujet de nos pratiques en matière de données, n'hésitez pas à nous contacter par les coordonnées fournies."
+  },
+  "language": "Langue",
+  "aria": {
+    "close": "Fermer",
+    "zoomIn": "Zoom dans",
+    "zoomOut": "Zoom arrière",
+    "toggleLayers": "Basculer les calques",
+    "searchAddress": "Rechercher une adresse",
+    "previousPage": "Résultat précédent",
+    "nextPage": "Résultat suivant",
+    "featureDetails": "Détails de l'emplacement",
+    "layerSelection": "Sélection des calques",
+    "map": "Carte des ressources alimentaires",
+    "layerTogglesLegend": "Couches de cartes",
+    "copyAddress": "Copier l'adresse",
+    "copyWebsite": "Copier le site Web",
+    "copyEmail": "Copier le courriel",
+    "copyPhone": "Copier le numéro de téléphone",
+    "copied": "Copies"
+  },
+  "data": {
+    "fallbackToEnglish": "Les données de \"{lang}}\" ne sont pas encore disponibles. Je montre l'anglais.",
+    "loadFailed": "Impossible de charger les données de garde-manger. Veuillez réessayer plus tard."
+  }
+}

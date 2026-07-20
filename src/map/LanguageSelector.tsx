@@ -2,11 +2,20 @@ import {IonSelect, IonSelectOption} from '@ionic/react';
 import {useTranslation} from 'react-i18next';
 import {useMap} from './MapContext';
 
+// Order: English first, then alphabetized by English name.
+// TODO: add Haitian Creole (`ht`) once we have UI + data translation for it.
 const languages = [
-  {code: 'en', label: 'English', flag: '🇺🇸'},
-  {code: 'es', label: 'Español', flag: '🇪🇸'},
-  {code: 'ko', label: '한국어', flag: '🇰🇷'},
-  {code: 'id', label: 'Bahasa Indonesia', flag: '🇮🇩'},
+  {code: 'en',      label: 'English',              flag: '🇺🇸'},
+  {code: 'ar',      label: 'العربية',              flag: '🇸🇦'},
+  {code: 'bn',      label: 'বাংলা',                flag: '🇧🇩'},
+  {code: 'zh-Hans', label: '简体中文',              flag: '🇨🇳'},
+  {code: 'zh-Hant', label: '繁體中文',              flag: '🇹🇼'},
+  {code: 'fr',      label: 'Français',             flag: '🇫🇷'},
+  {code: 'ko',      label: '한국어',               flag: '🇰🇷'},
+  {code: 'pl',      label: 'Polski',               flag: '🇵🇱'},
+  {code: 'ru',      label: 'Русский',              flag: '🇷🇺'},
+  {code: 'es',      label: 'Español',              flag: '🇪🇸'},
+  {code: 'ur',      label: 'اردو',                 flag: '🇵🇰'},
 ];
 
 export function LanguageSelector() {

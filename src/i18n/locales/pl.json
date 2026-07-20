@@ -1,0 +1,68 @@
+{
+  "layers": {
+    "cpd": "Dystrybucje partnerów wspólnotowych",
+    "mobileMarkets": "Rynki mobilne",
+    "foodPantries": "Pantry spożywcze",
+    "soupKitchens": "Zupa Kitchens"
+  },
+  "geocoder": {
+    "placeholder": "Wpisz adres",
+    "search": "Szukaj",
+    "helperText": "Aby znaleźć darmowe jedzenie w pobliżu, proszę podać adres, miasto i kod pocztowy",
+    "modalTitle": "Idź pod adres"
+  },
+  "days": {
+    "Su": "Niedziele",
+    "Mo": "Poniedziałek",
+    "Tu": "Wtorki",
+    "We": "Środy",
+    "Th": "Czwartek",
+    "Fr": "Piątek",
+    "Sa": "Soboty"
+  },
+  "renderer": {
+    "unknown": "nieznany",
+    "allDay": "Cały dzień",
+    "am": "AM",
+    "pm": "PM",
+    "dietaryAccommodations": "To miejsce ma jedzenie.",
+    "idRequired": "* * Wymagany jest identyfikator * *",
+    "idNotRequired": "* * ID nie jest wymagany * *",
+    "hours": "/ Godziny",
+    "contactInfo": "* * Informacje kontaktowe * *",
+    "notes": "*",
+    "lastVerified": "Ostatnia weryfikacja: {{data}}",
+    "pageOf": "{{strona}} {{całkowita}}",
+    "website": "Strona internetowa"
+  },
+  "privacy": {
+    "title": "Ważne informacje o gromadzeniu danych dla użytkowników map dostępu do żywności",
+    "summary": "Państwa sprawy prywatności: Centrum Żywności jako Medicine & Longevity i City Harvest gromadzi jedynie anonimowe, zagregowane dane z mapy dostępu do żywności. Nie używa się ani nie przechowuje zindywidualizowanych informacji, zapewniając prywatność. Dane te pomagają w badaniach i zwiększają dostęp do żywności bez korzystania z plików cookie lub lokalnego przechowywania.",
+    "readMore": "Czytaj więcej.",
+    "modalTitle": "Polityka prywatności",
+    "body": "Chcemy zapewnić przejrzystość i przejrzystość praktyk gromadzenia danych związanych z mapą dostępu do żywności, która znajduje się na naszej stronie internetowej. Centrum Żywności jako Medicine & Longevity i City Harvest jest zobowiązane do poprawy dostępu do żywności i prowadzenia cennych badań, aby skorzystać z naszej społeczności. Aby to osiągnąć, zbieramy anonimowe zagregowane dane i chcielibyśmy podkreślić, że prywatność i dane osobowe pozostają dla nas najważniejsze.\n\n* * Gromadzenie danych i stosowanie * *\n\n- * * Anonymous Aggregated Data Only Dane zebrane od użytkowników mapy dostępu do żywności są całkowicie anonimowe i zagregowane. Oznacza to, że z gromadzonymi danymi nie będą związane żadne możliwe do zidentyfikowania informacje (PII). Interesują nas wyłącznie wzorce, tendencje i ogólne spostrzeżenia mające na celu poprawę dostępu do żywności.\n- * * Brak spersonalizowanych informacji * *: Chcemy Państwa zapewnić, że nie zbieramy, nie przechowujemy ani nie wykorzystujemy żadnych spersonalizowanych informacji za pośrednictwem mapy dostępu do żywności. Państwa prywatność jest naszym priorytetem i podjęliśmy środki w celu zapewnienia, że żadne dane osobowe nie będą powiązane z danymi, które państwo udostępniają.\n- * * Badania i poprawa * *: Podstawowym celem gromadzenia tych danych są badania i poprawa dostępu do żywności w naszej społeczności. Analizując dane zagregowane, możemy zidentyfikować obszary wymagające poprawy, skutecznie ukierunkować zasoby i opracować strategie mające na celu wprowadzenie pozytywnych zmian.\n- * * Brak plików cookie lub danych lokalnych * *: Nasza strona internetowa nie używa plików cookie ani nie gromadzi żadnych informacji z komputera lub korzystania z witryny. Możesz korzystać z mapy dostępu do żywności bez obaw o jakiekolwiek dane przechowywane lokalnie lub na urządzeniu.\n\nZapewniamy, że nasze zaangażowanie na rzecz prywatności obejmuje każdy aspekt procesu gromadzenia i analizy danych. Przestrzegamy rygorystycznych standardów etycznych i wymogów prawnych, aby zapewnić, że zaufanie do nas jest dobrze umieszczone.\n\nDziękuję za udział w naszych wysiłkach na rzecz poprawy dostępu do żywności dla wszystkich w naszej społeczności. Jeśli masz jakieś pytania lub obawy dotyczące naszych praktyk w zakresie danych, prosimy o kontakt z nami poprzez dostarczone dane kontaktowe."
+  },
+  "language": "Język",
+  "aria": {
+    "close": "Zamknij",
+    "zoomIn": "Powiększ",
+    "zoomOut": "Powiększ",
+    "toggleLayers": "Warstwy przełączania",
+    "searchAddress": "Szukaj adresu",
+    "previousPage": "Poprzedni wynik",
+    "nextPage": "Następny wynik",
+    "featureDetails": "Szczegóły lokalizacji",
+    "layerSelection": "Wybór warstwy",
+    "map": "Mapa zasobów żywnościowych",
+    "layerTogglesLegend": "Warstwy mapy",
+    "copyAddress": "Kopiuj adres",
+    "copyWebsite": "Kopiuj stronę internetową",
+    "copyEmail": "Kopiuj e- mail",
+    "copyPhone": "Kopiuj numer telefonu",
+    "copied": "Kopiowane"
+  },
+  "data": {
+    "fallbackToEnglish": "Dane dotyczące \"{{lang}}\" nie są jeszcze dostępne. Pokazuję angielski.",
+    "loadFailed": "Nie można wczytać danych spiżarni. Proszę spróbować później."
+  }
+}

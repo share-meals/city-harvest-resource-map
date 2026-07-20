@@ -36,6 +36,7 @@ import {
   useState
 } from 'react';
 import {useTranslation} from 'react-i18next';
+import {RTL_LANGUAGES} from './i18n/config';
 import {useWindowSize} from '@uidotdev/usehooks';
 import {
   closeSharp,
@@ -48,15 +49,16 @@ import './App.scss';
 import mms_en from './data/mms.json';
 import mms_es from './data/mms.es.json';
 import mms_ko from './data/mms.ko.json';
-import mms_id from './data/mms.id.json';
 import mm_truck from './data/mm_truck.svg';
 import cpds_en from './data/cpds.json';
 import cpds_es from './data/cpds.es.json';
 import cpds_ko from './data/cpds.ko.json';
-import cpds_id from './data/cpds.id.json';
 
-const mmsByLang: Record<string, any> = {en: mms_en, es: mms_es, ko: mms_ko, id: mms_id};
-const cpdsByLang: Record<string, any> = {en: cpds_en, es: cpds_es, ko: cpds_ko, id: cpds_id};
+// Static per-language layer data. Anything not in this map falls back to English
+// at the read sites below (`|| mmsByLang.en`). Add more languages here as we
+// translate the static GeoJSON.
+const mmsByLang: Record<string, any> = {en: mms_en, es: mms_es, ko: mms_ko};
+const cpdsByLang: Record<string, any> = {en: cpds_en, es: cpds_es, ko: cpds_ko};
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -227,9 +229,10 @@ export const App = () => {
   const {t, i18n} = useTranslation();
   const [presentToast] = useIonToast();
 
-  // Update <html lang> attribute when language changes
+  // Update <html lang> and <html dir> attributes when language changes
   useEffect(() => {
     document.documentElement.lang = i18n.language;
+    document.documentElement.dir = RTL_LANGUAGES.has(i18n.language) ? 'rtl' : 'ltr';
   }, [i18n.language]);
 
   const [foodPantries, setFoodPantries] = useState<any>([]);
