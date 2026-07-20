@@ -9,16 +9,6 @@ export default defineConfig({
   build: {
     target: 'es2022',
   },
-  server: {
-    proxy: {
-      '/data': {
-        target: 'http://localhost:8055',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/data/, ''),
-        followRedirects: true,
-      },
-    },
-  },
   test: {
     globals: true,
     environment: 'jsdom',

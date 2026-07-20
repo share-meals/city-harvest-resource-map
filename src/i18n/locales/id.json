@@ -60,5 +60,9 @@
     "copyEmail": "Salin email",
     "copyPhone": "Salin nomor telepon",
     "copied": "Disalin"
+  },
+  "data": {
+    "fallbackToEnglish": "Data untuk \"{{lang}}\" belum tersedia. Menampilkan dalam bahasa Inggris.",
+    "loadFailed": "Tidak dapat memuat data dapur pangan. Silakan coba lagi nanti."
   }
 }

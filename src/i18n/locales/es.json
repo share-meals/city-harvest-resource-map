@@ -60,5 +60,9 @@
     "copyEmail": "Copiar correo electrónico",
     "copyPhone": "Copiar número de teléfono",
     "copied": "Copiado"
+  },
+  "data": {
+    "fallbackToEnglish": "Los datos para \"{{lang}}\" aún no están disponibles. Mostrando en inglés.",
+    "loadFailed": "No se pudieron cargar los datos de despensas de alimentos. Inténtelo de nuevo más tarde."
   }
 }
