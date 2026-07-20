@@ -28,7 +28,7 @@ import type {MapRef} from 'react-map-gl/maplibre';
 
 import {ZoomButtons} from './ZoomButtons';
 import {Renderer} from './data/Renderer';
-import {logToServer} from './logging';
+import {logToServer, SESSION_ID} from './logging';
 import {
   useEffect,
   useMemo,
@@ -304,7 +304,12 @@ export const App = () => {
     };
 
     const fetchLang = async (targetLang: string) => {
-      const res = await fetch(`${import.meta.env.VITE_DATA_URL}/pantries.open.${targetLang}.json`);
+      // Cache-bust per session: same URL for the tab's lifetime, fresh on new tab.
+      // Insurance against edge-cache poisoning while still letting the browser
+      // HTTP cache handle subsequent renders within the session.
+      const res = await fetch(
+        `${import.meta.env.VITE_DATA_URL}/pantries.open.${targetLang}.json?v=${SESSION_ID}`
+      );
       if(!res.ok) throw new Error(`HTTP ${res.status}`);
       const body = await res.json();
       return Array.isArray(body) ? body : body.data;
