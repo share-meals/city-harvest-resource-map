@@ -47,18 +47,39 @@ import {
 import './App.scss';
 
 import mms_en from './data/mms.json';
+import mms_ar from './data/mms.ar.json';
+import mms_bn from './data/mms.bn.json';
 import mms_es from './data/mms.es.json';
+import mms_fr from './data/mms.fr.json';
 import mms_ko from './data/mms.ko.json';
+import mms_pl from './data/mms.pl.json';
+import mms_ru from './data/mms.ru.json';
+import mms_ur from './data/mms.ur.json';
+import mms_zhHans from './data/mms.zh-Hans.json';
+import mms_zhHant from './data/mms.zh-Hant.json';
 import mm_truck from './data/mm_truck.svg';
 import cpds_en from './data/cpds.json';
+import cpds_ar from './data/cpds.ar.json';
+import cpds_bn from './data/cpds.bn.json';
 import cpds_es from './data/cpds.es.json';
+import cpds_fr from './data/cpds.fr.json';
 import cpds_ko from './data/cpds.ko.json';
+import cpds_pl from './data/cpds.pl.json';
+import cpds_ru from './data/cpds.ru.json';
+import cpds_ur from './data/cpds.ur.json';
+import cpds_zhHans from './data/cpds.zh-Hans.json';
+import cpds_zhHant from './data/cpds.zh-Hant.json';
 
 // Static per-language layer data. Anything not in this map falls back to English
-// at the read sites below (`|| mmsByLang.en`). Add more languages here as we
-// translate the static GeoJSON.
-const mmsByLang: Record<string, any> = {en: mms_en, es: mms_es, ko: mms_ko};
-const cpdsByLang: Record<string, any> = {en: cpds_en, es: cpds_es, ko: cpds_ko};
+// at the read sites below (`|| mmsByLang.en`).
+const mmsByLang: Record<string, any> = {
+  en: mms_en, ar: mms_ar, bn: mms_bn, es: mms_es, fr: mms_fr, ko: mms_ko,
+  pl: mms_pl, ru: mms_ru, ur: mms_ur, 'zh-Hans': mms_zhHans, 'zh-Hant': mms_zhHant,
+};
+const cpdsByLang: Record<string, any> = {
+  en: cpds_en, ar: cpds_ar, bn: cpds_bn, es: cpds_es, fr: cpds_fr, ko: cpds_ko,
+  pl: cpds_pl, ru: cpds_ru, ur: cpds_ur, 'zh-Hans': cpds_zhHans, 'zh-Hant': cpds_zhHant,
+};
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';

@@ -1,0 +1,649 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95827712883619,
+          40.66484362915894
+        ]
+      },
+      "properties": {
+        "name": "Ebbets Field Houses – Crown Heights (Brooklyn)",
+        "streetAddress": "Courtyard inside the Ebbets Field Apartment Houses - 1720 Bedford Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11225",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "9:30:00",
+            "timeEnd": "12:00:00",
+            "notes": "প্রতি মাসে শুধুমাত্র প্রথম মঙ্গলবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার - ইবস ফিল্ড ইন্টারপ্রজেক্ট সেন্টার\n- অক্টোবর ২০১৫"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8674754435212,
+          40.66821779808902
+        ]
+      },
+      "properties": {
+        "name": "Pink Houses NYCHA – East New York (Brooklyn)",
+        "streetAddress": "Pink Houses parking lot behind 2628 Linden Blvd",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11208",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "প্রতি মাসে মাত্র ২ ও ৪ মঙ্গলবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার - নদী তহবিল\n- ২০১৬ সালের ফেব্রুয়ারি মাসে খোলা"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97904995701182,
+          40.716975826029675
+        ]
+      },
+      "properties": {
+        "name": "Grand Street Settlement – Lower East Side (Manhattan)",
+        "streetAddress": "72 Columbia Street",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10002",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Mo"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টিনার – গ্র্যান্ড স্ট্রিট কনফিউজমেন্ট\n- জানুয়ারির ১ তারিখে খোলা"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.81893674351963,
+          40.758094419882205
+        ]
+      },
+      "properties": {
+        "name": "YWCA – Flushing (Queens)",
+        "streetAddress": "42-07 Parsons Blvd.",
+        "addressLocality": "Flushing",
+        "addressRegion": "NY",
+        "postalCode": "11355",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "14:00:00"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টিনার – ওয়াইওয়াসি\n- খোলা এপ্রিল ২০১৭"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99078500119481,
+          40.5998714481062
+        ]
+      },
+      "properties": {
+        "name": "Bensonhurst – (Brooklyn)",
+        "streetAddress": "2336 86th St",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11214",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "প্রতি মাসে শুধুমাত্র ১ম ও ৩য় বৃহস্পতিবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার – স্বাস্থ্যের প্রয়োজনীয় এসোসিয়েশন\n- জুন ২০১৮ খোলা হয়েছে\n"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95597998570271,
+          40.59899914418679
+        ]
+      },
+      "properties": {
+        "name": "Sheepshead Bay – (Brooklyn)",
+        "streetAddress": "Sidewalk on E 16 St - 1602 Avenue U",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11229",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Fr"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "প্রতি মাসে চতুর্থ শুক্রবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার – স্বাস্থ্যের প্রয়োজনীয় এসোসিয়েশন\n- অক্টোবর ২০১৮ খোলা হয়েছে\n- এটা সরাসরি বিতরণ এলাকা."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9060831011938,
+          40.661146680563355
+        ]
+      },
+      "properties": {
+        "name": "Brownsville – (Brooklyn)",
+        "streetAddress": "Salvation Army - Brownsville – 280 Riverdale Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11212",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Fr"
+            ],
+            "timeStart": "13:00:00",
+            "timeEnd": "15:00:00",
+            "notes": "প্রতি মাসের ১ম ও ৩য় শুক্রবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার - ত্রাণ বাহিনী\n- নভেম্বর ২০১৮ খোলা হয়েছে"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88871024352132,
+          40.6673365745202
+        ]
+      },
+      "properties": {
+        "name": "East New York – (Brooklyn)",
+        "streetAddress": "Fellowship Baptist Church – 509 Van Siclen Avenue",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11207",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "9:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "প্রতি মাসে মাত্র ২ ও ৪ মঙ্গলবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার - সহকর্মী ব্যাপ্টিস্ট চার্চ\n- খোলা হয়েছিল মে ২০,১৯"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98679224351926,
+          40.77457266970479
+        ]
+      },
+      "properties": {
+        "name": "Upper West Side – (Manhattan)",
+        "streetAddress": "Sidewalk in front of Lincoln Square Neighborhood Center - 250 W 65th St",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10023",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "প্রতি মাসে শুধুমাত্র ২ ও ৪ম বৃহস্পতিবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার- লিঙ্কনড স্কয়ারিং সেন্টার এবং খাদ্য ন্যায় বিচার কেন্দ্র"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.84647800119048,
+          40.842795035796264
+        ]
+      },
+      "properties": {
+        "name": "Westchester Square – (Bronx)",
+        "streetAddress": "Harvest Fields Community Church - 2626 East Tremont Avenue",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10461",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার- খ্রিস্টের খাদ্য বিতরণ কার্যক্রমের পরিবার\n- সেপ্টেম্বরের ২০ তারিখে খোলা"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.78485683003126,
+          40.59368835262741
+        ]
+      },
+      "properties": {
+        "name": "Far Rockaway – (Queens)",
+        "streetAddress": "Social Center – Oceanside Apartments (NYCHA) – 339 Beach 54 St",
+        "addressLocality": "Arverne",
+        "addressRegion": "NY",
+        "postalCode": "11692",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Mo"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "প্রতি মাসে মাত্র ২ ও ৪তম সোমবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার - ডোরিস ম্যাক ম্যাক্লিন - ইনসাইডিং (এনওয়াইসিএ)\n- মার্চ ২০২০ খোলা হয়েছে"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93695723002686,
+          40.832081960133344
+        ]
+      },
+      "properties": {
+        "name": "Harlem – (Manhattan)",
+        "streetAddress": "Community Center – 3005 Frederick Douglass Blvd",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10039",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00",
+            "notes": "প্রতি মাসে মাত্র ১ম ও ৩য় মঙ্গলবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টিনার – পোলো গ্রাউন্ড টাওয়ারস অধিবাসীদের সংগঠন (এনওয়াইসিএ)\n- জুলাই ২০"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85795173002607,
+          40.8809745537125
+        ]
+      },
+      "properties": {
+        "name": "Williamsbridge – (Bronx)",
+        "streetAddress": "North Bronx SDA Church – 3743 Bronxwood Avenue",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10469",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার - নর্থ ব্রঙ্ক্স এসডি চার্চ\n- আগস্ট ২০২০ খোলা হয়েছে"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88776680119017,
+          40.85863770036734
+        ]
+      },
+      "properties": {
+        "name": "North Bronx (Little Italy)",
+        "streetAddress": "Madison Square Boys & Girls Club – Grimm Clubhouse – 543 E 189 st",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10458",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [],
+        "notes": "- কমিউনিটি পার্টনার- ম্যাডিসন স্কোয়ার বয়েজ এবং মেয়েদের ক্লাব\n- সেপ্টেম্বর ২০\n- আরও তথ্যের জন্য ৭৩-৫৫০০ ডলার"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96528114351888,
+          40.796437804068034
+        ]
+      },
+      "properties": {
+        "name": "Upper West Side 2 – (Manhattan)",
+        "streetAddress": "Douglass Houses NYCHA – 830 Columbus Avenue",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10025",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00",
+            "notes": "প্রতি মাসে শুধুমাত্র ২ ও ৪ম বৃহস্পতিবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টিনার- ডগলাস হাউসস অধিবাসীদের কাউন্সিল\n- সেপ্টেম্বর ২০"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95548827235777,
+          40.64918511150437
+        ]
+      },
+      "properties": {
+        "name": "Flatbush (Brooklyn)",
+        "streetAddress": "Madison Square Boys & Girls Club – Thomas S. Murphy Clubhouse – 2245 Bedford Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11226",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [],
+        "notes": "- কমিউনিটি পার্টনার- ম্যাডিসন স্কোয়ার বয়েজ এবং মেয়েদের ক্লাব\n- জুন ২০২১ খোলা হয়েছে\n- আরও তথ্যের জন্য দয়া করে (৭১৮) ৪৬-৬১০০ নম্বর কল করুন"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.75162245886739,
+          40.59415629910103
+        ]
+      },
+      "properties": {
+        "name": "Far Rockaway 2 (Queens)",
+        "streetAddress": "Ocean Park Apartments – 125 Beach 17 street – Far Rockaway, NY 11691",
+        "addressLocality": "Far Rockaway",
+        "addressRegion": "NY",
+        "postalCode": "11691",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "প্রতি মাসে মাত্র ৩ দিন"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার - Affফোর্ড ফাউন্ডেশন সম্পর্কিত।\n- সেপ্টেম্বর ২০,২১"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14401037235919,
+          40.569936970461605
+        ]
+      },
+      "properties": {
+        "name": "Staten Island Community Partner Distribution",
+        "streetAddress": "Knights of Columbus – 397 Clarke Avenue",
+        "addressLocality": "Staten Island",
+        "addressRegion": "NY",
+        "postalCode": "10306",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "প্রতি মাসে শুধুমাত্র ১ম ও ৩য় বৃহস্পতিবার"
+          }
+        ],
+        "notes": "- কমিউনিটি পার্টনার - সবাই SIL খায়,\n- ২০২২ সালের মধ্যে খোলা হয়েছিল"
+      }
+    }
+  ]
+}

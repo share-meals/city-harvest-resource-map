@@ -1,0 +1,649 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95827712883619,
+          40.66484362915894
+        ]
+      },
+      "properties": {
+        "name": "Ebbets Field Houses – Crown Heights (Brooklyn)",
+        "streetAddress": "Courtyard inside the Ebbets Field Apartment Houses - 1720 Bedford Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11225",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "9:30:00",
+            "timeEnd": "12:00:00",
+            "notes": "الثلاثاء الأول فقط من كل شهر"
+          }
+        ],
+        "notes": "- شريك مجتمعي - مركز إيبيتس الميداني بين الأجيال\n- تشرين الأول/أكتوبر 2015"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8674754435212,
+          40.66821779808902
+        ]
+      },
+      "properties": {
+        "name": "Pink Houses NYCHA – East New York (Brooklyn)",
+        "streetAddress": "Pink Houses parking lot behind 2628 Linden Blvd",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11208",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "الثلاثاء الثاني والرابع من كل شهر"
+          }
+        ],
+        "notes": "- الشريك المجتمعي - صندوق النهر\n- تم افتتاحه في آب/أغسطس 2016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97904995701182,
+          40.716975826029675
+        ]
+      },
+      "properties": {
+        "name": "Grand Street Settlement – Lower East Side (Manhattan)",
+        "streetAddress": "72 Columbia Street",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10002",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Mo"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00"
+          }
+        ],
+        "notes": "- الشريك المجتمعي - مستوطنة الشوارع الكبرى\n-افتتح في كانون الثاني/يناير 2017"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.81893674351963,
+          40.758094419882205
+        ]
+      },
+      "properties": {
+        "name": "YWCA – Flushing (Queens)",
+        "streetAddress": "42-07 Parsons Blvd.",
+        "addressLocality": "Flushing",
+        "addressRegion": "NY",
+        "postalCode": "11355",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "14:00:00"
+          }
+        ],
+        "notes": "- الشريك المجتمعي - الجمعية العالمية للمرأة\n-فتحت أبريل 2017"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99078500119481,
+          40.5998714481062
+        ]
+      },
+      "properties": {
+        "name": "Bensonhurst – (Brooklyn)",
+        "streetAddress": "2336 86th St",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11214",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "الخميس الأول والثالث من كل شهر"
+          }
+        ],
+        "notes": "- الشراكة المجتمعية - الرابطة الأساسية للصحة\n-مفتوح في حزيران 2018\n"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95597998570271,
+          40.59899914418679
+        ]
+      },
+      "properties": {
+        "name": "Sheepshead Bay – (Brooklyn)",
+        "streetAddress": "Sidewalk on E 16 St - 1602 Avenue U",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11229",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Fr"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "الجمعة الرابعة فقط من كل شهر"
+          }
+        ],
+        "notes": "- الشراكة المجتمعية - الرابطة الأساسية للصحة\n-مفتوح تشرين الأول/أكتوبر 2018\n-هذا موقع توزيع مباشر."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9060831011938,
+          40.661146680563355
+        ]
+      },
+      "properties": {
+        "name": "Brownsville – (Brooklyn)",
+        "streetAddress": "Salvation Army - Brownsville – 280 Riverdale Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11212",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Fr"
+            ],
+            "timeStart": "13:00:00",
+            "timeEnd": "15:00:00",
+            "notes": "الجمعة الأولى والثالثة من كل شهر"
+          }
+        ],
+        "notes": "- الشريك المجتمعي - جيش الخلاص\n-فتحت تشرين الثاني/نوفمبر 2018"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88871024352132,
+          40.6673365745202
+        ]
+      },
+      "properties": {
+        "name": "East New York – (Brooklyn)",
+        "streetAddress": "Fellowship Baptist Church – 509 Van Siclen Avenue",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11207",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "9:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "الثلاثاء الثاني والرابع من كل شهر"
+          }
+        ],
+        "notes": "- الشريك المجتمعي - الكنيسة المعمدانية للزمالات\n-مفتوح في أيار/مايو 2019"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98679224351926,
+          40.77457266970479
+        ]
+      },
+      "properties": {
+        "name": "Upper West Side – (Manhattan)",
+        "streetAddress": "Sidewalk in front of Lincoln Square Neighborhood Center - 250 W 65th St",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10023",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "الخميس الثاني والرابع من كل شهر"
+          }
+        ],
+        "notes": "- شريك مجتمعي - مركز لنكولن سكوير للأحياء ومراهقون للعدالة الغذائية"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.84647800119048,
+          40.842795035796264
+        ]
+      },
+      "properties": {
+        "name": "Westchester Square – (Bronx)",
+        "streetAddress": "Harvest Fields Community Church - 2626 East Tremont Avenue",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10461",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00"
+          }
+        ],
+        "notes": "- شريك مجتمعي - برنامج توزيع الأغذية على أسرة المسيح\n-مفتوح في أيلول/سبتمبر 2019"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.78485683003126,
+          40.59368835262741
+        ]
+      },
+      "properties": {
+        "name": "Far Rockaway – (Queens)",
+        "streetAddress": "Social Center – Oceanside Apartments (NYCHA) – 339 Beach 54 St",
+        "addressLocality": "Arverne",
+        "addressRegion": "NY",
+        "postalCode": "11692",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Mo"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "الاثنين الثاني والرابع فقط من كل شهر"
+          }
+        ],
+        "notes": "- الشريك المجتمعي - دوريس ماكلولين - شقق المحيطات\n- تم افتتاحه في آذار/مارس 2020"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93695723002686,
+          40.832081960133344
+        ]
+      },
+      "properties": {
+        "name": "Harlem – (Manhattan)",
+        "streetAddress": "Community Center – 3005 Frederick Douglass Blvd",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10039",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Tu"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00",
+            "notes": "الثلاثاء الأول والثالث من كل شهر"
+          }
+        ],
+        "notes": "- الشريك المجتمعي - الرابطة المقيمة لأبراج بولو الأرض\n- تم افتتاحه في تموز/يوليه 2020"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85795173002607,
+          40.8809745537125
+        ]
+      },
+      "properties": {
+        "name": "Williamsbridge – (Bronx)",
+        "streetAddress": "North Bronx SDA Church – 3743 Bronxwood Avenue",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10469",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00"
+          }
+        ],
+        "notes": "- الشريك المجتمعي - كنيسة برونكس الشمالية\n- مفتوحة في آب/أغسطس 2020"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88776680119017,
+          40.85863770036734
+        ]
+      },
+      "properties": {
+        "name": "North Bronx (Little Italy)",
+        "streetAddress": "Madison Square Boys & Girls Club – Grimm Clubhouse – 543 E 189 st",
+        "addressLocality": "Bronx",
+        "addressRegion": "NY",
+        "postalCode": "10458",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [],
+        "notes": "- الشريك المجتمعي - نادي فتيات ماديسون سكوير\n- تم افتتاحه في أيلول/سبتمبر 2020\n- يرجى الاتصال (718) 733-5500 لمزيد من المعلومات"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96528114351888,
+          40.796437804068034
+        ]
+      },
+      "properties": {
+        "name": "Upper West Side 2 – (Manhattan)",
+        "streetAddress": "Douglass Houses NYCHA – 830 Columbus Avenue",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10025",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "12:00:00",
+            "timeEnd": "14:00:00",
+            "notes": "الخميس الثاني والرابع من كل شهر"
+          }
+        ],
+        "notes": "- الشريك المجتمعي - مجلس دوغلاس المقيم\n- تم افتتاحه في أيلول/سبتمبر 2020"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95548827235777,
+          40.64918511150437
+        ]
+      },
+      "properties": {
+        "name": "Flatbush (Brooklyn)",
+        "streetAddress": "Madison Square Boys & Girls Club – Thomas S. Murphy Clubhouse – 2245 Bedford Ave",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11226",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [],
+        "notes": "- الشريك المجتمعي - نادي فتيات ماديسون سكوير\n-مفتوح في حزيران/يونيه 2021\n- يرجى الاتصال (718) 462-6100 لمزيد من المعلومات"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.75162245886739,
+          40.59415629910103
+        ]
+      },
+      "properties": {
+        "name": "Far Rockaway 2 (Queens)",
+        "streetAddress": "Ocean Park Apartments – 125 Beach 17 street – Far Rockaway, NY 11691",
+        "addressLocality": "Far Rockaway",
+        "addressRegion": "NY",
+        "postalCode": "11691",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "We"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "الأربعاء الثالث فقط من كل شهر"
+          }
+        ],
+        "notes": "- شراكة مجتمعية - مؤسسة ميسرة ذات صلة\n-مفتوح في أيلول/سبتمبر 2021"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14401037235919,
+          40.569936970461605
+        ]
+      },
+      "properties": {
+        "name": "Staten Island Community Partner Distribution",
+        "streetAddress": "Knights of Columbus – 397 Clarke Avenue",
+        "addressLocality": "Staten Island",
+        "addressRegion": "NY",
+        "postalCode": "10306",
+        "geolocation": {
+          "type": "Point",
+          "coordinates": [
+            0,
+            0
+          ]
+        },
+        "status": "open",
+        "addressCountry": "US",
+        "hours": [
+          {
+            "days": [
+              "Th"
+            ],
+            "timeStart": "10:00:00",
+            "timeEnd": "12:00:00",
+            "notes": "الخميس الأول والثالث من كل شهر"
+          }
+        ],
+        "notes": "-شريك مجتمعي - كل شخص يأكل شركة SI Inc.\n-فتحت في تموز/يوليه 2022"
+      }
+    }
+  ]
+}
