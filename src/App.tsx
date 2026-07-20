@@ -12,7 +12,8 @@ import {
   IonRow,
   IonTitle,
   IonToolbar,
-  setupIonicReact
+  setupIonicReact,
+  useIonToast
 } from '@ionic/react';
 import {
   Geocoder,
@@ -224,6 +225,7 @@ const EnvironmentBanner = () => {
 
 export const App = () => {
   const {t, i18n} = useTranslation();
+  const [presentToast] = useIonToast();
 
   // Update <html lang> attribute when language changes
   useEffect(() => {
@@ -269,20 +271,53 @@ export const App = () => {
 
   useEffect(() => {
     const lang = i18n.language;
-    const filename = `foodPantriesOpen.${lang}.json`;
-    fetch(`${import.meta.env.VITE_DATA_URL}/${filename}`)
-      .then(response => response.json())
-      .then((response) => {
-	const items = Array.isArray(response) ? response : response.data;
-	const fp = items.filter((r: any) => r.type === 'foodPantry').map(geojsonify);
-	const sk = items.filter((r: any) => r.type === 'soupKitchen').map(geojsonify);
-	setFoodPantries(fp);
-	setSoupKitchens(sk);
-      })
-      .catch((error) => {
-	console.log(error);
+
+    const loadItems = (items: any[]) => {
+      const fp = items.filter((r: any) => r.type === 'foodPantry').map(geojsonify);
+      const sk = items.filter((r: any) => r.type === 'soupKitchen').map(geojsonify);
+      setFoodPantries(fp);
+      setSoupKitchens(sk);
+    };
+
+    const fetchLang = async (targetLang: string) => {
+      const res = await fetch(`${import.meta.env.VITE_DATA_URL}/pantries.open.${targetLang}.json`);
+      if(!res.ok) throw new Error(`HTTP ${res.status}`);
+      const body = await res.json();
+      return Array.isArray(body) ? body : body.data;
+    };
+
+    fetchLang(lang)
+      .then(loadItems)
+      .catch(async () => {
+	if(lang !== 'en'){
+	  try {
+	    const items = await fetchLang('en');
+	    loadItems(items);
+	    presentToast({
+	      message: t('data.fallbackToEnglish', {lang}),
+	      duration: 4000,
+	      position: 'top',
+	      color: 'warning'
+	    });
+	  } catch (err) {
+	    console.log(err);
+	    presentToast({
+	      message: t('data.loadFailed'),
+	      duration: 4000,
+	      position: 'top',
+	      color: 'danger'
+	    });
+	  }
+	} else {
+	  presentToast({
+	    message: t('data.loadFailed'),
+	    duration: 4000,
+	    position: 'top',
+	    color: 'danger'
+	  });
+	}
       });
-  }, [i18n.language]);
+  }, [i18n.language, presentToast, t]);
 
   const staticLayers: MapLayerConfig[] = useMemo(() => [
     {

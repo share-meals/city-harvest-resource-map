@@ -36,17 +36,19 @@ Required variables:
 yarn dev
 ```
 
-Runs at http://localhost:5173. In development, the Vite dev server proxies `/data/*` requests to `http://localhost:8055` (local Directus instance) to avoid CORS issues with redirects.
+Runs at http://localhost:5173.
 
-### Local Directus
+### Data source
 
-The app expects a Directus instance running on port 8055 serving translated food pantry data at:
+Food pantry data is served from Cloudflare R2 as pre-scrubbed, per-language JSON files. The base URL is set by `VITE_DATA_URL`; the app fetches:
 
 ```
-http://localhost:8055/file-by-filename/foodPantriesOpen.{lang}.json
+${VITE_DATA_URL}/pantries.open.{lang}.json
 ```
 
-Where `{lang}` is `en`, `es`, `zh`, or `ko`.
+For any environment, `VITE_DATA_URL` should point at the public R2 base — production uses `https://files.cfamhub.org/feeds`. `{lang}` is one of `en`, `es`, `id`, `ko`, `zh`.
+
+If the requested language's file isn't available, the app falls back to `pantries.open.en.json` and shows a toast letting the user know. If English is also unavailable, an error toast is shown and the map is left empty.
 
 ## Production Build
 
@@ -55,16 +57,15 @@ yarn build
 yarn preview
 ```
 
-In live, `VITE_DATA_URL` should point directly to the data server (e.g. `https://nfa-admin.foodmedcenter.org/file-by-filename`).
-
 ## Internationalization
 
-The app supports 4 languages via react-i18next:
+The app supports 5 languages via react-i18next:
 
 - English (`en`)
 - Spanish (`es`) - Español
 - Korean (`ko`) - 한국어
 - Indonesian (`id`) - Bahasa Indonesia
+- Chinese (`zh`) - 中文
 
 Language is auto-detected from the `?lang=` URL parameter (for iframe embedding), then the browser's preferred language, then defaults to English.
 

@@ -55,5 +55,9 @@
     "layerSelection": "图层选择",
     "map": "食品资源地图",
     "layerTogglesLegend": "地图图层"
+  },
+  "data": {
+    "fallbackToEnglish": "\"{{lang}}\" 数据尚未提供。显示为英文。",
+    "loadFailed": "无法加载食物赈济处数据。请稍后再试。"
   }
 }
