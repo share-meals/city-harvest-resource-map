@@ -29,6 +29,7 @@ import type {MapRef} from 'react-map-gl/maplibre';
 import {ZoomButtons} from './ZoomButtons';
 import {Renderer} from './data/Renderer';
 import {logToServer, SESSION_ID} from './logging';
+import {classifyResult} from './geocode-classify';
 import {
   useEffect,
   useMemo,
@@ -137,8 +138,9 @@ const GeocoderWrapper: React.FC<{
       if(modal){
         modal.current?.dismiss();
       }
-      logGeocode(result, i18n.language);
+      logGeocode(results, i18n.language);
     }}
+    onNoResult={() => logNoResult(i18n.language)}
     helperText={t('geocoder.helperText')}
   />
 };
@@ -186,11 +188,24 @@ const LayerTogglesModal = () => {
   </IonModal>;
 }
 
-const logGeocode = (result: google.maps.GeocoderResult, language: string) => {
+const logGeocode = (results: google.maps.GeocoderResult[], language: string) => {
+  logToServer('/log-geocode', {...classifyResult(results), language});
+};
+
+// Fires when Google returns ZERO_RESULTS. Sends the "user searched for
+// something and found nothing" signal without a coord or raw text.
+const logNoResult = (language: string) => {
   logToServer('/log-geocode', {
-    address: result.formatted_address,
-    lat: result.geometry.location.lat(),
-    lng: result.geometry.location.lng(),
+    searchType: 'unknown',
+    resultBucket: 'NONE',
+    resolvedCity: null,
+    resolvedRegion: null,
+    resolvedBorough: null,
+    resolvedCountry: null,
+    resolvedLocationType: null,
+    lat: null,
+    lng: null,
+    resultsFound: false,
     language,
   });
 };

@@ -13,11 +13,15 @@ interface GeocoderProps {
     locality?: string;
   };
   onGeocode: (results: google.maps.GeocoderResult[]) => void;
+  // Fired when the user's query yielded no results (Google returned
+  // ZERO_RESULTS). The map itself doesn't react to this, but the caller
+  // may want to log the miss.
+  onNoResult?: () => void;
   helperText?: string;
   language?: string;
 }
 
-export function Geocoder({apiKey, components, onGeocode, helperText, language}: GeocoderProps) {
+export function Geocoder({apiKey, components, onGeocode, onNoResult, helperText, language}: GeocoderProps) {
   const {isLoaded} = useJsApiLoader({
     googleMapsApiKey: apiKey,
     libraries: LIBRARIES,
@@ -47,10 +51,12 @@ export function Geocoder({apiKey, components, onGeocode, helperText, language}: 
       (results, status) => {
         if (status === 'OK' && results && results.length > 0) {
           onGeocode(results);
+        } else if (status === 'ZERO_RESULTS') {
+          onNoResult?.();
         }
       },
     );
-  }, [components, onGeocode, language]);
+  }, [components, onGeocode, onNoResult, language]);
 
   const {t} = useTranslation();
 
