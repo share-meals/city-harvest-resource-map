@@ -38,13 +38,18 @@ function detectOSFamily(): OSFamily {
   return 'Other';
 }
 
+// Staging Cloud Functions are named `-staging` (e.g. `log-geocode-staging`)
+// while prod keeps the bare names. Append the suffix when building in
+// staging mode so `--mode staging` builds hit the staging functions.
+const FUNCTION_SUFFIX = import.meta.env.MODE === 'staging' ? '-staging' : '';
+
 export const logToServer = (endpoint: string, payload: Record<string, any>) => {
   const enriched = {...payload, sessionId: SESSION_ID, osFamily: OS_FAMILY};
   if (DEBUG) {
     console.log(`[DEBUG] ${endpoint}`, enriched);
     return;
   }
-  fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}${endpoint}`, {
+  fetch(`${import.meta.env.VITE_LOG_FUNCTION_URL}${endpoint}${FUNCTION_SUFFIX}`, {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(enriched),

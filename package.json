@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build --mode live",
+    "build:staging": "tsc && vite build --mode staging",
     "preview": "vite preview --mode live",
     "test.e2e": "cypress run",
     "test.unit": "vitest",
