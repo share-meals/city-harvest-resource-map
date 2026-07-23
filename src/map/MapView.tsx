@@ -120,7 +120,12 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
       for (const f of features) {
         const id = f.properties?.id ?? f.id;
         if (id) {
-          lookup.set(String(id), f.properties ?? {});
+          // Keep the real geometry alongside properties so downstream consumers
+          // (Renderer.tsx logging, in particular) can read the feature's
+          // coordinates from `.geolocation`. Previously we stored only
+          // properties, and geojsonify() had already stripped `geolocation`
+          // out, so feature-click logs recorded `lat: 0, lng: 0`.
+          lookup.set(String(id), {...(f.properties ?? {}), geolocation: f.geometry});
         }
       }
     }
