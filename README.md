@@ -57,6 +57,14 @@ yarn build
 yarn preview
 ```
 
+## Staging
+
+The `staging` branch auto-deploys to [sm-ch-map-staging.netlify.app](https://sm-ch-map-staging.netlify.app) via Netlify. Netlify runs `yarn build:staging` for that branch, which loads `.env.staging`.
+
+Staging log calls hit the backend's `-staging` Cloud Functions (`log-geocode-staging`, `log-feature-click-staging`), which write to the `resourceMap_staging` BigQuery dataset. The routing works because `src/logging.ts` appends `-staging` to the endpoint path when `import.meta.env.MODE === 'staging'`.
+
+To cost-contain staging when it's idle for a while, see the "Teardown — staging" section in the [backend README](https://github.com/share-meals/city-harvest-resource-map-backend). Short version: `yarn teardown:staging` in the backend, plus disable the staging Google Maps + Protomaps API keys in their dashboards.
+
 ## Internationalization
 
 The app supports 5 languages via react-i18next:
