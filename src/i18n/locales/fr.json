@@ -60,9 +60,5 @@
     "copyEmail": "Copier le courriel",
     "copyPhone": "Copier le numéro de téléphone",
     "copied": "Copies"
-  },
-  "data": {
-    "fallbackToEnglish": "Les données de \"{lang}}\" ne sont pas encore disponibles. Je montre l'anglais.",
-    "loadFailed": "Impossible de charger les données de garde-manger. Veuillez réessayer plus tard."
   }
 }

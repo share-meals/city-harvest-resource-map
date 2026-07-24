@@ -60,9 +60,5 @@
     "copyEmail": "Kopiuj e- mail",
     "copyPhone": "Kopiuj numer telefonu",
     "copied": "Kopiowane"
-  },
-  "data": {
-    "fallbackToEnglish": "Dane dotyczące \"{{lang}}\" nie są jeszcze dostępne. Pokazuję angielski.",
-    "loadFailed": "Nie można wczytać danych spiżarni. Proszę spróbować później."
   }
 }

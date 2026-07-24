@@ -13,7 +13,6 @@ import {
   IonTitle,
   IonToolbar,
   setupIonicReact,
-  useIonToast
 } from '@ionic/react';
 import {
   Geocoder,
@@ -261,7 +260,6 @@ const EnvironmentBanner = () => {
 
 export const App = () => {
   const {t, i18n} = useTranslation();
-  const [presentToast] = useIonToast();
 
   // Update <html lang> and <html dir> attributes when language changes
   useEffect(() => {
@@ -331,35 +329,23 @@ export const App = () => {
     fetchLang(lang)
       .then(loadItems)
       .catch(async () => {
+	// Silent fallback: if the language-specific dump isn't in R2 yet,
+	// try English. If English also fails, leave the map empty and log
+	// to the console — no user-facing toast, since switching languages
+	// is a routine action and interstitials are more disruptive than
+	// helpful.
 	if(lang !== 'en'){
 	  try {
 	    const items = await fetchLang('en');
 	    loadItems(items);
-	    presentToast({
-	      message: t('data.fallbackToEnglish', {lang}),
-	      duration: 4000,
-	      position: 'top',
-	      color: 'warning'
-	    });
 	  } catch (err) {
 	    console.log(err);
-	    presentToast({
-	      message: t('data.loadFailed'),
-	      duration: 4000,
-	      position: 'top',
-	      color: 'danger'
-	    });
 	  }
 	} else {
-	  presentToast({
-	    message: t('data.loadFailed'),
-	    duration: 4000,
-	    position: 'top',
-	    color: 'danger'
-	  });
+	  console.log('failed to load pantry data');
 	}
       });
-  }, [i18n.language, presentToast, t]);
+  }, [i18n.language]);
 
   const staticLayers: MapLayerConfig[] = useMemo(() => [
     {

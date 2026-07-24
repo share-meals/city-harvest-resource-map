@@ -60,9 +60,5 @@
     "copyEmail": "Copy email",
     "copyPhone": "Copy phone number",
     "copied": "Copied"
-  },
-  "data": {
-    "fallbackToEnglish": "Data for \"{{lang}}\" is not available yet. Showing English.",
-    "loadFailed": "Could not load food pantry data. Please try again later."
   }
 }
