@@ -65,8 +65,10 @@ export const getEmailAddresses = (data: any): string[] => {
 export const render = (data: any, t: TFunction, locale: string = 'en') => {
   let payload = [];
 
-  if(data.dietaryAccomodations){
-    const items = data.dietaryAccomodations.map((v: string) => translateDietary(v, t));
+  const items = (data.dietaryAccomodations ?? [])
+    .filter((v: unknown) => typeof v === 'string' && v.trim().length > 0)
+    .map((v: string) => translateDietary(v, t));
+  if (items.length) {
     payload.push(t('renderer.dietaryAccommodations', {list: `**${renderList(items, locale)}**`}));
   }
 
