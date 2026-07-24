@@ -21,7 +21,6 @@
     "Sa": "Soboty"
   },
   "renderer": {
-    "unknown": "nieznany",
     "allDay": "Cały dzień",
     "dietaryAccommodations": "To miejsce oferuje jedzenie **{{list}}**.",
     "idRequired": "**Wymagany jest identyfikator**",

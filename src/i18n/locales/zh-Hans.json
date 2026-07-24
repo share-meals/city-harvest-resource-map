@@ -21,7 +21,6 @@
     "Sa": "星期六"
   },
   "renderer": {
-    "unknown": "不详",
     "allDay": "全天",
     "dietaryAccommodations": "这个地点提供 **{{list}}** 食物。",
     "idRequired": "需要**ID**",

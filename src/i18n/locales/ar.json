@@ -21,7 +21,6 @@
     "Sa": "أيام السبت"
   },
   "renderer": {
-    "unknown": "مجهول",
     "allDay": "كل يوم",
     "dietaryAccommodations": "يوفر هذا الموقع طعام **{{list}}**.",
     "idRequired": "**الهوية مطلوبة**",

@@ -21,7 +21,6 @@
     "Sa": "শনিবার"
   },
   "renderer": {
-    "unknown": "অজানা",
     "allDay": "সারাদিনব্যাপী",
     "dietaryAccommodations": "এই অবস্থানে **{{list}}** খাবার আছে।",
     "idRequired": "**আইডি প্রয়োজন**",

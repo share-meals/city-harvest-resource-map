@@ -21,7 +21,6 @@
     "Sa": "Суббота"
   },
   "renderer": {
-    "unknown": "неизвестный",
     "allDay": "Весь день",
     "dietaryAccommodations": "В этом месте есть еда **{{list}}**.",
     "idRequired": "**требуется**",

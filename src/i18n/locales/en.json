@@ -21,7 +21,6 @@
     "Sa": "Saturdays"
   },
   "renderer": {
-    "unknown": "unknown",
     "allDay": "All Day",
     "dietaryAccommodations": "This location has **{{list}}** food.",
     "idRequired": "**ID is required**",
