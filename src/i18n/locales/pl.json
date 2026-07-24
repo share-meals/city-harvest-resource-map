@@ -25,14 +25,14 @@
     "allDay": "Cały dzień",
     "am": "AM",
     "pm": "PM",
-    "dietaryAccommodations": "To miejsce ma jedzenie.",
+    "dietaryAccommodations": "To miejsce oferuje jedzenie **{{list}}**.",
     "idRequired": "* * Wymagany jest identyfikator * *",
     "idNotRequired": "* * ID nie jest wymagany * *",
     "hours": "/ Godziny",
     "contactInfo": "* * Informacje kontaktowe * *",
     "notes": "*",
-    "lastVerified": "Ostatnia weryfikacja: {{data}}",
-    "pageOf": "{{strona}} {{całkowita}}",
+    "lastVerified": "Ostatnia weryfikacja: {{date}}",
+    "pageOf": "Strona {{page}} z {{total}}",
     "website": "Strona internetowa"
   },
   "privacy": {
