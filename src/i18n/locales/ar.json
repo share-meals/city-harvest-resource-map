@@ -23,8 +23,6 @@
   "renderer": {
     "unknown": "مجهول",
     "allDay": "كل يوم",
-    "am": "AM",
-    "pm": "PM",
     "dietaryAccommodations": "يوفر هذا الموقع طعام **{{list}}**.",
     "idRequired": "**الهوية مطلوبة**",
     "idNotRequired": "**غير مطلوبة**",
@@ -60,5 +58,10 @@
     "copyEmail": "رسالة إلكترونية",
     "copyPhone": "رقم الهاتف",
     "copied": "Copied"
+  },
+  "dietary": {
+    "babyFood": "طعام الأطفال",
+    "halal": "حلال",
+    "kosher": "كوشر"
   }
 }

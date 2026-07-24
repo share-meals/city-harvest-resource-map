@@ -23,8 +23,6 @@
   "renderer": {
     "unknown": "inconnu",
     "allDay": "Toute la journée",
-    "am": "AM",
-    "pm": "PM",
     "dietaryAccommodations": "Cet endroit propose des aliments **{{list}}**.",
     "idRequired": "**L'identification est requise**",
     "idNotRequired": "**L'ID n'est pas requis**",
@@ -60,5 +58,10 @@
     "copyEmail": "Copier le courriel",
     "copyPhone": "Copier le numéro de téléphone",
     "copied": "Copies"
+  },
+  "dietary": {
+    "babyFood": "nourriture pour bébés",
+    "halal": "halal",
+    "kosher": "casher"
   }
 }

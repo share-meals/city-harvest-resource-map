@@ -23,8 +23,6 @@
   "renderer": {
     "unknown": "不详",
     "allDay": "全天",
-    "am": "上午",
-    "pm": "首相",
     "dietaryAccommodations": "这个地点提供 **{{list}}** 食物。",
     "idRequired": "需要**ID**",
     "idNotRequired": "不需要**ID**",
@@ -60,5 +58,10 @@
     "copyEmail": "复制电子邮件",
     "copyPhone": "复制电话号码",
     "copied": "复制"
+  },
+  "dietary": {
+    "babyFood": "婴儿食品",
+    "halal": "清真",
+    "kosher": "犹太洁食"
   }
 }

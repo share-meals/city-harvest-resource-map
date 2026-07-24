@@ -23,8 +23,6 @@
   "renderer": {
     "unknown": "неизвестный",
     "allDay": "Весь день",
-    "am": "АМ",
-    "pm": "ПМ",
     "dietaryAccommodations": "В этом месте есть еда **{{list}}**.",
     "idRequired": "**требуется**",
     "idNotRequired": "**не требуется**",
@@ -60,5 +58,10 @@
     "copyEmail": "Копировать электронную почту",
     "copyPhone": "Копия номера телефона",
     "copied": "Копирован"
+  },
+  "dietary": {
+    "babyFood": "детское питание",
+    "halal": "халяль",
+    "kosher": "кошерное"
   }
 }
