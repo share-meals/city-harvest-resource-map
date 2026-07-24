@@ -32,7 +32,7 @@
     "contactInfo": "** 联系信息**",
     "notes": "** 说明**",
     "lastVerified": "最后核实 :",
-    "pageOf": "{\\fn黑体\\fs22\\bord1\\shad0\\3ahbe\\4ah00\\fscx67\\fscy66\\2chffffff\\3ch808080}总和的页 {\\fn黑体\\fs22\\bord1\\shad0\\3ahbe\\4ah00\\fscx67\\fscy66\\2chffffff\\3ch808080}我..",
+    "pageOf": "第 {{page}} 页,共 {{total}} 页",
     "website": "网站"
   },
   "privacy": {
@@ -60,9 +60,5 @@
     "copyEmail": "复制电子邮件",
     "copyPhone": "复制电话号码",
     "copied": "复制"
-  },
-  "data": {
-    "fallbackToEnglish": "“ QQLANGQQ” 的数据尚未提供 。 显示英语.",
-    "loadFailed": "无法装入食品仓库数据 。 请以后再试."
   }
 }
