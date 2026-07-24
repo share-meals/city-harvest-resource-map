@@ -40,7 +40,11 @@ export function LanguageSelector() {
       >
         {languages.map((lang) => (
           <IonSelectOption key={lang.code} value={lang.code}>
-            {lang.flag} {lang.label}
+            {/* dir=ltr keeps flag-then-name order consistent across all
+                options regardless of the active app direction — otherwise
+                Arabic/Urdu labels reflow to name-then-flag while other
+                rows stay flag-then-name. */}
+            <span dir='ltr'>{lang.flag} {lang.label}</span>
           </IonSelectOption>
         ))}
       </IonSelect>

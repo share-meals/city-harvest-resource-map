@@ -86,7 +86,10 @@ const FeatureDetails = ({feature, t, lang}: {feature: any, t: TFunction, lang: s
           ))}
           {phoneNumbers.map((phone) => (
             <ContactRow key={phone} value={phone} label={t('aria.copyPhone')} t={t}>
-              {phone}
+              {/* <bdi> keeps the phone number's punctuation from flipping
+                  inside RTL text — otherwise "(646) 313-9957" renders as
+                  "313-9957 (646)" in Arabic/Urdu. */}
+              <bdi>{phone}</bdi>
             </ContactRow>
           ))}
         </>
