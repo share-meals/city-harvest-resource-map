@@ -11,13 +11,19 @@ import pl from './locales/pl.json';
 import ru from './locales/ru.json';
 import ur from './locales/ur.json';
 import zhHans from './locales/zh-Hans.json';
-import zhHant from './locales/zh-Hant.json';
 
 // TODO: add Haitian Creole (`ht`) once we have a translation source.
 // LibreTranslate does not currently support it — needs another provider
 // or manual translation.
+//
+// TODO: restore Traditional Chinese (`zh-Hant`). Removed 2026-07-24
+// because the map's tile renderer failed to display Traditional CJK
+// glyphs, blanking the map when this locale was selected. Locale
+// files, static layer files, and Directus language row for `zh-Hant`
+// are all removed; browser tags that would previously map to `zh-Hant`
+// now fall through to `zh-Hans`.
 export const SUPPORTED_LANGUAGES = [
-  'ar', 'bn', 'en', 'es', 'fr', 'ko', 'pl', 'ru', 'ur', 'zh-Hans', 'zh-Hant',
+  'ar', 'bn', 'en', 'es', 'fr', 'ko', 'pl', 'ru', 'ur', 'zh-Hans',
 ] as const;
 
 export const RTL_LANGUAGES = new Set<string>(['ar', 'ur']);
@@ -42,15 +48,8 @@ function mapBrowserTagToSupported(tag: string): string | null {
   const lower = tag.toLowerCase();
   const supportedLower = new Set(SUPPORTED_LANGUAGES.map((s) => s.toLowerCase()));
 
-  // Simplified Chinese variants
-  if (['zh-cn', 'zh-sg', 'zh-hans', 'zh-hans-cn', 'zh-hans-sg'].some((t) => lower.startsWith(t))) {
-    return 'zh-Hans';
-  }
-  // Traditional Chinese variants
-  if (['zh-tw', 'zh-hk', 'zh-mo', 'zh-hant', 'zh-hant-tw', 'zh-hant-hk'].some((t) => lower.startsWith(t))) {
-    return 'zh-Hant';
-  }
-  // Generic zh → Simplified
+  // All Chinese variants → Simplified. Traditional (zh-Hant) is
+  // temporarily unsupported (see the TODO above).
   if (lower === 'zh' || lower.startsWith('zh-')) return 'zh-Hans';
 
   // For everything else, drop the region and match by prefix
@@ -74,7 +73,6 @@ i18n.use(initReactI18next).init({
     ru: {translation: ru},
     ur: {translation: ur},
     'zh-Hans': {translation: zhHans},
-    'zh-Hant': {translation: zhHant},
   },
   lng: detectLanguage(),
   fallbackLng: 'en',

@@ -57,7 +57,6 @@ import mms_pl from './data/mms.pl.json';
 import mms_ru from './data/mms.ru.json';
 import mms_ur from './data/mms.ur.json';
 import mms_zhHans from './data/mms.zh-Hans.json';
-import mms_zhHant from './data/mms.zh-Hant.json';
 import mm_truck from './data/mm_truck.svg';
 import cpds_en from './data/cpds.json';
 import cpds_ar from './data/cpds.ar.json';
@@ -69,17 +68,16 @@ import cpds_pl from './data/cpds.pl.json';
 import cpds_ru from './data/cpds.ru.json';
 import cpds_ur from './data/cpds.ur.json';
 import cpds_zhHans from './data/cpds.zh-Hans.json';
-import cpds_zhHant from './data/cpds.zh-Hant.json';
 
 // Static per-language layer data. Anything not in this map falls back to English
 // at the read sites below (`|| mmsByLang.en`).
 const mmsByLang: Record<string, any> = {
   en: mms_en, ar: mms_ar, bn: mms_bn, es: mms_es, fr: mms_fr, ko: mms_ko,
-  pl: mms_pl, ru: mms_ru, ur: mms_ur, 'zh-Hans': mms_zhHans, 'zh-Hant': mms_zhHant,
+  pl: mms_pl, ru: mms_ru, ur: mms_ur, 'zh-Hans': mms_zhHans,
 };
 const cpdsByLang: Record<string, any> = {
   en: cpds_en, ar: cpds_ar, bn: cpds_bn, es: cpds_es, fr: cpds_fr, ko: cpds_ko,
-  pl: cpds_pl, ru: cpds_ru, ur: cpds_ur, 'zh-Hans': cpds_zhHans, 'zh-Hant': cpds_zhHant,
+  pl: cpds_pl, ru: cpds_ru, ur: cpds_ur, 'zh-Hans': cpds_zhHans,
 };
 
 /* Core CSS required for Ionic components to work properly */

@@ -9,7 +9,10 @@ const languages = [
   {code: 'ar',      label: 'العربية',              flag: '🇸🇦'},
   {code: 'bn',      label: 'বাংলা',                flag: '🇧🇩'},
   {code: 'zh-Hans', label: '简体中文',              flag: '🇨🇳'},
-  {code: 'zh-Hant', label: '繁體中文',              flag: '🇹🇼'},
+  // Traditional Chinese (zh-Hant) removed 2026-07-24: the map's tile
+  // renderer failed to display Traditional CJK glyphs, blanking the map
+  // when this locale was selected. Re-enable when the font/glyph gap is
+  // resolved.
   {code: 'fr',      label: 'Français',             flag: '🇫🇷'},
   {code: 'ko',      label: '한국어',               flag: '🇰🇷'},
   {code: 'pl',      label: 'Polski',               flag: '🇵🇱'},
