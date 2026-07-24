@@ -25,14 +25,14 @@
     "allDay": "دن",
     "am": "جگہ",
     "pm": "پی ایم",
-    "dietaryAccommodations": "اِس جگہ پر بُت‌پرستانہ طور پر کھانے پینے کی چیزیں موجود ہیں ۔.",
+    "dietaryAccommodations": "اِس جگہ پر **{{list}}** کھانا موجود ہے۔",
     "idRequired": "غیر قانونی امداد لازمی ہے۔",
     "idNotRequired": "غیر درج ذیل نہیں ہے۔",
     "hours": "مشکلات",
     "contactInfo": "غیر متصل معلومات",
     "notes": "حدود",
-    "lastVerified": "آخری توثیق: %s معتبر پلگ ان",
-    "pageOf": "طےشدہ",
+    "lastVerified": "آخری تصدیق: {{date}}",
+    "pageOf": "صفحہ {{page}} از {{total}}",
     "website": "ویب سائٹ"
   },
   "privacy": {

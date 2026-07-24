@@ -31,8 +31,8 @@
     "hours": "**ساعات العمل**",
     "contactInfo": "**المعلومات ذات الصلة**",
     "notes": "**ملاحظات**",
-    "lastVerified": "آخر تم التحقق منه: {التاريخ}",
-    "pageOf": "{page} of {total}}",
+    "lastVerified": "آخر تحقق: {{date}}",
+    "pageOf": "الصفحة {{page}} من {{total}}",
     "website": "الموقع الشبكي"
   },
   "privacy": {

@@ -25,7 +25,7 @@
     "allDay": "Toute la journée",
     "am": "AM",
     "pm": "PM",
-    "dietaryAccommodations": "Cet endroit a **{list}}** nourriture.",
+    "dietaryAccommodations": "Cet endroit propose des aliments **{{list}}**.",
     "idRequired": "**L'identification est requise**",
     "idNotRequired": "**L'ID n'est pas requis**",
     "hours": "**Heures**",

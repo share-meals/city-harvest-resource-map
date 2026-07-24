@@ -25,14 +25,14 @@
     "allDay": "Весь день",
     "am": "АМ",
     "pm": "ПМ",
-    "dietaryAccommodations": "В этом месте есть **{{список}}**.",
+    "dietaryAccommodations": "В этом месте есть еда **{{list}}**.",
     "idRequired": "**требуется**",
     "idNotRequired": "**не требуется**",
     "hours": "**Часы**",
     "contactInfo": "**Контактная информация**",
     "notes": "**Примечания**",
     "lastVerified": "Последний проверенный: {{date}}",
-    "pageOf": "{{страница}} {{общее}}",
+    "pageOf": "Страница {{page}} из {{total}}",
     "website": "Сайт"
   },
   "privacy": {
