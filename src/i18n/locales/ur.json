@@ -21,7 +21,6 @@
     "Sa": "ہفتے"
   },
   "renderer": {
-    "unknown": "نامعلوم",
     "allDay": "دن",
     "dietaryAccommodations": "اِس جگہ پر **{{list}}** کھانا موجود ہے۔",
     "idRequired": "**شناختی کارڈ درکار ہے**",

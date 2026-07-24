@@ -12,34 +12,53 @@ const translateDietary = (value: string, t: TFunction) => {
   return t(`dietary.${slug}`, {defaultValue: value});
 };
 
-// Parse "hh:mm:ss" into a Date. The date portion is arbitrary — only the
-// time-of-day is used by the formatter — but both endpoints of a range
-// must share the same date so `formatRange` treats them as same-day.
-const parseTime = (timeStr: string): Date => {
+// Parse "hh:mm:ss" into a Date, or null if the input is malformed.
+// The date portion is arbitrary — only the time-of-day is used by the
+// formatter — but both endpoints of a range must share the same date so
+// `formatRange` treats them as same-day. Return null (not throw) so one
+// bad row in the feed can't crash the whole Renderer.
+const parseTime = (timeStr: string): Date | null => {
   const [hh, mm, ss] = timeStr.split(':').map(Number);
-  if (hh < 0 || hh > 23 || mm < 0 || mm > 59 || ss < 0 || ss > 59) {
-    throw new Error('Invalid time format. Expected hh:mm:ss with valid time values.');
+  if (!Number.isFinite(hh) || !Number.isFinite(mm) ||
+      hh < 0 || hh > 23 || mm < 0 || mm > 59 ||
+      (ss !== undefined && (!Number.isFinite(ss) || ss < 0 || ss > 59))) {
+    return null;
   }
   const d = new Date(2000, 0, 1);
   d.setHours(hh, mm, ss || 0, 0);
   return d;
 };
 
-const formatTimeRange = (startStr: string, endStr: string | null | undefined, t: TFunction, locale: string): string => {
-  const fmt = new Intl.DateTimeFormat(locale, {hour: 'numeric', minute: '2-digit'});
+// Return the locale-formatted "1:00–3:00 PM" range, or null if either
+// endpoint is missing / malformed. Callers treat null as all-day per
+// the data convention: a partial time range is meaningless, so we don't
+// render "1:00 PM – Unknown".
+const formatTimeRange = (startStr: string | null | undefined, endStr: string | null | undefined, locale: string): string | null => {
+  if (!startStr || !endStr) return null;
   const start = parseTime(startStr);
-  if (!endStr) return `${fmt.format(start)} - ${t('renderer.unknown')}`;
-  return fmt.formatRange(start, parseTime(endStr));
+  const end = parseTime(endStr);
+  if (!start || !end) return null;
+  return new Intl.DateTimeFormat(locale, {hour: 'numeric', minute: '2-digit'}).formatRange(start, end);
 };
 
-const renderHours = (allHours: any[], t: TFunction, locale: string) => {
+// A row with no days is meaningless (whether or not times are set) — drop
+// it and warn so the bad row surfaces in the console. A row with days but
+// no times is intentional in the feed to mean "the times are unknown /
+// unspecified"; we render just the days for now (client wants "All Day"
+// eventually, but not yet). A row with both renders both.
+const renderHours = (allHours: any[], t: TFunction, locale: string, pantryName: string) => {
   return allHours.map((hours) => {
     const validDays = hours.days ? hours.days.filter((d: any) => d != null) : [];
-    const days = validDays.length > 0 ? renderList(validDays.map((day: string) => t(`days.${day}`)), locale) : '';
-    const time = hours.timeStart ? formatTimeRange(hours.timeStart, hours.timeEnd, t, locale) : t('renderer.allDay');
+    if (validDays.length === 0) {
+      console.warn(`[hours] dropping row with no days for pantry ${JSON.stringify(pantryName)}:`, hours);
+      return null;
+    }
+    const days = renderList(validDays.map((day: string) => t(`days.${day}`)), locale);
+    const time = formatTimeRange(hours.timeStart, hours.timeEnd, locale);
     const parts = [days, time, hours.notes].filter(Boolean);
     return parts.join('  \n');
   })
+  .filter(Boolean)
   .join('\n\n');
 };
 
@@ -82,9 +101,12 @@ export const render = (data: any, t: TFunction, locale: string = 'en') => {
   }
 
   if(data.hours){
-    payload.push('---');
-    payload.push(t('renderer.hours'));
-    payload.push(renderHours(data.hours, t, locale));
+    const rendered = renderHours(data.hours, t, locale, data.name);
+    if (rendered) {
+      payload.push('---');
+      payload.push(t('renderer.hours'));
+      payload.push(rendered);
+    }
   }
 
   if(data.notes){
