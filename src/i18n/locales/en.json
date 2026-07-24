@@ -23,8 +23,6 @@
   "renderer": {
     "unknown": "unknown",
     "allDay": "All Day",
-    "am": "AM",
-    "pm": "PM",
     "dietaryAccommodations": "This location has **{{list}}** food.",
     "idRequired": "**ID is required**",
     "idNotRequired": "**ID is not required**",
@@ -60,5 +58,10 @@
     "copyEmail": "Copy email",
     "copyPhone": "Copy phone number",
     "copied": "Copied"
+  },
+  "dietary": {
+    "babyFood": "baby food",
+    "halal": "halal",
+    "kosher": "kosher"
   }
 }

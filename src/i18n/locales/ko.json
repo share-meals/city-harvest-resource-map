@@ -23,8 +23,6 @@
   "renderer": {
     "unknown": "알 수 없음",
     "allDay": "종일",
-    "am": "오전",
-    "pm": "오후",
     "dietaryAccommodations": "이 장소에는 **{{list}}** 음식이 있습니다.",
     "idRequired": "**신분증이 필요합니다**",
     "idNotRequired": "**신분증이 필요하지 않습니다**",
@@ -60,5 +58,10 @@
     "copyEmail": "이메일 복사",
     "copyPhone": "전화번호 복사",
     "copied": "복사됨"
+  },
+  "dietary": {
+    "babyFood": "이유식",
+    "halal": "할랄",
+    "kosher": "코셔"
   }
 }

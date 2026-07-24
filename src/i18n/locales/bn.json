@@ -23,8 +23,6 @@
   "renderer": {
     "unknown": "অজানা",
     "allDay": "সারাদিনব্যাপী",
-    "am": "মেগাবাইট",
-    "pm": "পি- জি- পি",
     "dietaryAccommodations": "এই অবস্থানে **{{list}}** খাবার আছে।",
     "idRequired": "**আইডি প্রয়োজন**",
     "idNotRequired": "**আইডি প্রয়োজন নেই**",
@@ -60,5 +58,10 @@
     "copyEmail": "ই-মেইল কপি করুন",
     "copyPhone": "ফোন নম্বর কপি করো",
     "copied": "অনুলিপি করা হয়েছে"
+  },
+  "dietary": {
+    "babyFood": "শিশু খাদ্য",
+    "halal": "হালাল",
+    "kosher": "কোশের"
   }
 }

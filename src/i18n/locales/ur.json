@@ -23,8 +23,6 @@
   "renderer": {
     "unknown": "نامعلوم",
     "allDay": "دن",
-    "am": "جگہ",
-    "pm": "پی ایم",
     "dietaryAccommodations": "اِس جگہ پر **{{list}}** کھانا موجود ہے۔",
     "idRequired": "غیر قانونی امداد لازمی ہے۔",
     "idNotRequired": "غیر درج ذیل نہیں ہے۔",
@@ -60,5 +58,10 @@
     "copyEmail": "ای میل کاپی کریں",
     "copyPhone": "فون نمبر کاپی کریں",
     "copied": "کوس"
+  },
+  "dietary": {
+    "babyFood": "بچوں کا کھانا",
+    "halal": "حلال",
+    "kosher": "کوشر"
   }
 }
