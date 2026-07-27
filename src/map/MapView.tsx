@@ -191,7 +191,6 @@ export function MapView({controls, mapRef, onMapClick, protomapsApiKey}: MapView
         mapStyle={mapStyle}
         onClick={handleClick}
         onZoomEnd={handleZoomEnd}
-        trackResize={false}
         style={{width: '100%', height: '100%'}}
       >
         <MapLayers />

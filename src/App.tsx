@@ -413,7 +413,7 @@ export const App = () => {
 	    {!isMobile &&
 	     <IonGrid className='ion-no-padding'>
 	       <IonRow style={{height: '100vh'}}>
-		 <IonCol>
+		 <IonCol style={{overflow: 'hidden'}}>
 		   <MapView
 		     controls={controls.slice(0, 1)}
 		     mapRef={mapRef}
@@ -421,8 +421,13 @@ export const App = () => {
 		     protomapsApiKey={import.meta.env.VITE_PROTOMAPS_API_KEY}
 		   />
 		 </IonCol>
-		 <IonCol>
-		   <div className='ion-padding'>
+		 {/* Right col has fixed layout dimensions; inner scroll container
+		     absorbs any scrollbar so the map col isn't pushed around.
+		     Without this, clicking a marker changes Renderer content →
+		     right-col scrollbar toggles → left-col width shifts →
+		     MapLibre resize → visible map pan. */}
+		 <IonCol style={{height: '100%', overflow: 'hidden'}}>
+		   <div style={{height: '100%', overflowY: 'auto'}} className='ion-padding'>
 		     <LanguageSelector />
 		     <LayerToggles />
 		     <GeocoderWrapper setCenter={setCenter} />
