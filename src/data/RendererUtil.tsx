@@ -116,10 +116,13 @@ export const render = (data: any, t: TFunction, locale: string = 'en') => {
   }
 
   if(data.lastVerified){
+    // The date portion is UTC-midnight; format in UTC so a US-timezone
+    // viewer doesn't see it pulled back a day (e.g. "2023-01-30" → "Jan 29").
     const humanReadable = new Date(data.lastVerified.split('T')[0]);
     const localeMap: Record<string, string> = {en: 'en-US', es: 'es-ES', ko: 'ko-KR', id: 'id-ID'};
     const formatter = new Intl.DateTimeFormat(localeMap[locale] || locale, {
-      dateStyle: 'medium'
+      dateStyle: 'medium',
+      timeZone: 'UTC',
     });
     payload.push(t('renderer.lastVerified', {date: formatter.format(humanReadable)}));
   }
